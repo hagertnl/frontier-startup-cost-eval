@@ -8,6 +8,11 @@ source ../common_modules.sh
 
 if [ -d osu-micro-benchmarks-7.5-1 ]; then rm -rf osu-micro-benchmarks-7.5-1; fi
 
+if [ ! -f osu-micro-benchmarks-7.5-1.tar ]; then
+    echo "This script requires you to download osu-micro-benchmarks-7.5-1.tar from OSU's download site."
+    exit 1
+fi
+
 tar -xf osu-micro-benchmarks-7.5-1.tar
 pushd osu-micro-benchmarks-7.5-1
 
