@@ -4,13 +4,6 @@
 # then collates those into a CSV named `benchmark_times.csv` with rows:
 # benchmark,tool,nnodes,jobid,iteration,seconds
 
-# Output of benchmark runs should look like:
-#+ /usr/bin/time srun -N 512 -n 4096 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'from mpi4py import MPI'
-#srun: Step created for StepId=4142540.4
-#0.10user 0.15system 0:17.46elapsed 1%CPU (0avgtext+0avgdata 20480maxresident)k
-#0inputs+0outputs (0major+5162minor)pagefaults 0swaps
-#+ set +x
-
 out_name="benchmark_times.csv"
 
 echo "benchmark,tool,nnodes,jobid,iteration,seconds" > $out_name
