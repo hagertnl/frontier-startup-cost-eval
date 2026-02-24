@@ -1,0 +1,82 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
++ ldd /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libamdhip64.so.6 => /opt/rocm-6.4.2/lib/libamdhip64.so.6 (0x00007fffec1ed000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fffec0ed000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffec09e000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00007fffec085000)
+	libmpi_amd.so.12 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_amd.so.12 (0x00007fffeaf35000)
+	libmpi_gtl_hsa.so.0 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_gtl_hsa.so.0 (0x00007fffeae8a000)
+	libxpmem.so.0 => /usr/lib64/libxpmem.so.0 (0x00007fffeae87000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007fffeac31000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fffeac04000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fffea9ef000)
+	librocprofiler-register.so.0 => /opt/rocm-6.4.2/lib/librocprofiler-register.so.0 (0x00007fffea96e000)
+	libamd_comgr.so.3 => /opt/rocm-6.4.2/lib/libamd_comgr.so.3 (0x00007fffe11c1000)
+	libhsa-runtime64.so.1 => /opt/rocm-6.4.2/lib/libhsa-runtime64.so.1 (0x00007fffe0e77000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00007fffe0c00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libfabric.so.1 => /opt/cray/libfabric/1.22.0/lib64/libfabric.so.1 (0x00007fffe0ac9000)
+	libatomic.so.1 => /usr/lib64/libatomic.so.1 (0x00007fffe0e6b000)
+	libpmi.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi.so.0 (0x00007fffe0e47000)
+	libpmi2.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi2.so.0 (0x00007fffe0e23000)
+	libzstd.so.1 => /usr/lib64/libzstd.so.1 (0x00007fffe0a0a000)
+	libelf.so.1 => /usr/lib64/libelf.so.1 (0x00007fffe0600000)
+	libdrm.so.2 => /opt/amdgpu/lib64/libdrm.so.2 (0x00007fffe09f3000)
+	libdrm_amdgpu.so.1 => /opt/amdgpu/lib64/libdrm_amdgpu.so.1 (0x00007fffe0e13000)
+	libcxi.so.1 => /usr/lib64/libcxi.so.1 (0x00007fffe09d2000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fffe0e0e000)
+	libpals.so.0 => /opt/cray/pals/1.6/lib/libpals.so.0 (0x00007fffe09ca000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00007fffe09a7000)
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8, min: 93 ms, max: 103 ms, avg: 98 ms
+0.01user 0.03system 0:01.12elapsed 4%CPU (0avgtext+0avgdata 18432maxresident)k
+2928inputs+0outputs (10major+3243minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8, min: 9 ms, max: 19 ms, avg: 13 ms
+0.01user 0.01system 0:00.31elapsed 9%CPU (0avgtext+0avgdata 18432maxresident)k
+38inputs+0outputs (0major+3247minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8, min: 9 ms, max: 18 ms, avg: 13 ms
+0.01user 0.01system 0:00.31elapsed 8%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3247minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8, min: 7 ms, max: 17 ms, avg: 13 ms
+0.01user 0.01system 0:00.30elapsed 8%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3247minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8, min: 8 ms, max: 17 ms, avg: 13 ms
+0.01user 0.01system 0:00.31elapsed 8%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3247minor)pagefaults 0swaps
++ set +x
