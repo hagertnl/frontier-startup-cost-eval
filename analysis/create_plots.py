@@ -55,6 +55,7 @@ for cache in ['cold', 'warm']:
     for ax in axes:
         ax.set_xlabel("# Nodes", fontsize=14)
         ax.tick_params(axis='both', labelsize=12)
+        ax.set_yscale('log')
         ax.set_xscale('log')
 
     df = df_grouped[df_grouped['cache'] == cache]
