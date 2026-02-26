@@ -1,0 +1,123 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
++ /usr/bin/time sbcast -pf /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env.tar.gz /mnt/bb/hagertnl/conda_env.tar.gz
+6.83user 3.45system 0:16.63elapsed 61%CPU (0avgtext+0avgdata 4108336maxresident)k
+8166818inputs+0outputs (11037major+1017564minor)pagefaults 0swaps
++ /usr/bin/time srun -N 1 --ntasks-per-node 1 -c 56 bash -c 'mkdir /mnt/bb/hagertnl/conda_env; tar --use-compress-program=pigz -xf /mnt/bb/hagertnl/conda_env.tar.gz -C /mnt/bb/hagertnl/conda_env'
+0.01user 0.02system 0:25.36elapsed 0%CPU (0avgtext+0avgdata 18432maxresident)k
+2538inputs+0outputs (9major+3242minor)pagefaults 0swaps
++ conda activate /mnt/bb/hagertnl/conda_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /mnt/bb/hagertnl/conda_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate /mnt/bb/hagertnl/conda_env
+++ /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda shell.posix activate /mnt/bb/hagertnl/conda_env
++ ask_conda='. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+PS1='\''(/mnt/bb/hagertnl/conda_env) '\''
+export PATH='\''/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/mnt/bb/hagertnl/conda_env) '\''
+export CONDA_PREFIX_1='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
++ eval '. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+PS1='\''(/mnt/bb/hagertnl/conda_env) '\''
+export PATH='\''/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/mnt/bb/hagertnl/conda_env) '\''
+export CONDA_PREFIX_1='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh
++++ test -n ''
++++ unset XML_CATALOG_FILES
++++ unset xml_catalog_files_libxml2
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh
++++ export GSETTINGS_SCHEMA_DIR=
++++ GSETTINGS_SCHEMA_DIR=
++++ unset GSETTINGS_SCHEMA_DIR_CONDA_BACKUP
++++ '[' -z ']'
++++ unset GSETTINGS_SCHEMA_DIR
+++ PS1='(/mnt/bb/hagertnl/conda_env) '
+++ export PATH=/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ PATH=/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ export CONDA_PREFIX=/mnt/bb/hagertnl/conda_env
+++ CONDA_PREFIX=/mnt/bb/hagertnl/conda_env
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=/mnt/bb/hagertnl/conda_env
+++ CONDA_DEFAULT_ENV=/mnt/bb/hagertnl/conda_env
+++ export 'CONDA_PROMPT_MODIFIER=(/mnt/bb/hagertnl/conda_env) '
+++ CONDA_PROMPT_MODIFIER='(/mnt/bb/hagertnl/conda_env) '
+++ export CONDA_PREFIX_1=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0
+++ CONDA_PREFIX_1=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0
+++ export CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
+++ CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ /usr/bin/time srun -N 1 --ntasks-per-node 1 -c 56 conda-unpack
+0.01user 0.01system 0:00.77elapsed 3%CPU (0avgtext+0avgdata 18432maxresident)k
+38inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ set -x
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'import torch'
+0.01user 0.01system 0:09.57elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'import torch'
+0.01user 0.01system 0:09.44elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'import torch'
+0.01user 0.01system 0:09.39elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'import torch'
+0.01user 0.01system 0:10.93elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 1 -n 8 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest python3 -c 'import torch'
+0.01user 0.01system 0:10.01elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3224minor)pagefaults 0swaps
++ set +x
