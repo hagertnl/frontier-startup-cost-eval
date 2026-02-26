@@ -28,12 +28,6 @@ df_grouped = df_grouped.reset_index()
 
 fig, axes = plt.subplots(1, 4, figsize=(20, 5))
 
-for ax in axes:
-    ax.set_xlabel("# Nodes", fontsize=14)
-    ax.set_ylabel("Time (s)", fontsize=14)
-    ax.tick_params(axis='both', labelsize=12)
-    ax.set_xscale('log')
-
 # Custom legend
 legend_colors = ["#0072B2", "#E69F00", "#56B4E9", "#009E73", "#D55E00"]
 legend_labels = ['nfs-baseline', 'lustre-baseline', 'sbcast', 'spindle', 'copper']
@@ -45,24 +39,28 @@ for i in range(0, len(legend_labels)):
 legend_handles = [Patch(color=color, label=label) for color, label in zip(legend_colors, legend_labels)]
 legend_labels = [h.get_label() for h in legend_handles]
 fig.legend(legend_handles, legend_labels, loc='upper center', bbox_to_anchor=(0.5, 0.1), ncol=5, frameon=False, fontsize=14)
-fig.tight_layout(rect=[0, 0.1, 1, 0.95])
+fig.tight_layout(rect=[0.01, 0.1, 1, 0.95])
 
 # Create a mapping of axis index to benchmark name
 benchmark_to_ax_index = {}
 cur_index = 0
+# Assign benchmarks to axes
 for b in df_grouped['benchmark'].unique():
     benchmark_to_ax_index[b] = cur_index
-    axes[cur_index].set_title(b, fontsize=16)
     cur_index += 1
 
-#plt.tight_layout()
-
 for cache in ['cold', 'warm']:
+    # Set labels, scales
+    axes[0].set_ylabel("Time (s)", fontsize=14)
+    for ax in axes:
+        ax.set_xlabel("# Nodes", fontsize=14)
+        ax.tick_params(axis='both', labelsize=12)
+        ax.set_xscale('log')
+
     df = df_grouped[df_grouped['cache'] == cache]
     # For each unique benchmark/tool, get & plot data
     for index, entry in df[['benchmark', 'tool']].drop_duplicates().iterrows():
         single_series_df = df[(df['benchmark'] == entry['benchmark']) & (df['tool'] == entry['tool'])]
-        print(entry)
         nnodes = single_series_df['nnodes'].to_numpy()
         time_avg = single_series_df['mean'].to_numpy()
         time_stdev = single_series_df['std'].to_numpy()
@@ -71,6 +69,7 @@ for cache in ['cold', 'warm']:
         time_avg_sorted = time_avg[sorted_indices]
         time_stdev_sorted = time_stdev[sorted_indices]
         axes[benchmark_to_ax_index[entry['benchmark']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=time_stdev_sorted, fmt='-o', capsize=5, color=legend_colors[legend_labels_to_index[entry['tool']]])
+        axes[benchmark_to_ax_index[entry['benchmark']]].set_title(entry['benchmark'], fontsize=16)
 
     plt.savefig(f'scaling_{cache}_start.png', dpi=100)
 
