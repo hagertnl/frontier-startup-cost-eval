@@ -1,0 +1,109 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time sbcast --send-libs --exclude=NONE -pf /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init /mnt/bb/hagertnl/osu_init
+2.65user 1.65system 0:05.58elapsed 77%CPU (0avgtext+0avgdata 298436maxresident)k
+167048inputs+0outputs (443major+44803minor)pagefaults 0swaps
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ export LD_LIBRARY_PATH=/mnt/bb/hagertnl/osu_init_libs
++ LD_LIBRARY_PATH=/mnt/bb/hagertnl/osu_init_libs
+++ pkg-config --variable=libdir libfabric
++ export LD_LIBRARY_PATH=/mnt/bb/hagertnl/osu_init_libs:/opt/cray/libfabric/1.22.0/lib64
++ LD_LIBRARY_PATH=/mnt/bb/hagertnl/osu_init_libs:/opt/cray/libfabric/1.22.0/lib64
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 1024 --ntasks-per-node=1 --label -D /mnt/bb/hagertnl/osu_init_libs bash -c 'if [ -f libhsa-runtime64.so.1 ]; then ln -s libhsa-runtime64.so.1 libhsa-runtime64.so; fi;
+    if [ -f libamd_comgr.so.2 ]; then ln -s libamd_comgr.so.2 libamd_comgr.so;
+    elif [ -f libamd_comgr.so.3 ]; then ln -s libamd_comgr.so.3 libamd_comgr.so; fi;
+    if [ -f libamdhip64.so.5 ]; then ln -s libamdhip64.so.5 libamdhip64.so;
+    elif [ -f libamdhip64.so.6 ]; then ln -s libamdhip64.so.6 libamdhip64.so; fi'
+0.08user 0.24system 0:05.57elapsed 5%CPU (0avgtext+0avgdata 24576maxresident)k
+2408inputs+0outputs (9major+5989minor)pagefaults 0swaps
++ ldd /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libamdhip64.so.6 => /opt/rocm-6.4.2/lib/libamdhip64.so.6 (0x00007fffec1ed000)
+	libm.so.6 => /mnt/bb/hagertnl/osu_init_libs/libm.so.6 (0x00007fffec103000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffec0b2000)
+	libz.so.1 => /mnt/bb/hagertnl/osu_init_libs/libz.so.1 (0x00007fffec099000)
+	libmpi_amd.so.12 => /mnt/bb/hagertnl/osu_init_libs/libmpi_amd.so.12 (0x00007fffeae00000)
+	libmpi_gtl_hsa.so.0 => /mnt/bb/hagertnl/osu_init_libs/libmpi_gtl_hsa.so.0 (0x00007fffebfee000)
+	libxpmem.so.0 => /mnt/bb/hagertnl/osu_init_libs/libxpmem.so.0 (0x00007fffebfeb000)
+	libstdc++.so.6 => /mnt/bb/hagertnl/osu_init_libs/libstdc++.so.6 (0x00007fffeaa00000)
+	libgcc_s.so.1 => /mnt/bb/hagertnl/osu_init_libs/libgcc_s.so.1 (0x00007fffebfbc000)
+	libc.so.6 => /mnt/bb/hagertnl/osu_init_libs/libc.so.6 (0x00007fffea600000)
+	librocprofiler-register.so.0 => /mnt/bb/hagertnl/osu_init_libs/librocprofiler-register.so.0 (0x00007fffead7f000)
+	libamd_comgr.so.3 => /mnt/bb/hagertnl/osu_init_libs/libamd_comgr.so.3 (0x00007fffe0e00000)
+	libhsa-runtime64.so.1 => /mnt/bb/hagertnl/osu_init_libs/libhsa-runtime64.so.1 (0x00007fffe0a00000)
+	libnuma.so.1 => /mnt/bb/hagertnl/osu_init_libs/libnuma.so.1 (0x00007fffe0600000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libfabric.so.1 => /mnt/bb/hagertnl/osu_init_libs/libfabric.so.1 (0x00007fffea8c9000)
+	libatomic.so.1 => /mnt/bb/hagertnl/osu_init_libs/libatomic.so.1 (0x00007fffebfb0000)
+	libpmi.so.0 => /mnt/bb/hagertnl/osu_init_libs/libpmi.so.0 (0x00007fffebf8c000)
+	libpmi2.so.0 => /mnt/bb/hagertnl/osu_init_libs/libpmi2.so.0 (0x00007fffebf68000)
+	libzstd.so.1 => /mnt/bb/hagertnl/osu_init_libs/libzstd.so.1 (0x00007fffeacc0000)
+	libelf.so.1 => /mnt/bb/hagertnl/osu_init_libs/libelf.so.1 (0x00007fffe0200000)
+	libdrm.so.2 => /mnt/bb/hagertnl/osu_init_libs/libdrm.so.2 (0x00007fffeaca9000)
+	libdrm_amdgpu.so.1 => /mnt/bb/hagertnl/osu_init_libs/libdrm_amdgpu.so.1 (0x00007fffebf58000)
+	libcxi.so.1 => /mnt/bb/hagertnl/osu_init_libs/libcxi.so.1 (0x00007fffeac88000)
+	libpthread.so.0 => /mnt/bb/hagertnl/osu_init_libs/libpthread.so.0 (0x00007fffebf55000)
+	libpals.so.0 => /mnt/bb/hagertnl/osu_init_libs/libpals.so.0 (0x00007fffeac80000)
+	libnl-3.so.200 => /mnt/bb/hagertnl/osu_init_libs/libnl-3.so.200 (0x00007fffeac5d000)
+++ seq 1 5
++ for i in $(seq 1 5)
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/osu_init
+srun: Step created for StepId=4148468.1
+# OSU MPI Init Test v7.5
+nprocs: 8192, min: 896 ms, max: 1442 ms, avg: 1291 ms
+0.12user 0.30system 1:54.11elapsed 0%CPU (0avgtext+0avgdata 23552maxresident)k
+38inputs+8outputs (0major+7292minor)pagefaults 0swaps
++ for i in $(seq 1 5)
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/osu_init
+srun: Step created for StepId=4148468.2
+# OSU MPI Init Test v7.5
+nprocs: 8192, min: 684 ms, max: 861 ms, avg: 818 ms
+0.11user 0.30system 0:48.25elapsed 0%CPU (0avgtext+0avgdata 21504maxresident)k
+38inputs+8outputs (0major+7293minor)pagefaults 0swaps
++ for i in $(seq 1 5)
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/osu_init
+srun: Step created for StepId=4148468.3
+# OSU MPI Init Test v7.5
+nprocs: 8192, min: 597 ms, max: 852 ms, avg: 811 ms
+0.11user 0.29system 0:06.55elapsed 6%CPU (0avgtext+0avgdata 23552maxresident)k
+0inputs+0outputs (0major+7296minor)pagefaults 0swaps
++ for i in $(seq 1 5)
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/osu_init
+srun: Step created for StepId=4148468.4
+# OSU MPI Init Test v7.5
+nprocs: 8192, min: 674 ms, max: 849 ms, avg: 810 ms
+0.11user 0.30system 0:06.53elapsed 6%CPU (0avgtext+0avgdata 21504maxresident)k
+0inputs+0outputs (0major+7292minor)pagefaults 0swaps
++ for i in $(seq 1 5)
+++ basename /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 8192, min: 686 ms, max: 851 ms, avg: 812 ms
+0.11user 0.30system 0:08.54elapsed 4%CPU (0avgtext+0avgdata 20480maxresident)k
+0inputs+0outputs (0major+7292minor)pagefaults 0swaps
++ set +x
