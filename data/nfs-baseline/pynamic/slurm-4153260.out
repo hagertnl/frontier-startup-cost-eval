@@ -1,0 +1,147 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
++ export LD_LIBRARY_PATH=/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ LD_LIBRARY_PATH=/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ export LD_LIBRARY_PATH=/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/python-mpi4py/conda_env/lib:/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ LD_LIBRARY_PATH=/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/python-mpi4py/conda_env/lib:/ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ seq 1 5
++ for i in $(seq 1 5)
++ grep -v 'rank -'
++ srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
+Pynamic: Version 1.3.3
+Pynamic: run on 02/27/26 04:37:36 with 8192 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules... visiting all module functions
+Pynamic: module import time = 69.32353091239929 secs
+Pynamic: module visit time = 0.6638169288635254 secs
+Pynamic: module test passed!
+
+Pynamic: testing mpi capability...
+
+Starting computation (groan)
+
+Header length is  54
+BMP size is  (400, 400)
+Data length is  480000
+
+Pynamic: fractal mpi time = 1.2540574073791504 secs
+Pynamic: mpi test passed!
+
++ for i in $(seq 1 5)
++ grep -v 'rank -'
++ srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
+Pynamic: Version 1.3.3
+Pynamic: run on 02/27/26 04:40:55 with 8192 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules... visiting all module functions
+Pynamic: module import time = 72.90959095954895 secs
+Pynamic: module visit time = 0.6725900173187256 secs
+Pynamic: module test passed!
+
+Pynamic: testing mpi capability...
+
+Starting computation (groan)
+
+Header length is  54
+BMP size is  (400, 400)
+Data length is  480000
+
+Pynamic: fractal mpi time = 1.0075809955596924 secs
+Pynamic: mpi test passed!
+
+
+MPICH Slingshot Network Summary: 11 network timeouts
+
++ for i in $(seq 1 5)
++ grep -v 'rank -'
++ srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
+Pynamic: Version 1.3.3
+Pynamic: run on 02/27/26 04:44:13 with 8192 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules... visiting all module functions
+Pynamic: module import time = 68.8490800857544 secs
+Pynamic: module visit time = 0.6646714210510254 secs
+Pynamic: module test passed!
+
+Pynamic: testing mpi capability...
+
+Starting computation (groan)
+
+Header length is  54
+BMP size is  (400, 400)
+Data length is  480000
+
+Pynamic: fractal mpi time = 1.2679314613342285 secs
+Pynamic: mpi test passed!
+
++ for i in $(seq 1 5)
++ grep -v 'rank -'
++ srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
+srun: Step created for StepId=4153260.3
+Pynamic: Version 1.3.3
+Pynamic: run on 02/27/26 04:47:52 with 8192 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules... visiting all module functions
+Pynamic: module import time = 76.59684634208679 secs
+Pynamic: module visit time = 0.6675238609313965 secs
+Pynamic: module test passed!
+
+Pynamic: testing mpi capability...
+
+Starting computation (groan)
+
+Header length is  54
+BMP size is  (400, 400)
+Data length is  480000
+
+Pynamic: fractal mpi time = 2.9782562255859375 secs
+Pynamic: mpi test passed!
+
++ for i in $(seq 1 5)
++ grep -v 'rank -'
++ srun -N 1024 -n 8192 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /ccs/proj/stf243/hagertnl/CUG26/benchmark-builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
+srun: Step created for StepId=4153260.4
+Pynamic: Version 1.3.3
+Pynamic: run on 02/27/26 04:52:02 with 8192 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules... visiting all module functions
+Pynamic: module import time = 90.27849769592285 secs
+Pynamic: module visit time = 0.6659622192382812 secs
+Pynamic: module test passed!
+
+Pynamic: testing mpi capability...
+
+Starting computation (groan)
+
+Header length is  54
+BMP size is  (400, 400)
+Data length is  480000
+
+Pynamic: fractal mpi time = 1.8733980655670166 secs
+Pynamic: mpi test passed!
+
++ set +x
