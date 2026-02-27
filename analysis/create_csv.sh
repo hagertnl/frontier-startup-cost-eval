@@ -19,11 +19,19 @@ for tool in ../data/*; do
                 nnodes=$(sacct -j $jobid -Xn -o nnodes | head -n1 | awk '{print $1}')
 
                 iteration=1
-                for elapsed_time in $(grep -A5 'ntasks-per-node=8' $run_output | grep 'maxresident' | awk '{print $3}' | cut -d'e' -f1); do
-                    seconds=$(python3 -c "s='${elapsed_time}'; print(int(s.split(':')[0])*60+float(s.split(':')[1]))")
-                    echo "$benchmark,$tool,$nnodes,$jobid,$iteration,$seconds" >> $out_name
-                    iteration=$((iteration+1))
-                done
+                if [ ! "$benchmark" == "pynamic" ]; then
+                    for elapsed_time in $(grep -A5 'ntasks-per-node=8' $run_output | grep 'maxresident' | awk '{print $3}' | cut -d'e' -f1); do
+                        seconds=$(python3 -c "s='${elapsed_time}'; print(int(s.split(':')[0])*60+float(s.split(':')[1]))")
+                        echo "$benchmark,$tool,$nnodes,$jobid,$iteration,$seconds" >> $out_name
+                        iteration=$((iteration+1))
+                    done
+                else
+                    for elapsed_time in $(grep 'module import time' $run_output | awk '{print $6}'); do
+                        seconds=$elapsed_time
+                        echo "$benchmark,$tool,$nnodes,$jobid,$iteration,$seconds" >> $out_name
+                        iteration=$((iteration+1))
+                    done
+                fi
             fi
         done
     done
