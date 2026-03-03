@@ -57,6 +57,8 @@ for cache in ['cold', 'warm']:
         ax.tick_params(axis='both', labelsize=12)
         ax.set_yscale('log')
         ax.set_xscale('log')
+        ax.set_ylim(0.1, 1500)
+        ax.set_xlim(0.5, 1500)
 
     df = df_grouped[df_grouped['cache'] == cache]
     # For each unique benchmark/tool, get & plot data
