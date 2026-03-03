@@ -1,0 +1,710 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
++ /usr/bin/time sbcast -pf /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds//python-mpi4py/conda_env.tar.gz /mnt/bb/hagertnl/conda_env.tar.gz
+0.81user 0.28system 0:00.84elapsed 130%CPU (0avgtext+0avgdata 189460maxresident)k
+133906inputs+0outputs (6752major+46516minor)pagefaults 0swaps
++ /usr/bin/time srun -N 64 --ntasks-per-node 1 bash -c 'mkdir /mnt/bb/hagertnl/conda_env; tar --use-compress-program=pigz -xf /mnt/bb/hagertnl/conda_env.tar.gz -C /mnt/bb/hagertnl/conda_env'
+0.01user 0.06system 0:01.71elapsed 4%CPU (0avgtext+0avgdata 15360maxresident)k
+2538inputs+0outputs (36major+4108minor)pagefaults 0swaps
++ conda activate /mnt/bb/hagertnl/conda_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /mnt/bb/hagertnl/conda_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate /mnt/bb/hagertnl/conda_env
+++ /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda shell.posix activate /mnt/bb/hagertnl/conda_env
++ ask_conda='. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+PS1='\''(/mnt/bb/hagertnl/conda_env) '\''
+export PATH='\''/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/mnt/bb/hagertnl/conda_env) '\''
+export CONDA_PREFIX_1='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
++ eval '. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+PS1='\''(/mnt/bb/hagertnl/conda_env) '\''
+export PATH='\''/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''/mnt/bb/hagertnl/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/mnt/bb/hagertnl/conda_env) '\''
+export CONDA_PREFIX_1='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh
++++ test -n ''
++++ unset XML_CATALOG_FILES
++++ unset xml_catalog_files_libxml2
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh
++++ export GSETTINGS_SCHEMA_DIR=
++++ GSETTINGS_SCHEMA_DIR=
++++ unset GSETTINGS_SCHEMA_DIR_CONDA_BACKUP
++++ '[' -z ']'
++++ unset GSETTINGS_SCHEMA_DIR
+++ PS1='(/mnt/bb/hagertnl/conda_env) '
+++ export PATH=/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ PATH=/mnt/bb/hagertnl/conda_env/bin:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/hagertnl/.local/bin:/ccs/home/hagertnl/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ export CONDA_PREFIX=/mnt/bb/hagertnl/conda_env
+++ CONDA_PREFIX=/mnt/bb/hagertnl/conda_env
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=/mnt/bb/hagertnl/conda_env
+++ CONDA_DEFAULT_ENV=/mnt/bb/hagertnl/conda_env
+++ export 'CONDA_PROMPT_MODIFIER=(/mnt/bb/hagertnl/conda_env) '
+++ CONDA_PROMPT_MODIFIER='(/mnt/bb/hagertnl/conda_env) '
+++ export CONDA_PREFIX_1=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0
+++ CONDA_PREFIX_1=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0
+++ export CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
+++ CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ /usr/bin/time srun -N 64 --ntasks-per-node 1 conda-unpack
+0.01user 0.03system 0:00.25elapsed 19%CPU (0avgtext+0avgdata 15360maxresident)k
+38inputs+0outputs (0major+4136minor)pagefaults 0swaps
++ /usr/bin/time sbcast --send-libs --exclude=NONE -pf /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds//pynamic/pynamic-pyMPI-2.6a1_util_495_280/pynamic-bigexe-mpi4py /mnt/bb/hagertnl/pynamic-bigexe-mpi4py
+5.15user 6.53system 0:12.06elapsed 96%CPU (0avgtext+0avgdata 646212maxresident)k
+727512inputs+0outputs (12457major+121516minor)pagefaults 0swaps
++ /usr/bin/time sbcast -pf /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds//pynamic/pynamic-pyMPI-2.6a1_util_495_280/pynamic_driver_mpi4py.py /mnt/bb/hagertnl/pynamic_driver_mpi4py.py
+0.00user 0.01system 0:00.02elapsed 71%CPU (0avgtext+0avgdata 9216maxresident)k
+0inputs+0outputs (0major+1882minor)pagefaults 0swaps
++ set +x
+0.01user 0.03system 0:00.14elapsed 30%CPU (0avgtext+0avgdata 15360maxresident)k
+38inputs+0outputs (0major+4136minor)pagefaults 0swaps
+LD_LIBRARY_PATH=/mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs:/mnt/bb/hagertnl/conda_env/lib:/opt/cray/libfabric/1.22.0/lib64
++ /usr/bin/time srun -N 64 -n 64 --ntasks-per-node=1 --label -D /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs bash -c 'if [ -f libhsa-runtime64.so.1 ]; then ln -s libhsa-runtime64.so.1 libhsa-runtime64.so; fi;
+    if [ -f libamd_comgr.so.2 ]; then ln -s libamd_comgr.so.2 libamd_comgr.so;
+    elif [ -f libamd_comgr.so.3 ]; then ln -s libamd_comgr.so.3 libamd_comgr.so; fi;
+    if [ -f libamdhip64.so.5 ]; then ln -s libamdhip64.so.5 libamdhip64.so;
+    elif [ -f libamdhip64.so.6 ]; then ln -s libamdhip64.so.6 libamdhip64.so; fi'
+srun: Step created for StepId=4161829.3
+0.00user 0.03system 0:00.17elapsed 25%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+0outputs (0major+3986minor)pagefaults 0swaps
++ ldd /mnt/bb/hagertnl/pynamic-bigexe-mpi4py
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libpython3.12.so.1.0 => /mnt/bb/hagertnl/conda_env/lib/libpython3.12.so.1.0 (0x00007fffed200000)
+	libm.so.6 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libm.so.6 (0x00007fffed8de000)
+	libmodule0.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule0.so (0x00007fffed8b7000)
+	libmodule1.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule1.so (0x00007fffed1de000)
+	libmodule2.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule2.so (0x00007fffed1c5000)
+	libmodule3.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule3.so (0x00007fffed1a5000)
+	libmodule4.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule4.so (0x00007fffed180000)
+	libmodule5.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule5.so (0x00007fffed15c000)
+	libmodule6.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule6.so (0x00007fffed137000)
+	libmodule7.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule7.so (0x00007fffed10c000)
+	libmodule8.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule8.so (0x00007fffed0de000)
+	libmodule9.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule9.so (0x00007fffed0b3000)
+	libmodule10.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule10.so (0x00007fffed091000)
+	libmodule11.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule11.so (0x00007fffed06e000)
+	libmodule12.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule12.so (0x00007fffed052000)
+	libmodule13.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule13.so (0x00007fffed01f000)
+	libmodule14.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule14.so (0x00007fffed004000)
+	libmodule15.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule15.so (0x00007fffecfda000)
+	libmodule16.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule16.so (0x00007fffecfa7000)
+	libmodule17.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule17.so (0x00007fffecf84000)
+	libmodule18.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule18.so (0x00007fffecf57000)
+	libmodule19.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule19.so (0x00007fffecf34000)
+	libmodule20.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule20.so (0x00007fffecf10000)
+	libmodule21.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule21.so (0x00007fffecee4000)
+	libmodule22.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule22.so (0x00007fffecec0000)
+	libmodule23.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule23.so (0x00007fffece98000)
+	libmodule24.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule24.so (0x00007fffece78000)
+	libmodule25.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule25.so (0x00007fffece62000)
+	libmodule26.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule26.so (0x00007fffece49000)
+	libmodule27.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule27.so (0x00007fffece2b000)
+	libmodule28.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule28.so (0x00007fffecdfd000)
+	libmodule29.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule29.so (0x00007fffecddb000)
+	libmodule30.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule30.so (0x00007fffecdbe000)
+	libmodule31.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule31.so (0x00007fffecda4000)
+	libmodule32.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule32.so (0x00007fffecd71000)
+	libmodule33.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule33.so (0x00007fffecd48000)
+	libmodule34.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule34.so (0x00007fffecd27000)
+	libmodule35.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule35.so (0x00007fffecd08000)
+	libmodule36.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule36.so (0x00007fffeccdb000)
+	libmodule37.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule37.so (0x00007fffeccbc000)
+	libmodule38.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule38.so (0x00007fffecc97000)
+	libmodule39.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule39.so (0x00007fffecc64000)
+	libmodule40.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule40.so (0x00007fffecc3f000)
+	libmodule41.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule41.so (0x00007fffecc27000)
+	libmodule42.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule42.so (0x00007fffecc0d000)
+	libmodule43.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule43.so (0x00007fffecbe2000)
+	libmodule44.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule44.so (0x00007fffecbc8000)
+	libmodule45.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule45.so (0x00007fffecba5000)
+	libmodule46.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule46.so (0x00007fffecb86000)
+	libmodule47.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule47.so (0x00007fffecb65000)
+	libmodule48.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule48.so (0x00007fffecb44000)
+	libmodule49.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule49.so (0x00007fffecb2a000)
+	libmodule50.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule50.so (0x00007fffecafd000)
+	libmodule51.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule51.so (0x00007fffecae2000)
+	libmodule52.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule52.so (0x00007fffecaba000)
+	libmodule53.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule53.so (0x00007fffeca96000)
+	libmodule54.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule54.so (0x00007fffeca7d000)
+	libmodule55.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule55.so (0x00007fffeca59000)
+	libmodule56.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule56.so (0x00007fffeca3e000)
+	libmodule57.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule57.so (0x00007fffeca29000)
+	libmodule58.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule58.so (0x00007fffeca14000)
+	libmodule59.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule59.so (0x00007fffec9fd000)
+	libmodule60.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule60.so (0x00007fffec9d7000)
+	libmodule61.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule61.so (0x00007fffec9a7000)
+	libmodule62.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule62.so (0x00007fffec97c000)
+	libmodule63.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule63.so (0x00007fffec953000)
+	libmodule64.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule64.so (0x00007fffec939000)
+	libmodule65.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule65.so (0x00007fffec91c000)
+	libmodule66.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule66.so (0x00007fffec907000)
+	libmodule67.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule67.so (0x00007fffec8e3000)
+	libmodule68.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule68.so (0x00007fffec8ce000)
+	libmodule69.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule69.so (0x00007fffec89e000)
+	libmodule70.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule70.so (0x00007fffec886000)
+	libmodule71.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule71.so (0x00007fffec859000)
+	libmodule72.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule72.so (0x00007fffec842000)
+	libmodule73.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule73.so (0x00007fffec825000)
+	libmodule74.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule74.so (0x00007fffec7f3000)
+	libmodule75.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule75.so (0x00007fffec7c7000)
+	libmodule76.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule76.so (0x00007fffec79f000)
+	libmodule77.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule77.so (0x00007fffec771000)
+	libmodule78.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule78.so (0x00007fffec745000)
+	libmodule79.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule79.so (0x00007fffec72d000)
+	libmodule80.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule80.so (0x00007fffec718000)
+	libmodule81.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule81.so (0x00007fffec6f4000)
+	libmodule82.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule82.so (0x00007fffec6ca000)
+	libmodule83.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule83.so (0x00007fffec6a1000)
+	libmodule84.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule84.so (0x00007fffec68b000)
+	libmodule85.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule85.so (0x00007fffec66b000)
+	libmodule86.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule86.so (0x00007fffec63f000)
+	libmodule87.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule87.so (0x00007fffec61b000)
+	libmodule88.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule88.so (0x00007fffec5f3000)
+	libmodule89.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule89.so (0x00007fffec5c9000)
+	libmodule90.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule90.so (0x00007fffec5ab000)
+	libmodule91.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule91.so (0x00007fffec591000)
+	libmodule92.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule92.so (0x00007fffec56b000)
+	libmodule93.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule93.so (0x00007fffec53e000)
+	libmodule94.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule94.so (0x00007fffec519000)
+	libmodule95.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule95.so (0x00007fffec4f7000)
+	libmodule96.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule96.so (0x00007fffec4d4000)
+	libmodule97.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule97.so (0x00007fffec4b5000)
+	libmodule98.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule98.so (0x00007fffec493000)
+	libmodule99.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule99.so (0x00007fffec478000)
+	libmodule100.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule100.so (0x00007fffec446000)
+	libmodule101.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule101.so (0x00007fffec423000)
+	libmodule102.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule102.so (0x00007fffec40b000)
+	libmodule103.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule103.so (0x00007fffec3df000)
+	libmodule104.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule104.so (0x00007fffec3bd000)
+	libmodule105.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule105.so (0x00007fffec393000)
+	libmodule106.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule106.so (0x00007fffec371000)
+	libmodule107.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule107.so (0x00007fffec33f000)
+	libmodule108.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule108.so (0x00007fffec323000)
+	libmodule109.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule109.so (0x00007fffec2fc000)
+	libmodule110.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule110.so (0x00007fffec2ce000)
+	libmodule111.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule111.so (0x00007fffec2a8000)
+	libmodule112.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule112.so (0x00007fffec27e000)
+	libmodule113.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule113.so (0x00007fffec259000)
+	libmodule114.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule114.so (0x00007fffec235000)
+	libmodule115.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule115.so (0x00007fffec203000)
+	libmodule116.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule116.so (0x00007fffec1dd000)
+	libmodule117.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule117.so (0x00007fffec1b1000)
+	libmodule118.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule118.so (0x00007fffec17e000)
+	libmodule119.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule119.so (0x00007fffec166000)
+	libmodule120.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule120.so (0x00007fffec14f000)
+	libmodule121.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule121.so (0x00007fffec12a000)
+	libmodule122.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule122.so (0x00007fffec102000)
+	libmodule123.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule123.so (0x00007fffec0e8000)
+	libmodule124.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule124.so (0x00007fffec0ca000)
+	libmodule125.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule125.so (0x00007fffec0a0000)
+	libmodule126.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule126.so (0x00007fffec07c000)
+	libmodule127.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule127.so (0x00007fffec04c000)
+	libmodule128.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule128.so (0x00007fffec01f000)
+	libmodule129.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule129.so (0x00007fffec003000)
+	libmodule130.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule130.so (0x00007fffebfde000)
+	libmodule131.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule131.so (0x00007fffebfb4000)
+	libmodule132.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule132.so (0x00007fffebf91000)
+	libmodule133.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule133.so (0x00007fffebf68000)
+	libmodule134.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule134.so (0x00007fffebf4f000)
+	libmodule135.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule135.so (0x00007fffebf24000)
+	libmodule136.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule136.so (0x00007fffebf0b000)
+	libmodule137.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule137.so (0x00007fffebeee000)
+	libmodule138.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule138.so (0x00007fffebed1000)
+	libmodule139.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule139.so (0x00007fffebea6000)
+	libmodule140.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule140.so (0x00007fffebe83000)
+	libmodule141.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule141.so (0x00007fffebe6d000)
+	libmodule142.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule142.so (0x00007fffebe39000)
+	libmodule143.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule143.so (0x00007fffebe09000)
+	libmodule144.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule144.so (0x00007fffebdea000)
+	libmodule145.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule145.so (0x00007fffebdd2000)
+	libmodule146.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule146.so (0x00007fffebdad000)
+	libmodule147.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule147.so (0x00007fffebd92000)
+	libmodule148.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule148.so (0x00007fffebd6d000)
+	libmodule149.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule149.so (0x00007fffebd4e000)
+	libmodule150.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule150.so (0x00007fffebd1d000)
+	libmodule151.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule151.so (0x00007fffebcff000)
+	libmodule152.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule152.so (0x00007fffebcd7000)
+	libmodule153.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule153.so (0x00007fffebcbf000)
+	libmodule154.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule154.so (0x00007fffebc92000)
+	libmodule155.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule155.so (0x00007fffebc7a000)
+	libmodule156.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule156.so (0x00007fffebc58000)
+	libmodule157.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule157.so (0x00007fffebc2b000)
+	libmodule158.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule158.so (0x00007fffebc15000)
+	libmodule159.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule159.so (0x00007fffebbef000)
+	libmodule160.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule160.so (0x00007fffebbd2000)
+	libmodule161.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule161.so (0x00007fffebbaf000)
+	libmodule162.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule162.so (0x00007fffebb8d000)
+	libmodule163.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule163.so (0x00007fffebb6e000)
+	libmodule164.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule164.so (0x00007fffebb3b000)
+	libmodule165.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule165.so (0x00007fffebb23000)
+	libmodule166.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule166.so (0x00007fffebafd000)
+	libmodule167.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule167.so (0x00007fffebad7000)
+	libmodule168.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule168.so (0x00007fffebab4000)
+	libmodule169.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule169.so (0x00007fffeba88000)
+	libmodule170.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule170.so (0x00007fffeba63000)
+	libmodule171.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule171.so (0x00007fffeba36000)
+	libmodule172.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule172.so (0x00007fffeba0b000)
+	libmodule173.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule173.so (0x00007fffeb9e1000)
+	libmodule174.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule174.so (0x00007fffeb9b3000)
+	libmodule175.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule175.so (0x00007fffeb995000)
+	libmodule176.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule176.so (0x00007fffeb97d000)
+	libmodule177.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule177.so (0x00007fffeb959000)
+	libmodule178.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule178.so (0x00007fffeb93c000)
+	libmodule179.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule179.so (0x00007fffeb921000)
+	libmodule180.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule180.so (0x00007fffeb908000)
+	libmodule181.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule181.so (0x00007fffeb8d3000)
+	libmodule182.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule182.so (0x00007fffeb8ad000)
+	libmodule183.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule183.so (0x00007fffeb887000)
+	libmodule184.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule184.so (0x00007fffeb872000)
+	libmodule185.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule185.so (0x00007fffeb844000)
+	libmodule186.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule186.so (0x00007fffeb81b000)
+	libmodule187.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule187.so (0x00007fffeb7e7000)
+	libmodule188.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule188.so (0x00007fffeb7b5000)
+	libmodule189.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule189.so (0x00007fffeb78c000)
+	libmodule190.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule190.so (0x00007fffeb760000)
+	libmodule191.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule191.so (0x00007fffeb748000)
+	libmodule192.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule192.so (0x00007fffeb727000)
+	libmodule193.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule193.so (0x00007fffeb6f9000)
+	libmodule194.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule194.so (0x00007fffeb6c8000)
+	libmodule195.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule195.so (0x00007fffeb69f000)
+	libmodule196.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule196.so (0x00007fffeb682000)
+	libmodule197.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule197.so (0x00007fffeb651000)
+	libmodule198.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule198.so (0x00007fffeb622000)
+	libmodule199.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule199.so (0x00007fffeb5f3000)
+	libmodule200.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule200.so (0x00007fffeb5c7000)
+	libmodule201.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule201.so (0x00007fffeb5b1000)
+	libmodule202.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule202.so (0x00007fffeb587000)
+	libmodule203.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule203.so (0x00007fffeb56c000)
+	libmodule204.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule204.so (0x00007fffeb552000)
+	libmodule205.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule205.so (0x00007fffeb53b000)
+	libmodule206.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule206.so (0x00007fffeb518000)
+	libmodule207.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule207.so (0x00007fffeb4e5000)
+	libmodule208.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule208.so (0x00007fffeb4c7000)
+	libmodule209.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule209.so (0x00007fffeb494000)
+	libmodule210.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule210.so (0x00007fffeb462000)
+	libmodule211.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule211.so (0x00007fffeb43c000)
+	libmodule212.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule212.so (0x00007fffeb416000)
+	libmodule213.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule213.so (0x00007fffeb3f3000)
+	libmodule214.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule214.so (0x00007fffeb3d5000)
+	libmodule215.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule215.so (0x00007fffeb3b8000)
+	libmodule216.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule216.so (0x00007fffeb38e000)
+	libmodule217.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule217.so (0x00007fffeb376000)
+	libmodule218.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule218.so (0x00007fffeb35d000)
+	libmodule219.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule219.so (0x00007fffeb346000)
+	libmodule220.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule220.so (0x00007fffeb313000)
+	libmodule221.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule221.so (0x00007fffeb2f2000)
+	libmodule222.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule222.so (0x00007fffeb2da000)
+	libmodule223.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule223.so (0x00007fffeb2bc000)
+	libmodule224.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule224.so (0x00007fffeb292000)
+	libmodule225.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule225.so (0x00007fffeb27a000)
+	libmodule226.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule226.so (0x00007fffeb250000)
+	libmodule227.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule227.so (0x00007fffeb226000)
+	libmodule228.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule228.so (0x00007fffeb20a000)
+	libmodule229.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule229.so (0x00007fffeb1e7000)
+	libmodule230.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule230.so (0x00007fffeb1cb000)
+	libmodule231.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule231.so (0x00007fffeb1a8000)
+	libmodule232.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule232.so (0x00007fffeb189000)
+	libmodule233.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule233.so (0x00007fffeb156000)
+	libmodule234.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule234.so (0x00007fffeb137000)
+	libmodule235.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule235.so (0x00007fffeb10d000)
+	libmodule236.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule236.so (0x00007fffeb0e0000)
+	libmodule237.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule237.so (0x00007fffeb0c3000)
+	libmodule238.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule238.so (0x00007fffeb09a000)
+	libmodule239.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule239.so (0x00007fffeb070000)
+	libmodule240.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule240.so (0x00007fffeb04f000)
+	libmodule241.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule241.so (0x00007fffeb033000)
+	libmodule242.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule242.so (0x00007fffeb019000)
+	libmodule243.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule243.so (0x00007fffeafef000)
+	libmodule244.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule244.so (0x00007fffeafcd000)
+	libmodule245.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule245.so (0x00007fffeafb4000)
+	libmodule246.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule246.so (0x00007fffeaf91000)
+	libmodule247.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule247.so (0x00007fffeaf6c000)
+	libmodule248.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule248.so (0x00007fffeaf3a000)
+	libmodule249.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule249.so (0x00007fffeaf20000)
+	libmodule250.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule250.so (0x00007fffeaeff000)
+	libmodule251.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule251.so (0x00007fffeaed0000)
+	libmodule252.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule252.so (0x00007fffeaeb8000)
+	libmodule253.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule253.so (0x00007fffeae9c000)
+	libmodule254.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule254.so (0x00007fffeae7a000)
+	libmodule255.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule255.so (0x00007fffeae59000)
+	libmodule256.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule256.so (0x00007fffeae32000)
+	libmodule257.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule257.so (0x00007fffeae05000)
+	libmodule258.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule258.so (0x00007fffeadda000)
+	libmodule259.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule259.so (0x00007fffeadad000)
+	libmodule260.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule260.so (0x00007fffead8d000)
+	libmodule261.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule261.so (0x00007fffead6c000)
+	libmodule262.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule262.so (0x00007fffead50000)
+	libmodule263.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule263.so (0x00007fffead2b000)
+	libmodule264.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule264.so (0x00007fffead0f000)
+	libmodule265.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule265.so (0x00007fffeace7000)
+	libmodule266.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule266.so (0x00007fffeacbe000)
+	libmodule267.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule267.so (0x00007fffeac8f000)
+	libmodule268.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule268.so (0x00007fffeac68000)
+	libmodule269.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule269.so (0x00007fffeac36000)
+	libmodule270.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule270.so (0x00007fffeac11000)
+	libmodule271.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule271.so (0x00007fffeabeb000)
+	libmodule272.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule272.so (0x00007fffeabba000)
+	libmodule273.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule273.so (0x00007fffeab8e000)
+	libmodule274.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule274.so (0x00007fffeab72000)
+	libmodule275.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule275.so (0x00007fffeab4c000)
+	libmodule276.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule276.so (0x00007fffeab2b000)
+	libmodule277.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule277.so (0x00007fffeab0f000)
+	libmodule278.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule278.so (0x00007fffeaae2000)
+	libmodule279.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodule279.so (0x00007fffeaac5000)
+	libmodulebegin.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodulebegin.so (0x00007fffeaabf000)
+	libmodulefinal.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmodulefinal.so (0x00007fffeaabb000)
+	libmpi_amd.so.12 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmpi_amd.so.12 (0x00007fffe9800000)
+	libhugetlbfs.so => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libhugetlbfs.so (0x00007fffeaa83000)
+	libxpmem.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libxpmem.so.0 (0x00007fffeaa80000)
+	libc.so.6 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libc.so.6 (0x00007fffe9400000)
+	libpthread.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libpthread.so.0 (0x00007fffeaa7d000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fffeaa66000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007fffeaa61000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libutility0.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility0.so (0x00007fffeaa44000)
+	libutility1.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility1.so (0x00007fffeaa21000)
+	libutility2.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility2.so (0x00007fffeaa06000)
+	libutility3.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility3.so (0x00007fffea9f3000)
+	libutility4.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility4.so (0x00007fffea9dd000)
+	libutility5.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility5.so (0x00007fffea9bd000)
+	libutility6.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility6.so (0x00007fffea99a000)
+	libutility7.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility7.so (0x00007fffea982000)
+	libutility8.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility8.so (0x00007fffea96e000)
+	libutility9.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility9.so (0x00007fffea955000)
+	libutility10.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility10.so (0x00007fffe97e8000)
+	libutility11.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility11.so (0x00007fffe97d9000)
+	libutility12.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility12.so (0x00007fffe97c5000)
+	libutility13.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility13.so (0x00007fffe97a3000)
+	libutility14.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility14.so (0x00007fffe978e000)
+	libutility15.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility15.so (0x00007fffe977a000)
+	libutility16.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility16.so (0x00007fffe975c000)
+	libutility17.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility17.so (0x00007fffe9741000)
+	libutility18.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility18.so (0x00007fffe972f000)
+	libutility19.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility19.so (0x00007fffe971a000)
+	libutility20.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility20.so (0x00007fffe9703000)
+	libutility21.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility21.so (0x00007fffe96f1000)
+	libutility22.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility22.so (0x00007fffe96dc000)
+	libutility23.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility23.so (0x00007fffe96bf000)
+	libutility24.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility24.so (0x00007fffe96a9000)
+	libutility25.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility25.so (0x00007fffe968e000)
+	libutility26.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility26.so (0x00007fffe967e000)
+	libutility27.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility27.so (0x00007fffe965d000)
+	libutility28.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility28.so (0x00007fffe9643000)
+	libutility29.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility29.so (0x00007fffe9624000)
+	libutility30.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility30.so (0x00007fffe93ea000)
+	libutility31.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility31.so (0x00007fffe93ca000)
+	libutility32.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility32.so (0x00007fffe93b1000)
+	libutility33.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility33.so (0x00007fffe9390000)
+	libutility34.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility34.so (0x00007fffe9381000)
+	libutility35.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility35.so (0x00007fffe9361000)
+	libutility36.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility36.so (0x00007fffe9340000)
+	libutility37.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility37.so (0x00007fffe9321000)
+	libutility38.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility38.so (0x00007fffe9301000)
+	libutility39.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility39.so (0x00007fffe92ef000)
+	libutility40.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility40.so (0x00007fffe92ce000)
+	libutility41.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility41.so (0x00007fffe92b9000)
+	libutility42.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility42.so (0x00007fffe92a7000)
+	libutility43.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility43.so (0x00007fffe9297000)
+	libutility44.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility44.so (0x00007fffe9286000)
+	libutility45.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility45.so (0x00007fffe9274000)
+	libutility46.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility46.so (0x00007fffe9254000)
+	libutility47.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility47.so (0x00007fffe9240000)
+	libutility48.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility48.so (0x00007fffe9224000)
+	libutility49.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility49.so (0x00007fffe9212000)
+	libutility50.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility50.so (0x00007fffe91fb000)
+	libutility51.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility51.so (0x00007fffe91e0000)
+	libutility52.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility52.so (0x00007fffe91cd000)
+	libutility53.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility53.so (0x00007fffe91bb000)
+	libutility54.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility54.so (0x00007fffe91a1000)
+	libutility55.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility55.so (0x00007fffe9186000)
+	libutility56.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility56.so (0x00007fffe9166000)
+	libutility57.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility57.so (0x00007fffe914c000)
+	libutility58.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility58.so (0x00007fffe9129000)
+	libutility59.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility59.so (0x00007fffe9114000)
+	libutility60.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility60.so (0x00007fffe9104000)
+	libutility61.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility61.so (0x00007fffe90eb000)
+	libutility62.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility62.so (0x00007fffe90db000)
+	libutility63.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility63.so (0x00007fffe90b8000)
+	libutility64.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility64.so (0x00007fffe9095000)
+	libutility65.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility65.so (0x00007fffe9083000)
+	libutility66.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility66.so (0x00007fffe9073000)
+	libutility67.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility67.so (0x00007fffe9050000)
+	libutility68.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility68.so (0x00007fffe9037000)
+	libutility69.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility69.so (0x00007fffe9021000)
+	libutility70.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility70.so (0x00007fffe9005000)
+	libutility71.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility71.so (0x00007fffe8fe2000)
+	libutility72.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility72.so (0x00007fffe8fcb000)
+	libutility73.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility73.so (0x00007fffe8fad000)
+	libutility74.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility74.so (0x00007fffe8f95000)
+	libutility75.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility75.so (0x00007fffe8f71000)
+	libutility76.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility76.so (0x00007fffe8f58000)
+	libutility77.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility77.so (0x00007fffe8f46000)
+	libutility78.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility78.so (0x00007fffe8f2c000)
+	libutility79.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility79.so (0x00007fffe8f10000)
+	libutility80.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility80.so (0x00007fffe8ef5000)
+	libutility81.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility81.so (0x00007fffe8ee4000)
+	libutility82.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility82.so (0x00007fffe8ecf000)
+	libutility83.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility83.so (0x00007fffe8eb1000)
+	libutility84.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility84.so (0x00007fffe8e9c000)
+	libutility85.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility85.so (0x00007fffe8e89000)
+	libutility86.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility86.so (0x00007fffe8e7a000)
+	libutility87.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility87.so (0x00007fffe8e69000)
+	libutility88.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility88.so (0x00007fffe8e49000)
+	libutility89.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility89.so (0x00007fffe8e38000)
+	libutility90.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility90.so (0x00007fffe8e1c000)
+	libutility91.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility91.so (0x00007fffe8dfa000)
+	libutility92.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility92.so (0x00007fffe8de1000)
+	libutility93.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility93.so (0x00007fffe8dc3000)
+	libutility94.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility94.so (0x00007fffe8db3000)
+	libutility95.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility95.so (0x00007fffe8d90000)
+	libutility96.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility96.so (0x00007fffe8d75000)
+	libutility97.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility97.so (0x00007fffe8d61000)
+	libutility98.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility98.so (0x00007fffe8d46000)
+	libutility99.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility99.so (0x00007fffe8d2e000)
+	libutility100.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility100.so (0x00007fffe8d13000)
+	libutility101.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility101.so (0x00007fffe8cff000)
+	libutility102.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility102.so (0x00007fffe8ce7000)
+	libutility103.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility103.so (0x00007fffe8cd0000)
+	libutility104.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility104.so (0x00007fffe8cae000)
+	libutility105.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility105.so (0x00007fffe8c9e000)
+	libutility106.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility106.so (0x00007fffe8c8c000)
+	libutility107.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility107.so (0x00007fffe8c71000)
+	libutility108.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility108.so (0x00007fffe8c58000)
+	libutility109.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility109.so (0x00007fffe8c3e000)
+	libutility110.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility110.so (0x00007fffe8c1c000)
+	libutility111.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility111.so (0x00007fffe8c0d000)
+	libutility112.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility112.so (0x00007fffe8bee000)
+	libutility113.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility113.so (0x00007fffe8bd2000)
+	libutility114.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility114.so (0x00007fffe8bb2000)
+	libutility115.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility115.so (0x00007fffe8b9b000)
+	libutility116.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility116.so (0x00007fffe8b7f000)
+	libutility117.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility117.so (0x00007fffe8b69000)
+	libutility118.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility118.so (0x00007fffe8b54000)
+	libutility119.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility119.so (0x00007fffe8b44000)
+	libutility120.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility120.so (0x00007fffe8b35000)
+	libutility121.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility121.so (0x00007fffe8b23000)
+	libutility122.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility122.so (0x00007fffe8b02000)
+	libutility123.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility123.so (0x00007fffe8ae7000)
+	libutility124.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility124.so (0x00007fffe8ad6000)
+	libutility125.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility125.so (0x00007fffe8ac7000)
+	libutility126.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility126.so (0x00007fffe8aa4000)
+	libutility127.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility127.so (0x00007fffe8a82000)
+	libutility128.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility128.so (0x00007fffe8a6e000)
+	libutility129.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility129.so (0x00007fffe8a5d000)
+	libutility130.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility130.so (0x00007fffe8a4e000)
+	libutility131.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility131.so (0x00007fffe8a3e000)
+	libutility132.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility132.so (0x00007fffe8a27000)
+	libutility133.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility133.so (0x00007fffe8a0e000)
+	libutility134.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility134.so (0x00007fffe89fd000)
+	libutility135.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility135.so (0x00007fffe89e1000)
+	libutility136.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility136.so (0x00007fffe89c4000)
+	libutility137.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility137.so (0x00007fffe89aa000)
+	libutility138.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility138.so (0x00007fffe899b000)
+	libutility139.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility139.so (0x00007fffe8986000)
+	libutility140.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility140.so (0x00007fffe8967000)
+	libutility141.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility141.so (0x00007fffe8954000)
+	libutility142.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility142.so (0x00007fffe8941000)
+	libutility143.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility143.so (0x00007fffe8920000)
+	libutility144.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility144.so (0x00007fffe890a000)
+	libutility145.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility145.so (0x00007fffe88eb000)
+	libutility146.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility146.so (0x00007fffe88ce000)
+	libutility147.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility147.so (0x00007fffe88a9000)
+	libutility148.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility148.so (0x00007fffe8891000)
+	libutility149.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility149.so (0x00007fffe8873000)
+	libutility150.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility150.so (0x00007fffe8862000)
+	libutility151.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility151.so (0x00007fffe8853000)
+	libutility152.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility152.so (0x00007fffe883f000)
+	libutility153.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility153.so (0x00007fffe881d000)
+	libutility154.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility154.so (0x00007fffe87fd000)
+	libutility155.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility155.so (0x00007fffe87e2000)
+	libutility156.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility156.so (0x00007fffe87c3000)
+	libutility157.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility157.so (0x00007fffe87a3000)
+	libutility158.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility158.so (0x00007fffe8790000)
+	libutility159.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility159.so (0x00007fffe877b000)
+	libutility160.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility160.so (0x00007fffe875a000)
+	libutility161.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility161.so (0x00007fffe873c000)
+	libutility162.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility162.so (0x00007fffe8727000)
+	libutility163.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility163.so (0x00007fffe8718000)
+	libutility164.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility164.so (0x00007fffe8708000)
+	libutility165.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility165.so (0x00007fffe86f9000)
+	libutility166.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility166.so (0x00007fffe86d9000)
+	libutility167.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility167.so (0x00007fffe86c4000)
+	libutility168.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility168.so (0x00007fffe86b0000)
+	libutility169.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility169.so (0x00007fffe8693000)
+	libutility170.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility170.so (0x00007fffe8682000)
+	libutility171.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility171.so (0x00007fffe8671000)
+	libutility172.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility172.so (0x00007fffe865b000)
+	libutility173.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility173.so (0x00007fffe863e000)
+	libutility174.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility174.so (0x00007fffe862a000)
+	libutility175.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility175.so (0x00007fffe8607000)
+	libutility176.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility176.so (0x00007fffe85e5000)
+	libutility177.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility177.so (0x00007fffe85d1000)
+	libutility178.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility178.so (0x00007fffe85bf000)
+	libutility179.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility179.so (0x00007fffe85a0000)
+	libutility180.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility180.so (0x00007fffe857e000)
+	libutility181.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility181.so (0x00007fffe8562000)
+	libutility182.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility182.so (0x00007fffe853e000)
+	libutility183.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility183.so (0x00007fffe852b000)
+	libutility184.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility184.so (0x00007fffe8510000)
+	libutility185.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility185.so (0x00007fffe84fc000)
+	libutility186.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility186.so (0x00007fffe84ea000)
+	libutility187.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility187.so (0x00007fffe84d1000)
+	libutility188.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility188.so (0x00007fffe84b1000)
+	libutility189.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility189.so (0x00007fffe8492000)
+	libutility190.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility190.so (0x00007fffe8475000)
+	libutility191.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility191.so (0x00007fffe8462000)
+	libutility192.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility192.so (0x00007fffe844b000)
+	libutility193.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility193.so (0x00007fffe842e000)
+	libutility194.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility194.so (0x00007fffe841b000)
+	libutility195.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility195.so (0x00007fffe8405000)
+	libutility196.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility196.so (0x00007fffe83f1000)
+	libutility197.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility197.so (0x00007fffe83da000)
+	libutility198.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility198.so (0x00007fffe83b7000)
+	libutility199.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility199.so (0x00007fffe83a6000)
+	libutility200.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility200.so (0x00007fffe8393000)
+	libutility201.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility201.so (0x00007fffe8370000)
+	libutility202.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility202.so (0x00007fffe8353000)
+	libutility203.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility203.so (0x00007fffe833b000)
+	libutility204.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility204.so (0x00007fffe831d000)
+	libutility205.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility205.so (0x00007fffe830d000)
+	libutility206.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility206.so (0x00007fffe82f8000)
+	libutility207.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility207.so (0x00007fffe82e3000)
+	libutility208.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility208.so (0x00007fffe82cc000)
+	libutility209.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility209.so (0x00007fffe82a9000)
+	libutility210.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility210.so (0x00007fffe828b000)
+	libutility211.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility211.so (0x00007fffe826d000)
+	libutility212.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility212.so (0x00007fffe8257000)
+	libutility213.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility213.so (0x00007fffe823d000)
+	libutility214.so => /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/libutility214.so (0x00007fffe821f000)
+	libamdhip64.so.6 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libamdhip64.so.6 (0x00007fffe6a00000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffe69b1000)
+	libz.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libz.so.1 (0x00007fffe8202000)
+	libmpi_gtl_hsa.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libmpi_gtl_hsa.so.0 (0x00007fffe6906000)
+	libfabric.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libfabric.so.1 (0x00007fffe66da000)
+	libatomic.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libatomic.so.1 (0x00007fffe66cf000)
+	libpmi.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libpmi.so.0 (0x00007fffe66ab000)
+	libpmi2.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libpmi2.so.0 (0x00007fffe6687000)
+	librocprofiler-register.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/librocprofiler-register.so.0 (0x00007fffe65fe000)
+	libamd_comgr.so.3 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libamd_comgr.so.3 (0x00007fffdce00000)
+	libhsa-runtime64.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libhsa-runtime64.so.1 (0x00007fffdca00000)
+	libnuma.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libnuma.so.1 (0x00007fffdc600000)
+	libstdc++.so.6 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libstdc++.so.6 (0x00007fffdc81d000)
+	libgcc_s.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libgcc_s.so.1 (0x00007fffe65e1000)
+	libcxi.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libcxi.so.1 (0x00007fffe65c0000)
+	libpals.so.0 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libpals.so.0 (0x00007fffe65b8000)
+	libzstd.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libzstd.so.1 (0x00007fffdc4ec000)
+	libelf.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libelf.so.1 (0x00007fffdc200000)
+	libdrm.so.2 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libdrm.so.2 (0x00007fffdcde9000)
+	libdrm_amdgpu.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libdrm_amdgpu.so.1 (0x00007fffdcddb000)
+	librt.so.1 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/./librt.so.1 (0x00007fffe65b3000)
+	libnl-3.so.200 => /mnt/bb/hagertnl/pynamic-bigexe-mpi4py_libs/libnl-3.so.200 (0x00007fffdcdb8000)
++ which python3
+/mnt/bb/hagertnl/conda_env/bin/python3
+++ seq 1 5
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -t 15 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 14:20:18 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 4.015708684921265 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -t 15 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4161829.5
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 14:20:24 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 3.3106529712677 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -t 15 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 14:20:30 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 3.717578887939453 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -t 15 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4161829.7
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 14:20:36 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 4.016044616699219 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -t 15 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /mnt/bb/hagertnl/pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 14:20:56 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 3.736548900604248 secs
+Pynamic: module test passed!
+
++ set +x
