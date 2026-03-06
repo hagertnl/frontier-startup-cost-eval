@@ -1,0 +1,156 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
++ export LD_LIBRARY_PATH=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ LD_LIBRARY_PATH=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ export LD_LIBRARY_PATH=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env/lib:/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ LD_LIBRARY_PATH=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env/lib:/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ seq 1 5
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 16:33:15 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 2.729825019836426 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4162406.1
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 16:33:20 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 2.6928179264068604 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4162406.2
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 16:54:14 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 28.837980031967163 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4162406.3
+Pynamic: Version 1.3.3
+Pynamic: run on 03/02/26 16:58:05 with 512 MPI tasks
+
+Pynamic: driver beginning... now importing modules
+Pynamic: driver finished importing all modules..
+Pynamic: module import time = 2.7161593437194824 secs
+Pynamic: module test passed!
+
++ for i in $(seq 1 5)
++ srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
++ grep -v 'rank -'
+srun: Step created for StepId=4162406.4
+Mon Mar  2 17:08:08 2026: [PE_464]:inet_connect:inet_connect: connect from frontier07520 to frontier07394 failed after 300 attempts
+Mon Mar  2 17:08:08 2026: [PE_464]:conn_to_controller:inet_connect failed
+Mon Mar  2 17:08:08 2026: [PE_464]:control_nets_join:_pmi_inet_setup (full) returned -1
+pynamic-bigexe-mpi4py: ../src/mpid/common/cray/cray_pmi_utils.c:364: mpid_cray_pmi_init: Assertion `PMI2_Initialized()' failed.
+Mon Mar  2 17:08:09 2026: [PE_400]:inet_connect:inet_connect: connect from frontier06497 to frontier06364 failed after 300 attempts
+Mon Mar  2 17:08:09 2026: [PE_400]:conn_to_controller:inet_connect failed
+Mon Mar  2 17:08:09 2026: [PE_400]:control_nets_join:_pmi_inet_setup (full) returned -1
+pynamic-bigexe-mpi4py: ../src/mpid/common/cray/cray_pmi_utils.c:364: mpid_cray_pmi_init: Assertion `PMI2_Initialized()' failed.
+srun: error: frontier07520: task 464: Aborted (core dumped)
+srun: Terminating StepId=4162406.4
+slurmstepd: error: *** STEP 4162406.4 ON frontier00101 CANCELLED AT 2026-03-02T17:08:09 ***
+srun: error: frontier07520: tasks 465-471: Terminated
+srun: error: frontier00101: tasks 0-7: Terminated
+srun: error: frontier07891: tasks 488-495: Terminated
+srun: error: frontier02921: tasks 176-183: Terminated
+srun: error: frontier05607: tasks 344-351: Terminated
+srun: error: frontier05997: tasks 368-375: Terminated
+srun: error: frontier07143: tasks 440-447: Terminated
+srun: error: frontier01133: tasks 64-71: Terminated
+srun: error: frontier01773: tasks 104-111: Terminated
+srun: error: frontier01648: tasks 96-103: Terminated
+srun: error: frontier05860: tasks 360-367: Terminated
+srun: error: frontier00381: tasks 16-23: Terminated
+srun: error: frontier06364: tasks 392-393,395-399: Terminated
+srun: error: frontier06756: tasks 416-423: Terminated
+srun: error: frontier06635: tasks 408-415: Terminated
+srun: error: frontier06497: task 400: Aborted (core dumped)
+srun: error: frontier02043: tasks 120-127: Terminated
+srun: error: frontier04697: tasks 288-295: Terminated
+srun: error: frontier00748: tasks 40-47: Terminated
+srun: error: frontier01904: tasks 112-119: Terminated
+srun: error: frontier06118: tasks 376-383: Terminated
+srun: error: frontier03684: tasks 224-231: Terminated
+srun: error: frontier02538: tasks 152-159: Terminated
+srun: error: frontier04445: tasks 272-279: Terminated
+srun: error: frontier01007: tasks 56-63: Terminated
+srun: error: frontier03165: tasks 192-199: Terminated
+srun: error: frontier06889: tasks 424-431: Terminated
+srun: error: frontier00625: tasks 32-39: Terminated
+srun: error: frontier04061: tasks 248-255: Terminated
+srun: error: frontier05461: tasks 336-343: Terminated
+srun: error: frontier02277: tasks 136-143: Terminated
+srun: error: frontier04949: tasks 304-311: Terminated
+srun: error: frontier01259: tasks 72-79: Terminated
+srun: error: frontier00882: tasks 48-55: Terminated
+srun: error: frontier03044: tasks 184-191: Terminated
+srun: error: frontier05191: tasks 320-327: Terminated
+srun: error: frontier04830: tasks 296-303: Terminated
+srun: error: frontier03926: tasks 240-247: Terminated
+srun: error: frontier02807: tasks 168-175: Terminated
+srun: error: frontier07765: tasks 480-487: Terminated
+srun: error: frontier01516: tasks 88-95: Terminated
+srun: error: frontier02664: tasks 160-167: Terminated
+srun: error: frontier08143: tasks 504-511: Terminated
+srun: error: frontier02402: tasks 144-151: Terminated
+srun: error: frontier07647: tasks 472-479: Terminated
+srun: error: frontier02156: tasks 128-135: Terminated
+srun: error: frontier03300: tasks 200-207: Terminated
+srun: error: frontier05710: tasks 352-359: Terminated
+srun: error: frontier04318: tasks 264-271: Terminated
+srun: error: frontier07004: tasks 432-439: Terminated
+srun: error: frontier03559: tasks 216-223: Terminated
+srun: error: frontier04193: tasks 256-263: Terminated
+srun: error: frontier05336: tasks 328-335: Terminated
+srun: error: frontier08026: tasks 496-503: Terminated
+srun: error: frontier03807: tasks 232-239: Terminated
+srun: error: frontier07265: tasks 448-455: Terminated
+srun: error: frontier00470: tasks 24-31: Terminated
+srun: error: frontier06246: tasks 384-391: Terminated
+srun: error: frontier05096: tasks 312-319: Terminated
+srun: error: frontier06497: tasks 401-407: Terminated
+srun: error: frontier00239: tasks 8-15: Terminated
+srun: error: frontier04569: tasks 280-287: Terminated
+srun: error: frontier07394: tasks 456-463: Terminated
+srun: error: frontier06364: task 394: Terminated
+srun: error: frontier01386: tasks 80-87: Terminated
+srun: error: frontier03425: tasks 208-215: Terminated
+srun: Force Terminated StepId=4162406.4
++ set +x
