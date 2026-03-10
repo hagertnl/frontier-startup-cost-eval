@@ -1,0 +1,1672 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ module load PrgEnv-amd
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cpe/25.09
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load amd/6.4.2
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load rocm/6.4.2
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load libfabric/1.22.0
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load craype-accel-amd-gfx90a
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load miniforge3/23.11.0-0
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load ums ums046 copper
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Copper loaded: use 'launch_copper' and 'stop_copper'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper points to: /sw/frontier/ums/ums046/copper/build/launch_copper.sh
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
++ [[ /var/spool/slurmd/job4182282/slurm_script == \/\v\a\r\/\s\p\o\o\l\/\s\l\u\r\m\d\/\j\o\b\4\1\8\2\2\8\2\/\s\l\u\r\m\_\s\c\r\i\p\t ]]
++ echo 'This script should be sourced! When it is not, it prints out the resulting module set:'
+This script should be sourced! When it is not, it prints out the resulting module set:
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) libfabric/1.22.0
+  8) DefApps                         21) craype-accel-amd-gfx90a
+  9) PrgEnv-amd/8.6.0                22) miniforge3/23.11.0-0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_modules.sh
+++ module load PrgEnv-amd
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load cpe/25.09
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source
+/opt/cray/pe/cpe/25.09/restore_lmod_system_defaults.[csh|sh]'. 
+ 
+Sourcing the above script is not necessary if swapping the cpe module with a
+different version. 
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load amd/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load rocm/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libfabric/1.22.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load craype-accel-amd-gfx90a
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load miniforge3/23.11.0-0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Deactivating conda environments
+Deactivating conda environments
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib
+++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib
+++ [[ /var/spool/slurmd/job4182282/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
++ LOGDIR=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ launch_copper.sh -d /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ log_level=6
++ log_dir=/ccs/home/khana/copper-logs/4182282
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ sleeptime=20
++ physcpubind=57-60
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts l:t:d:T:M:s:b:F:n: opt
++ echo 'log_level                  : 6'
+log_level                  : 6
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 10485760'
+max_cacheable_byte_size    : 10485760
++ echo 'sleeptime                  : 20'
+sleeptime                  : 20
++ echo 'CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper'
+CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper
++ echo 'LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs'
+LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 57-60'
+physcpubind                : 57-60
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ scontrol show hostnames 'frontier[00114,00215,00339,00478,00603,00726,00853,01000]'
++ echo 'Ignore errors below this line related to copper fuse unmount or cleanup if any. '
+Ignore errors below this line related to copper fuse unmount or cleanup if any. 
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+frontier00114: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00114: exited with exit code 1
+frontier01000: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier01000: exited with exit code 1
+frontier00603: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00603: exited with exit code 1
+frontier00853: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00853: exited with exit code 1
+frontier00478: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00478: exited with exit code 1
+frontier00339: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00339: exited with exit code 1
+frontier00726: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00726: exited with exit code 1
+frontier00215: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00215: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'mkdir -p /tmp/khana/copper'
++ echo 'Errors below this line are critical - report if any. '
+Errors below this line are critical - report if any. 
++ options=' -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760  -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper'
++ sleep 20s
++ srun -N 8 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=threads --network=single_node_vni,job_vni /sw/frontier/ums/ums046/copper/build/cu_fuse -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760 -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper
+2026-03-06 12-56-39.335 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.335 [Info] (cu_hello_main) hostname found to be: frontier00114
+2026-03-06 12-56-39.335 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.335 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.335 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.335 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.335 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.335 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.335 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.335 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.335 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.335 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.335 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.335 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.335 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00114-1725954-output.log
+2026-03-06 12-56-39.351 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.351 [Info] (cu_hello_main) hostname found to be: frontier00339
+2026-03-06 12-56-39.351 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.351 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.351 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.351 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.351 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.351 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.351 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.351 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.351 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.351 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.351 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.351 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.351 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00339-353642-output.log
+2026-03-06 12-56-39.352 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.352 [Info] (cu_hello_main) hostname found to be: frontier00603
+2026-03-06 12-56-39.352 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.352 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.352 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.352 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.352 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.352 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.352 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.352 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.352 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.352 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.352 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.352 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.352 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00603-1335296-output.log
+2026-03-06 12-56-39.353 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.353 [Info] (cu_hello_main) hostname found to be: frontier00478
+2026-03-06 12-56-39.353 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.353 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.353 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.353 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.353 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.353 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.353 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.353 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.353 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.353 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.353 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.353 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.353 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00478-1579455-output.log
+2026-03-06 12-56-39.354 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.354 [Info] (cu_hello_main) hostname found to be: frontier01000
+2026-03-06 12-56-39.354 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.354 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.354 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.354 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.354 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.354 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.354 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.354 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.354 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.354 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.354 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.354 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.354 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01000-980870-output.log
+2026-03-06 12-56-39.376 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) hostname found to be: frontier00215
+2026-03-06 12-56-39.376 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.376 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.376 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.376 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.376 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) hostname found to be: frontier00726
+2026-03-06 12-56-39.376 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.376 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.376 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.376 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.376 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.376 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.376 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.376 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.376 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.376 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.376 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00215-1171329-output.log
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.376 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00726-534781-output.log
+2026-03-06 12-56-39.473 [Debug] (cu_hello_main)  
+2026-03-06 12-56-39.473 [Info] (cu_hello_main) hostname found to be: frontier00853
+2026-03-06 12-56-39.473 [Debug] (process_args) -tpath was found: /
+2026-03-06 12-56-39.473 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-06 12-56-39.473 [Debug] (process_args) -log_level was found: 6
+2026-03-06 12-56-39.473 [Debug] (process_args) -log_type was found: file
+2026-03-06 12-56-39.473 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-06 12-56-39.473 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-06 12-56-39.473 [Debug] (process_args) -trees was found: 1
+2026-03-06 12-56-39.473 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-06 12-56-39.473 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-06 12-56-39.473 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.473 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-06 12-56-39.473 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-06 12-56-39.473 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00853-881112-output.log
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
++ conda activate /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+++ /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda shell.posix activate /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
++ ask_conda='PS1='\''(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '\''
+export PATH='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env/bin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/lustre/orion/proj-shared/stf008/io_variability/kafka_client/kafka_2.13-4.1.0/bin:/autofs/nccs-svm1_home1/khana/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/khana/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/usr/sbin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
++ eval 'PS1='\''(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '\''
+export PATH='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env/bin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/lustre/orion/proj-shared/stf008/io_variability/kafka_client/kafka_2.13-4.1.0/bin:/autofs/nccs-svm1_home1/khana/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/khana/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/usr/sbin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
+++ PS1='(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '
+++ export PATH=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env/bin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/lustre/orion/proj-shared/stf008/io_variability/kafka_client/kafka_2.13-4.1.0/bin:/autofs/nccs-svm1_home1/khana/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/khana/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/usr/sbin:/opt/cray/pe/bin
+++ PATH=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env/bin:/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/lustre/orion/proj-shared/stf008/io_variability/kafka_client/kafka_2.13-4.1.0/bin:/autofs/nccs-svm1_home1/khana/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/khana/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/usr/sbin:/opt/cray/pe/bin
+++ export CONDA_PREFIX=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+++ CONDA_PREFIX=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+++ export CONDA_SHLVL=1
+++ CONDA_SHLVL=1
+++ export CONDA_DEFAULT_ENV=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+++ CONDA_DEFAULT_ENV=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+++ export 'CONDA_PROMPT_MODIFIER=(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '
+++ CONDA_PROMPT_MODIFIER='(/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env) '
+++ export CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
+++ CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ exe=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/
++ set -x
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni python3 -c 'import torch'
+0.01user 0.02system 0:36.27elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+0outputs (0major+3459minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.01system 0:26.04elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+0outputs (0major+3459minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni python3 -c 'import torch'
+srun: Step created for StepId=4182282.3
+0.01user 0.02system 0:25.45elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3459minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni python3 -c 'import torch'
+0.01user 0.02system 0:25.22elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3459minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni python3 -c 'import torch'
+srun: Step created for StepId=4182282.5
+0.01user 0.02system 0:25.09elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3459minor)pagefaults 0swaps
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ log_dir=/ccs/home/khana/copper-logs/4182282
++ getopts d: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts d: opt
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ echo 'Stopping Copper Gracefully On All Nodes : Start'
+Stopping Copper Gracefully On All Nodes : Start
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'pkill -9 cu_fuse'
+frontier06622: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06627: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06245: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06622: Connection closed by 10.128.103.140 port 22
+frontier06627: Connection closed by 10.128.103.160 port 22
+clush: frontier06622: exited with exit code 255
+frontier06245: Connection closed by 10.128.97.168 port 22
+clush: frontier06627: exited with exit code 255
+frontier05982: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05982: Connection closed by 10.128.93.140 port 22
+clush: frontier06245: exited with exit code 255
+frontier05983: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05983: Connection closed by 10.128.93.144 port 22
+clush: frontier05982: exited with exit code 255
+frontier00239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00239: Connection closed by 10.128.3.208 port 22
+frontier06116: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06116: Connection closed by 10.128.95.164 port 22
+clush: frontier05983: exited with exit code 255
+frontier06239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06239: Connection closed by 10.128.97.144 port 22
+frontier06369: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06369: Connection closed by 10.128.99.152 port 22
+frontier06624: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06624: Connection closed by 10.128.103.148 port 22
+frontier07004: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07004: Connection closed by 10.128.109.132 port 22
+clush: frontier00239: exited with exit code 255
+frontier06747: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06747: Connection closed by 10.128.105.128 port 22
+frontier00123: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00123: Connection closed by 10.128.2.0 port 22
+frontier06870: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06870: Connection closed by 10.128.107.108 port 22
+clush: frontier06116: exited with exit code 255
+clush: frontier06239: exited with exit code 255
+clush: frontier06369: exited with exit code 255
+frontier06876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06876: Connection closed by 10.128.107.132 port 22
+clush: frontier06624: exited with exit code 255
+clush: frontier07004: exited with exit code 255
+clush: frontier06747: exited with exit code 255
+clush: frontier00123: exited with exit code 255
+clush: frontier06870: exited with exit code 255
+frontier06498: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06498: Connection closed by 10.128.101.156 port 22
+frontier00247: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00247: Connection closed by 10.128.3.240 port 22
+frontier06115: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06115: Connection closed by 10.128.95.160 port 22
+frontier06497: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06497: Connection closed by 10.128.101.152 port 22
+frontier06241: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06241: Connection closed by 10.128.97.152 port 22
+clush: frontier06876: exited with exit code 255
+clush: frontier06498: exited with exit code 255
+clush: frontier00247: exited with exit code 255
+clush: frontier06115: exited with exit code 255
+clush: frontier06497: exited with exit code 255
+clush: frontier06241: exited with exit code 255
+frontier06869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06869: Connection closed by 10.128.107.104 port 22
+clush: frontier06869: exited with exit code 255
+frontier06372: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06372: Connection closed by 10.128.99.164 port 22
+frontier00365: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06372: exited with exit code 255
+frontier00365: Connection closed by 10.128.5.200 port 22
+clush: frontier00365: exited with exit code 255
+frontier06744: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06744: Connection closed by 10.128.105.116 port 22
+clush: frontier06744: exited with exit code 255
+frontier00248: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00248: Connection closed by 10.128.3.244 port 22
+clush: frontier00248: exited with exit code 255
+frontier06748: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00746: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00363: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06748: Connection closed by 10.128.105.132 port 22
+frontier00746: Connection closed by 10.128.11.188 port 22
+clush: frontier06748: exited with exit code 255
+clush: frontier00746: exited with exit code 255
+frontier00363: Connection closed by 10.128.5.192 port 22
+clush: frontier00363: exited with exit code 255
+frontier00611: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07647: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00611: Connection closed by 10.128.9.160 port 22
+clush: frontier00611: exited with exit code 255
+frontier07647: Connection closed by 10.128.119.144 port 22
+clush: frontier07647: exited with exit code 255
+frontier07137: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07266: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00371: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07137: Connection closed by 10.128.111.152 port 22
+frontier07266: Connection closed by 10.128.113.156 port 22
+clush: frontier07137: exited with exit code 255
+clush: frontier07266: exited with exit code 255
+frontier00371: Connection closed by 10.128.5.224 port 22
+clush: frontier00371: exited with exit code 255
+frontier00500: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00750: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00500: Connection closed by 10.128.7.228 port 22
+clush: frontier00500: exited with exit code 255
+frontier00750: Connection closed by 10.128.11.204 port 22
+clush: frontier00750: exited with exit code 255
+frontier00615: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00127: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00504: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00615: Connection closed by 10.128.9.176 port 22
+frontier00127: Connection closed by 10.128.2.16 port 22
+frontier00504: Connection closed by 10.128.7.244 port 22
+clush: frontier00127: exited with exit code 255
+clush: frontier00615: exited with exit code 255
+clush: frontier00504: exited with exit code 255
+frontier06998: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06117: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06998: Connection closed by 10.128.109.108 port 22
+frontier07516: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06998: exited with exit code 255
+frontier01124: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01124: Connection closed by 10.128.17.164 port 22
+frontier01014: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01014: Connection closed by 10.128.15.236 port 22
+frontier06117: Connection closed by 10.128.95.168 port 22
+frontier00868: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00868: Connection closed by 10.128.13.164 port 22
+frontier07516: Connection closed by 10.128.117.132 port 22
+frontier07902: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07902: Connection closed by 10.128.123.140 port 22
+clush: frontier01124: exited with exit code 255
+clush: frontier01014: exited with exit code 255
+clush: frontier06117: exited with exit code 255
+clush: frontier07516: exited with exit code 255
+clush: frontier00868: exited with exit code 255
+clush: frontier07902: exited with exit code 255
+frontier03964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier03964: Connection closed by 10.128.62.4 port 22
+frontier00757: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00757: Connection closed by 10.128.11.232 port 22
+frontier00869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00869: Connection closed by 10.128.13.168 port 22
+frontier08285: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08285: Connection closed by 10.128.129.136 port 22
+clush: frontier03964: exited with exit code 255
+clush: frontier00757: exited with exit code 255
+clush: frontier00869: exited with exit code 255
+clush: frontier08285: exited with exit code 255
+frontier04337: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04708: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04456: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04337: Connection closed by 10.128.67.216 port 22
+frontier08539: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier04337: exited with exit code 255
+frontier04708: Connection closed by 10.128.73.164 port 22
+frontier04456: Connection closed by 10.128.69.180 port 22
+frontier08539: Connection closed by 10.128.133.128 port 22
+clush: frontier04708: exited with exit code 255
+clush: frontier04456: exited with exit code 255
+clush: frontier08539: exited with exit code 255
+frontier08793: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08793: Connection closed by 10.128.137.120 port 22
+clush: frontier08793: exited with exit code 255
+frontier00876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01010: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00876: Connection closed by 10.128.13.196 port 22
+clush: frontier00876: exited with exit code 255
+frontier01010: Connection closed by 10.128.15.220 port 22
+clush: frontier01010: exited with exit code 255
+frontier01125: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07517: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01125: Connection closed by 10.128.17.168 port 22
+clush: frontier01125: exited with exit code 255
+frontier07517: Connection closed by 10.128.117.136 port 22
+clush: frontier07517: exited with exit code 255
+frontier08030: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08030: Connection closed by 10.128.125.140 port 22
+clush: frontier08030: exited with exit code 255
+frontier07648: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07648: Connection closed by 10.128.119.148 port 22
+clush: frontier07648: exited with exit code 255
+frontier07268: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07268: Connection closed by 10.128.113.164 port 22
+clush: frontier07268: exited with exit code 255
+frontier09049: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09049: Connection closed by 10.128.141.120 port 22
+clush: frontier09049: exited with exit code 255
+frontier08276: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08276: Connection closed by 10.128.129.100 port 22
+clush: frontier08276: exited with exit code 255
+frontier04709: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04709: Connection closed by 10.128.73.168 port 22
+clush: frontier04709: exited with exit code 255
+frontier07653: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07653: Connection closed by 10.128.119.168 port 22
+clush: frontier07653: exited with exit code 255
+frontier08420: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08420: Connection closed by 10.128.131.164 port 22
+clush: frontier08420: exited with exit code 255
+frontier07901: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07901: Connection closed by 10.128.123.136 port 22
+clush: frontier07901: exited with exit code 255
+clush: frontier06363: exited with exit code 1
+frontier04336: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04336: Connection closed by 10.128.67.212 port 22
+clush: frontier04336: exited with exit code 255
+frontier06491: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06491: Connection closed by 10.128.101.128 port 22
+clush: frontier06491: exited with exit code 255
+frontier07267: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08042: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07267: Connection closed by 10.128.113.160 port 22
+frontier08042: Connection closed by 10.128.125.188 port 22
+clush: frontier07267: exited with exit code 255
+clush: frontier08042: exited with exit code 255
+frontier07792: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07792: Connection closed by 10.128.121.212 port 22
+clush: frontier07792: exited with exit code 255
+frontier07005: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07005: Connection closed by 10.128.109.136 port 22
+clush: frontier07005: exited with exit code 255
+frontier00609: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07791: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04838: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04967: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07518: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00609: Connection closed by 10.128.9.152 port 22
+frontier07791: Connection closed by 10.128.121.208 port 22
+frontier04838: Connection closed by 10.128.75.172 port 22
+clush: frontier00609: exited with exit code 255
+clush: frontier07791: exited with exit code 255
+frontier04967: Connection closed by 10.128.77.176 port 22
+frontier07518: Connection closed by 10.128.117.140 port 22
+clush: frontier04838: exited with exit code 255
+clush: frontier04967: exited with exit code 255
+clush: frontier07518: exited with exit code 255
+frontier04317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04317: Connection closed by 10.128.67.136 port 22
+clush: frontier04317: exited with exit code 255
+frontier08421: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08421: Connection closed by 10.128.131.168 port 22
+clush: frontier08421: exited with exit code 255
+frontier04190: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04190: Connection closed by 10.128.65.140 port 22
+clush: frontier04190: exited with exit code 255
+frontier01016: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05343: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01016: Connection closed by 10.128.15.244 port 22
+clush: frontier01016: exited with exit code 255
+frontier05343: Connection closed by 10.128.83.144 port 22
+clush: frontier05343: exited with exit code 255
+frontier08160: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08160: Connection closed by 10.128.127.148 port 22
+clush: frontier08160: exited with exit code 255
+frontier05344: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05344: Connection closed by 10.128.83.148 port 22
+clush: frontier05344: exited with exit code 255
+frontier04440: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04440: Connection closed by 10.128.69.116 port 22
+clush: frontier04440: exited with exit code 255
+frontier08796: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08796: Connection closed by 10.128.137.132 port 22
+clush: frontier08796: exited with exit code 255
+frontier08529: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08529: Connection closed by 10.128.133.88 port 22
+clush: frontier08529: exited with exit code 255
+frontier08157: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08157: Connection closed by 10.128.127.136 port 22
+clush: frontier08157: exited with exit code 255
+frontier05601: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05601: Connection closed by 10.128.87.152 port 22
+clush: frontier05601: exited with exit code 255
+frontier04461: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04461: Connection closed by 10.128.69.200 port 22
+clush: frontier04461: exited with exit code 255
+frontier01126: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01126: Connection closed by 10.128.17.172 port 22
+clush: frontier01126: exited with exit code 255
+frontier04565: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08668: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04565: Connection closed by 10.128.71.104 port 22
+frontier08668: Connection closed by 10.128.135.132 port 22
+clush: frontier04565: exited with exit code 255
+clush: frontier08668: exited with exit code 255
+frontier05981: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05981: Connection closed by 10.128.93.136 port 22
+clush: frontier05981: exited with exit code 255
+frontier04710: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04710: Connection closed by 10.128.73.172 port 22
+clush: frontier04710: exited with exit code 255
+frontier09432: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09432: Connection closed by 10.128.147.116 port 22
+clush: frontier09432: exited with exit code 255
+frontier04570: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04570: Connection closed by 10.128.71.124 port 22
+clush: frontier04570: exited with exit code 255
+frontier09050: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09050: Connection closed by 10.128.141.124 port 22
+clush: frontier09050: exited with exit code 255
+frontier05239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04580: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05239: Connection closed by 10.128.81.240 port 22
+clush: frontier05239: exited with exit code 255
+frontier04580: Connection closed by 10.128.71.164 port 22
+clush: frontier04580: exited with exit code 255
+frontier04840: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04840: Connection closed by 10.128.75.180 port 22
+clush: frontier04840: exited with exit code 255
+frontier04841: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04841: Connection closed by 10.128.75.184 port 22
+clush: frontier04841: exited with exit code 255
+frontier09317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09317: Connection closed by 10.128.145.168 port 22
+clush: frontier09317: exited with exit code 255
+frontier08923: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08923: Connection closed by 10.128.139.128 port 22
+clush: frontier08923: exited with exit code 255
+frontier05092: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05092: Connection closed by 10.128.79.164 port 22
+clush: frontier05092: exited with exit code 255
+frontier09315: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09315: Connection closed by 10.128.145.160 port 22
+clush: frontier09315: exited with exit code 255
+frontier04964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04964: Connection closed by 10.128.77.164 port 22
+clush: frontier04964: exited with exit code 255
+frontier09182: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09182: Connection closed by 10.128.143.140 port 22
+clush: frontier09182: exited with exit code 255
+frontier04968: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09181: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04968: Connection closed by 10.128.77.180 port 22
+clush: frontier04968: exited with exit code 255
+frontier09181: Connection closed by 10.128.143.136 port 22
+clush: frontier09181: exited with exit code 255
+frontier05090: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05090: Connection closed by 10.128.79.156 port 22
+clush: frontier05090: exited with exit code 255
+frontier05238: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05238: Connection closed by 10.128.81.236 port 22
+clush: frontier05238: exited with exit code 255
+frontier05474: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05474: Connection closed by 10.128.85.156 port 22
+clush: frontier05474: exited with exit code 255
+frontier05469: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05469: Connection closed by 10.128.85.136 port 22
+clush: frontier05469: exited with exit code 255
+frontier05089: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05089: Connection closed by 10.128.79.152 port 22
+clush: frontier05089: exited with exit code 255
+frontier05346: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05346: Connection closed by 10.128.83.156 port 22
+clush: frontier05346: exited with exit code 255
+frontier05472: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05472: Connection closed by 10.128.85.148 port 22
+clush: frontier05472: exited with exit code 255
+frontier05594: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05594: Connection closed by 10.128.87.124 port 22
+clush: frontier05594: exited with exit code 255
+frontier05730: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05730: Connection closed by 10.128.89.156 port 22
+clush: frontier05730: exited with exit code 255
+frontier05723: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05723: Connection closed by 10.128.89.128 port 22
+clush: frontier05723: exited with exit code 255
+frontier05859: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05859: Connection closed by 10.128.91.160 port 22
+clush: frontier05859: exited with exit code 255
+frontier05731: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05731: Connection closed by 10.128.89.160 port 22
+clush: frontier05731: exited with exit code 255
+frontier05857: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05857: Connection closed by 10.128.91.152 port 22
+clush: frontier05857: exited with exit code 255
+frontier05853: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05853: Connection closed by 10.128.91.136 port 22
+clush: frontier05853: exited with exit code 255
+frontier05237: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05237: Connection closed by 10.128.81.232 port 22
+clush: frontier05237: exited with exit code 255
+clush: frontier05597: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+frontier05089: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04968: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05238: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05089: Connection closed by 10.128.79.152 port 22
+clush: frontier05089: exited with exit code 255
+frontier04968: Connection closed by 10.128.77.180 port 22
+frontier05238: Connection closed by 10.128.81.236 port 22
+clush: frontier04968: exited with exit code 255
+clush: frontier05238: exited with exit code 255
+frontier05237: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05237: Connection closed by 10.128.81.232 port 22
+clush: frontier05237: exited with exit code 255
+frontier05601: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05601: Connection closed by 10.128.87.152 port 22
+frontier05859: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05239: Connection closed by 10.128.81.240 port 22
+clush: frontier05601: exited with exit code 255
+clush: frontier05239: exited with exit code 255
+frontier05859: Connection closed by 10.128.91.160 port 22
+clush: frontier05859: exited with exit code 255
+frontier05343: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05343: Connection closed by 10.128.83.144 port 22
+frontier06497: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06497: Connection closed by 10.128.101.152 port 22
+clush: frontier05343: exited with exit code 255
+clush: frontier06497: exited with exit code 255
+frontier05469: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05346: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05090: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05092: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05981: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05469: Connection closed by 10.128.85.136 port 22
+frontier05346: Connection closed by 10.128.83.156 port 22
+frontier05472: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier05469: exited with exit code 255
+frontier05090: Connection closed by 10.128.79.156 port 22
+clush: frontier05346: exited with exit code 255
+frontier05092: Connection closed by 10.128.79.164 port 22
+frontier05981: Connection closed by 10.128.93.136 port 22
+frontier05472: Connection closed by 10.128.85.148 port 22
+clush: frontier05090: exited with exit code 255
+clush: frontier05092: exited with exit code 255
+clush: frontier05981: exited with exit code 255
+clush: frontier05472: exited with exit code 255
+frontier05594: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05594: Connection closed by 10.128.87.124 port 22
+clush: frontier05594: exited with exit code 255
+frontier05474: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05731: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06241: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06498: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05853: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05474: Connection closed by 10.128.85.156 port 22
+frontier05731: Connection closed by 10.128.89.160 port 22
+frontier06627: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05723: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05344: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier05731: exited with exit code 255
+frontier06622: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06622: Connection closed by 10.128.103.140 port 22
+clush: frontier05474: exited with exit code 255
+frontier06241: Connection closed by 10.128.97.152 port 22
+frontier06498: Connection closed by 10.128.101.156 port 22
+frontier05853: Connection closed by 10.128.91.136 port 22
+frontier06627: Connection closed by 10.128.103.160 port 22
+frontier05723: Connection closed by 10.128.89.128 port 22
+frontier05344: Connection closed by 10.128.83.148 port 22
+clush: frontier06622: exited with exit code 255
+clush: frontier06241: exited with exit code 255
+clush: frontier06498: exited with exit code 255
+clush: frontier05853: exited with exit code 255
+clush: frontier06627: exited with exit code 255
+clush: frontier05723: exited with exit code 255
+clush: frontier05344: exited with exit code 255
+frontier00248: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06870: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00248: Connection closed by 10.128.3.244 port 22
+clush: frontier00248: exited with exit code 255
+frontier06870: Connection closed by 10.128.107.108 port 22
+frontier06744: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06870: exited with exit code 255
+frontier07004: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07004: Connection closed by 10.128.109.132 port 22
+frontier06744: Connection closed by 10.128.105.116 port 22
+frontier06369: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06115: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06744: exited with exit code 255
+frontier06369: Connection closed by 10.128.99.152 port 22
+frontier06115: Connection closed by 10.128.95.160 port 22
+clush: frontier07004: exited with exit code 255
+clush: frontier06369: exited with exit code 255
+frontier00363: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00363: Connection closed by 10.128.5.192 port 22
+clush: frontier06115: exited with exit code 255
+frontier06245: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06245: Connection closed by 10.128.97.168 port 22
+frontier06998: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06998: Connection closed by 10.128.109.108 port 22
+clush: frontier00363: exited with exit code 255
+clush: frontier06245: exited with exit code 255
+clush: frontier06998: exited with exit code 255
+frontier06748: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07005: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06748: Connection closed by 10.128.105.132 port 22
+frontier07005: Connection closed by 10.128.109.136 port 22
+clush: frontier06748: exited with exit code 255
+clush: frontier07005: exited with exit code 255
+frontier00123: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00123: Connection closed by 10.128.2.0 port 22
+frontier05982: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier00123: exited with exit code 255
+frontier05982: Connection closed by 10.128.93.140 port 22
+clush: frontier05982: exited with exit code 255
+frontier00365: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06624: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05983: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00365: Connection closed by 10.128.5.200 port 22
+clush: frontier00365: exited with exit code 255
+frontier06624: Connection closed by 10.128.103.148 port 22
+frontier05983: Connection closed by 10.128.93.144 port 22
+clush: frontier06624: exited with exit code 255
+clush: frontier05983: exited with exit code 255
+frontier06869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05730: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06869: Connection closed by 10.128.107.104 port 22
+clush: frontier06869: exited with exit code 255
+frontier05730: Connection closed by 10.128.89.156 port 22
+clush: frontier05730: exited with exit code 255
+frontier07267: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07267: Connection closed by 10.128.113.160 port 22
+clush: frontier07267: exited with exit code 255
+frontier00127: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05857: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00127: Connection closed by 10.128.2.16 port 22
+clush: frontier00127: exited with exit code 255
+frontier05857: Connection closed by 10.128.91.152 port 22
+clush: frontier05857: exited with exit code 255
+frontier06117: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07137: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06117: Connection closed by 10.128.95.168 port 22
+frontier07268: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00247: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06117: exited with exit code 255
+frontier00247: Connection closed by 10.128.3.240 port 22
+frontier06876: Connection closed by 10.128.107.132 port 22
+frontier07137: Connection closed by 10.128.111.152 port 22
+frontier07268: Connection closed by 10.128.113.164 port 22
+frontier06239: Connection closed by 10.128.97.144 port 22
+clush: frontier00247: exited with exit code 255
+clush: frontier06876: exited with exit code 255
+clush: frontier07137: exited with exit code 255
+clush: frontier07268: exited with exit code 255
+clush: frontier06239: exited with exit code 255
+frontier00371: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06747: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06116: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00500: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00371: Connection closed by 10.128.5.224 port 22
+frontier00504: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06372: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06747: Connection closed by 10.128.105.128 port 22
+frontier04456: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier00371: exited with exit code 255
+frontier07266: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07266: Connection closed by 10.128.113.156 port 22
+frontier06116: Connection closed by 10.128.95.164 port 22
+frontier00239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00239: Connection closed by 10.128.3.208 port 22
+frontier00500: Connection closed by 10.128.7.228 port 22
+clush: frontier06747: exited with exit code 255
+frontier06491: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06491: Connection closed by 10.128.101.128 port 22
+frontier00504: Connection closed by 10.128.7.244 port 22
+frontier06372: Connection closed by 10.128.99.164 port 22
+frontier04456: Connection closed by 10.128.69.180 port 22
+clush: frontier07266: exited with exit code 255
+clush: frontier06116: exited with exit code 255
+clush: frontier00500: exited with exit code 255
+clush: frontier00504: exited with exit code 255
+clush: frontier06372: exited with exit code 255
+clush: frontier04456: exited with exit code 255
+clush: frontier00239: exited with exit code 255
+clush: frontier06491: exited with exit code 255
+frontier00611: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00611: Connection closed by 10.128.9.160 port 22
+clush: frontier00611: exited with exit code 255
+frontier00609: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07516: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00609: Connection closed by 10.128.9.152 port 22
+clush: frontier00609: exited with exit code 255
+frontier07516: Connection closed by 10.128.117.132 port 22
+clush: frontier07516: exited with exit code 255
+frontier07791: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07791: Connection closed by 10.128.121.208 port 22
+clush: frontier07791: exited with exit code 255
+frontier07902: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01125: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07653: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07902: Connection closed by 10.128.123.140 port 22
+frontier01125: Connection closed by 10.128.17.168 port 22
+clush: frontier07902: exited with exit code 255
+frontier07653: Connection closed by 10.128.119.168 port 22
+clush: frontier01125: exited with exit code 255
+clush: frontier07653: exited with exit code 255
+frontier00757: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00757: Connection closed by 10.128.11.232 port 22
+clush: frontier00757: exited with exit code 255
+frontier00869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00869: Connection closed by 10.128.13.168 port 22
+clush: frontier00869: exited with exit code 255
+frontier04190: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07792: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00615: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01010: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04190: Connection closed by 10.128.65.140 port 22
+frontier07792: Connection closed by 10.128.121.212 port 22
+frontier07517: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00615: Connection closed by 10.128.9.176 port 22
+frontier01010: Connection closed by 10.128.15.220 port 22
+clush: frontier07792: exited with exit code 255
+clush: frontier04190: exited with exit code 255
+clush: frontier00615: exited with exit code 255
+clush: frontier01010: exited with exit code 255
+frontier07517: Connection closed by 10.128.117.136 port 22
+clush: frontier07517: exited with exit code 255
+frontier08276: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08276: Connection closed by 10.128.129.100 port 22
+clush: frontier08276: exited with exit code 255
+frontier00750: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00750: Connection closed by 10.128.11.204 port 22
+frontier00876: Connection closed by 10.128.13.196 port 22
+clush: frontier00750: exited with exit code 255
+clush: frontier00876: exited with exit code 255
+frontier07518: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07518: Connection closed by 10.128.117.140 port 22
+clush: frontier07518: exited with exit code 255
+frontier04317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04317: Connection closed by 10.128.67.136 port 22
+clush: frontier04317: exited with exit code 255
+frontier03964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier03964: Connection closed by 10.128.62.4 port 22
+frontier08160: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier03964: exited with exit code 255
+frontier08160: Connection closed by 10.128.127.148 port 22
+clush: frontier08160: exited with exit code 255
+frontier00746: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00746: Connection closed by 10.128.11.188 port 22
+clush: frontier00746: exited with exit code 255
+frontier01016: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01016: Connection closed by 10.128.15.244 port 22
+clush: frontier01016: exited with exit code 255
+frontier04336: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07901: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04336: Connection closed by 10.128.67.212 port 22
+frontier07901: Connection closed by 10.128.123.136 port 22
+clush: frontier04336: exited with exit code 255
+clush: frontier07901: exited with exit code 255
+frontier08042: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08042: Connection closed by 10.128.125.188 port 22
+clush: frontier08042: exited with exit code 255
+frontier04337: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04337: Connection closed by 10.128.67.216 port 22
+frontier01124: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier04337: exited with exit code 255
+frontier01124: Connection closed by 10.128.17.164 port 22
+frontier08421: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier01124: exited with exit code 255
+frontier08421: Connection closed by 10.128.131.168 port 22
+clush: frontier08421: exited with exit code 255
+frontier04570: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08420: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04570: Connection closed by 10.128.71.124 port 22
+clush: frontier04570: exited with exit code 255
+frontier08420: Connection closed by 10.128.131.164 port 22
+clush: frontier08420: exited with exit code 255
+frontier08529: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08529: Connection closed by 10.128.133.88 port 22
+clush: frontier08529: exited with exit code 255
+frontier08539: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08539: Connection closed by 10.128.133.128 port 22
+clush: frontier08539: exited with exit code 255
+frontier08285: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00868: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08668: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08157: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08285: Connection closed by 10.128.129.136 port 22
+frontier00868: Connection closed by 10.128.13.164 port 22
+frontier08668: Connection closed by 10.128.135.132 port 22
+clush: frontier08285: exited with exit code 255
+clush: frontier00868: exited with exit code 255
+clush: frontier08668: exited with exit code 255
+frontier08157: Connection closed by 10.128.127.136 port 22
+clush: frontier08157: exited with exit code 255
+frontier09050: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09050: Connection closed by 10.128.141.124 port 22
+clush: frontier09050: exited with exit code 255
+frontier04708: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09049: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04708: Connection closed by 10.128.73.164 port 22
+frontier04565: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04461: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier04708: exited with exit code 255
+frontier09049: Connection closed by 10.128.141.120 port 22
+frontier04565: Connection closed by 10.128.71.104 port 22
+frontier04461: Connection closed by 10.128.69.200 port 22
+clush: frontier09049: exited with exit code 255
+clush: frontier04565: exited with exit code 255
+clush: frontier04461: exited with exit code 255
+frontier07647: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07647: Connection closed by 10.128.119.144 port 22
+clush: frontier07647: exited with exit code 255
+frontier07648: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07648: Connection closed by 10.128.119.148 port 22
+clush: frontier07648: exited with exit code 255
+frontier04580: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04580: Connection closed by 10.128.71.164 port 22
+clush: frontier04580: exited with exit code 255
+frontier04440: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08796: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04440: Connection closed by 10.128.69.116 port 22
+clush: frontier04440: exited with exit code 255
+frontier08796: Connection closed by 10.128.137.132 port 22
+clush: frontier08796: exited with exit code 255
+frontier08030: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08793: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08030: Connection closed by 10.128.125.140 port 22
+clush: frontier08030: exited with exit code 255
+frontier08793: Connection closed by 10.128.137.120 port 22
+clush: frontier08793: exited with exit code 255
+frontier01126: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01014: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08923: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01126: Connection closed by 10.128.17.172 port 22
+frontier08923: Connection closed by 10.128.139.128 port 22
+frontier01014: Connection closed by 10.128.15.236 port 22
+clush: frontier01126: exited with exit code 255
+clush: frontier01014: exited with exit code 255
+clush: frontier08923: exited with exit code 255
+frontier09182: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04841: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04840: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09182: Connection closed by 10.128.143.140 port 22
+clush: frontier09182: exited with exit code 255
+frontier04841: Connection closed by 10.128.75.184 port 22
+clush: frontier04841: exited with exit code 255
+frontier04840: Connection closed by 10.128.75.180 port 22
+clush: frontier04840: exited with exit code 255
+frontier09315: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09315: Connection closed by 10.128.145.160 port 22
+clush: frontier09315: exited with exit code 255
+frontier04838: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04838: Connection closed by 10.128.75.172 port 22
+frontier09317: Connection closed by 10.128.145.168 port 22
+clush: frontier04838: exited with exit code 255
+clush: frontier09317: exited with exit code 255
+frontier09181: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09181: Connection closed by 10.128.143.136 port 22
+clush: frontier09181: exited with exit code 255
+frontier09432: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09432: Connection closed by 10.128.147.116 port 22
+clush: frontier09432: exited with exit code 255
+frontier04709: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04709: Connection closed by 10.128.73.168 port 22
+clush: frontier04709: exited with exit code 255
+frontier04964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04710: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04964: Connection closed by 10.128.77.164 port 22
+frontier04710: Connection closed by 10.128.73.172 port 22
+clush: frontier04964: exited with exit code 255
+clush: frontier04710: exited with exit code 255
+frontier04967: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04967: Connection closed by 10.128.77.176 port 22
+clush: frontier04967: exited with exit code 255
+frontier05597: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier05597: exited with exit code 1
+frontier06363: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier06363: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
+frontier05469: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05469: Connection closed by 10.128.85.136 port 22
+clush: frontier05469: exited with exit code 255
+frontier05731: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05731: Connection closed by 10.128.89.160 port 22
+clush: frontier05731: exited with exit code 255
+frontier05601: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05601: Connection closed by 10.128.87.152 port 22
+frontier06116: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier05601: exited with exit code 255
+frontier05723: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05723: Connection closed by 10.128.89.128 port 22
+frontier06116: Connection closed by 10.128.95.164 port 22
+clush: frontier06116: exited with exit code 255
+clush: frontier05723: exited with exit code 255
+frontier05853: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05474: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05853: Connection closed by 10.128.91.136 port 22
+clush: frontier05853: exited with exit code 255
+frontier05474: Connection closed by 10.128.85.156 port 22
+clush: frontier05474: exited with exit code 255
+frontier06491: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05859: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06241: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06491: Connection closed by 10.128.101.128 port 22
+frontier05859: Connection closed by 10.128.91.160 port 22
+frontier05982: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05983: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06491: exited with exit code 255
+frontier05983: Connection closed by 10.128.93.144 port 22
+clush: frontier05859: exited with exit code 255
+frontier06241: Connection closed by 10.128.97.152 port 22
+frontier05594: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05594: Connection closed by 10.128.87.124 port 22
+frontier05857: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05857: Connection closed by 10.128.91.152 port 22
+frontier05982: Connection closed by 10.128.93.140 port 22
+clush: frontier06241: exited with exit code 255
+clush: frontier05982: exited with exit code 255
+clush: frontier05983: exited with exit code 255
+clush: frontier05594: exited with exit code 255
+clush: frontier05857: exited with exit code 255
+frontier06744: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06369: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05981: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06115: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06744: Connection closed by 10.128.105.116 port 22
+frontier06369: Connection closed by 10.128.99.152 port 22
+frontier06372: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06497: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06117: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05981: Connection closed by 10.128.93.136 port 22
+frontier06245: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier06744: exited with exit code 255
+frontier06245: Connection closed by 10.128.97.168 port 22
+clush: frontier06369: exited with exit code 255
+frontier06498: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06498: Connection closed by 10.128.101.156 port 22
+frontier05730: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05730: Connection closed by 10.128.89.156 port 22
+frontier00127: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00127: Connection closed by 10.128.2.16 port 22
+clush: frontier05981: exited with exit code 255
+frontier06115: Connection closed by 10.128.95.160 port 22
+frontier06117: Connection closed by 10.128.95.168 port 22
+frontier06497: Connection closed by 10.128.101.152 port 22
+frontier06372: Connection closed by 10.128.99.164 port 22
+frontier00609: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00609: Connection closed by 10.128.9.152 port 22
+clush: frontier06245: exited with exit code 255
+clush: frontier06115: exited with exit code 255
+clush: frontier06117: exited with exit code 255
+clush: frontier06497: exited with exit code 255
+clush: frontier06372: exited with exit code 255
+frontier06239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06239: Connection closed by 10.128.97.144 port 22
+clush: frontier00127: exited with exit code 255
+frontier04461: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04461: Connection closed by 10.128.69.200 port 22
+frontier05472: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05472: Connection closed by 10.128.85.148 port 22
+clush: frontier05730: exited with exit code 255
+clush: frontier06498: exited with exit code 255
+frontier06748: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06748: Connection closed by 10.128.105.132 port 22
+clush: frontier00609: exited with exit code 255
+clush: frontier06239: exited with exit code 255
+clush: frontier04461: exited with exit code 255
+clush: frontier05472: exited with exit code 255
+clush: frontier06748: exited with exit code 255
+frontier06622: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00371: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06622: Connection closed by 10.128.103.140 port 22
+frontier00371: Connection closed by 10.128.5.224 port 22
+clush: frontier00371: exited with exit code 255
+clush: frontier06622: exited with exit code 255
+frontier00757: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00757: Connection closed by 10.128.11.232 port 22
+frontier00500: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00500: Connection closed by 10.128.7.228 port 22
+frontier06869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06869: Connection closed by 10.128.107.104 port 22
+frontier06747: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06747: Connection closed by 10.128.105.128 port 22
+frontier06624: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06624: Connection closed by 10.128.103.148 port 22
+clush: frontier00757: exited with exit code 255
+clush: frontier00500: exited with exit code 255
+clush: frontier06869: exited with exit code 255
+clush: frontier06747: exited with exit code 255
+clush: frontier06624: exited with exit code 255
+frontier00746: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00611: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07137: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00248: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07266: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00363: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00504: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07517: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00123: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00746: Connection closed by 10.128.11.188 port 22
+frontier07004: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00611: Connection closed by 10.128.9.160 port 22
+frontier07647: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07137: Connection closed by 10.128.111.152 port 22
+frontier00248: Connection closed by 10.128.3.244 port 22
+frontier06998: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier00746: exited with exit code 255
+frontier06998: Connection closed by 10.128.109.108 port 22
+clush: frontier00611: exited with exit code 255
+clush: frontier07137: exited with exit code 255
+frontier07266: Connection closed by 10.128.113.156 port 22
+clush: frontier00248: exited with exit code 255
+frontier00504: Connection closed by 10.128.7.244 port 22
+frontier00363: Connection closed by 10.128.5.192 port 22
+frontier07517: Connection closed by 10.128.117.136 port 22
+frontier00123: Connection closed by 10.128.2.0 port 22
+frontier07004: Connection closed by 10.128.109.132 port 22
+frontier07647: Connection closed by 10.128.119.144 port 22
+frontier07518: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07518: Connection closed by 10.128.117.140 port 22
+frontier07005: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07005: Connection closed by 10.128.109.136 port 22
+frontier00615: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00615: Connection closed by 10.128.9.176 port 22
+frontier00365: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00365: Connection closed by 10.128.5.200 port 22
+frontier00239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00239: Connection closed by 10.128.3.208 port 22
+frontier00247: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00247: Connection closed by 10.128.3.240 port 22
+clush: frontier07266: exited with exit code 255
+clush: frontier00504: exited with exit code 255
+clush: frontier00363: exited with exit code 255
+clush: frontier07517: exited with exit code 255
+clush: frontier00123: exited with exit code 255
+clush: frontier07004: exited with exit code 255
+clush: frontier07647: exited with exit code 255
+clush: frontier06998: exited with exit code 255
+frontier07516: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07516: Connection closed by 10.128.117.132 port 22
+frontier06627: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06627: Connection closed by 10.128.103.160 port 22
+frontier07268: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07268: Connection closed by 10.128.113.164 port 22
+frontier00750: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00750: Connection closed by 10.128.11.204 port 22
+frontier07267: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07267: Connection closed by 10.128.113.160 port 22
+clush: frontier07518: exited with exit code 255
+clush: frontier07005: exited with exit code 255
+clush: frontier00365: exited with exit code 255
+clush: frontier00615: exited with exit code 255
+clush: frontier00239: exited with exit code 255
+clush: frontier00247: exited with exit code 255
+clush: frontier07516: exited with exit code 255
+clush: frontier06627: exited with exit code 255
+clush: frontier07268: exited with exit code 255
+clush: frontier00750: exited with exit code 255
+clush: frontier07267: exited with exit code 255
+frontier06876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06870: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier06876: Connection closed by 10.128.107.132 port 22
+clush: frontier06876: exited with exit code 255
+frontier06870: Connection closed by 10.128.107.108 port 22
+clush: frontier06870: exited with exit code 255
+frontier07648: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07648: Connection closed by 10.128.119.148 port 22
+clush: frontier07648: exited with exit code 255
+frontier07792: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00876: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07792: Connection closed by 10.128.121.212 port 22
+frontier00876: Connection closed by 10.128.13.196 port 22
+clush: frontier07792: exited with exit code 255
+clush: frontier00876: exited with exit code 255
+frontier00868: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00868: Connection closed by 10.128.13.164 port 22
+clush: frontier00868: exited with exit code 255
+frontier01010: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01010: Connection closed by 10.128.15.220 port 22
+clush: frontier01010: exited with exit code 255
+frontier08157: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08157: Connection closed by 10.128.127.136 port 22
+frontier07653: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier08157: exited with exit code 255
+frontier07791: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier07653: Connection closed by 10.128.119.168 port 22
+clush: frontier07653: exited with exit code 255
+frontier07791: Connection closed by 10.128.121.208 port 22
+clush: frontier07791: exited with exit code 255
+frontier00869: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00869: Connection closed by 10.128.13.168 port 22
+clush: frontier00869: exited with exit code 255
+frontier08030: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08030: Connection closed by 10.128.125.140 port 22
+clush: frontier08030: exited with exit code 255
+frontier03964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier03964: Connection closed by 10.128.62.4 port 22
+clush: frontier03964: exited with exit code 255
+frontier08160: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08160: Connection closed by 10.128.127.148 port 22
+frontier04440: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier08160: exited with exit code 255
+frontier04440: Connection closed by 10.128.69.116 port 22
+clush: frontier04440: exited with exit code 255
+frontier08529: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08529: Connection closed by 10.128.133.88 port 22
+clush: frontier08529: exited with exit code 255
+frontier04337: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04190: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04337: Connection closed by 10.128.67.216 port 22
+clush: frontier04337: exited with exit code 255
+frontier07902: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04190: Connection closed by 10.128.65.140 port 22
+clush: frontier04190: exited with exit code 255
+frontier07902: Connection closed by 10.128.123.140 port 22
+clush: frontier07902: exited with exit code 255
+frontier01126: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01126: Connection closed by 10.128.17.172 port 22
+clush: frontier01126: exited with exit code 255
+frontier01016: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01016: Connection closed by 10.128.15.244 port 22
+clush: frontier01016: exited with exit code 255
+frontier01125: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08042: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01124: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08042: Connection closed by 10.128.125.188 port 22
+frontier04317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01014: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08793: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier01125: Connection closed by 10.128.17.168 port 22
+frontier07901: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier08042: exited with exit code 255
+frontier04336: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier01125: exited with exit code 255
+frontier01124: Connection closed by 10.128.17.164 port 22
+frontier08793: Connection closed by 10.128.137.120 port 22
+frontier04317: Connection closed by 10.128.67.136 port 22
+frontier01014: Connection closed by 10.128.15.236 port 22
+frontier07901: Connection closed by 10.128.123.136 port 22
+clush: frontier01124: exited with exit code 255
+clush: frontier04317: exited with exit code 255
+clush: frontier01014: exited with exit code 255
+frontier04336: Connection closed by 10.128.67.212 port 22
+clush: frontier08793: exited with exit code 255
+frontier08276: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier07901: exited with exit code 255
+clush: frontier04336: exited with exit code 255
+frontier08276: Connection closed by 10.128.129.100 port 22
+clush: frontier08276: exited with exit code 255
+frontier08285: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08420: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04708: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08421: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08285: Connection closed by 10.128.129.136 port 22
+frontier08420: Connection closed by 10.128.131.164 port 22
+frontier04708: Connection closed by 10.128.73.164 port 22
+clush: frontier08285: exited with exit code 255
+clush: frontier08420: exited with exit code 255
+frontier08421: Connection closed by 10.128.131.168 port 22
+clush: frontier04708: exited with exit code 255
+clush: frontier08421: exited with exit code 255
+frontier04709: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04709: Connection closed by 10.128.73.168 port 22
+clush: frontier04709: exited with exit code 255
+frontier04840: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08923: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04840: Connection closed by 10.128.75.180 port 22
+frontier08923: Connection closed by 10.128.139.128 port 22
+clush: frontier04840: exited with exit code 255
+clush: frontier08923: exited with exit code 255
+frontier04964: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04964: Connection closed by 10.128.77.164 port 22
+clush: frontier04964: exited with exit code 255
+frontier05089: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05089: Connection closed by 10.128.79.152 port 22
+clush: frontier05089: exited with exit code 255
+frontier04570: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04570: Connection closed by 10.128.71.124 port 22
+clush: frontier04570: exited with exit code 255
+frontier04710: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04710: Connection closed by 10.128.73.172 port 22
+clush: frontier04710: exited with exit code 255
+frontier08668: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08668: Connection closed by 10.128.135.132 port 22
+clush: frontier08668: exited with exit code 255
+frontier09432: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09432: Connection closed by 10.128.147.116 port 22
+clush: frontier09432: exited with exit code 255
+frontier09050: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09050: Connection closed by 10.128.141.124 port 22
+clush: frontier09050: exited with exit code 255
+frontier08539: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08539: Connection closed by 10.128.133.128 port 22
+clush: frontier08539: exited with exit code 255
+frontier04838: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04838: Connection closed by 10.128.75.172 port 22
+clush: frontier04838: exited with exit code 255
+frontier04565: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04968: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04565: Connection closed by 10.128.71.104 port 22
+clush: frontier04565: exited with exit code 255
+frontier04968: Connection closed by 10.128.77.180 port 22
+frontier05239: Access denied by pam_slurm_adopt: you have no active jobs on this node
+clush: frontier04968: exited with exit code 255
+frontier05239: Connection closed by 10.128.81.240 port 22
+clush: frontier05239: exited with exit code 255
+frontier09317: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09317: Connection closed by 10.128.145.168 port 22
+clush: frontier09317: exited with exit code 255
+frontier04841: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05343: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04841: Connection closed by 10.128.75.184 port 22
+clush: frontier04841: exited with exit code 255
+frontier05343: Connection closed by 10.128.83.144 port 22
+clush: frontier05343: exited with exit code 255
+frontier09181: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09181: Connection closed by 10.128.143.136 port 22
+clush: frontier09181: exited with exit code 255
+frontier05090: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05090: Connection closed by 10.128.79.156 port 22
+clush: frontier05090: exited with exit code 255
+frontier04580: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04580: Connection closed by 10.128.71.164 port 22
+clush: frontier04580: exited with exit code 255
+frontier05092: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05092: Connection closed by 10.128.79.164 port 22
+clush: frontier05092: exited with exit code 255
+frontier09315: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09315: Connection closed by 10.128.145.160 port 22
+clush: frontier09315: exited with exit code 255
+frontier04456: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier08796: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04456: Connection closed by 10.128.69.180 port 22
+frontier08796: Connection closed by 10.128.137.132 port 22
+clush: frontier04456: exited with exit code 255
+clush: frontier08796: exited with exit code 255
+frontier04967: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier04967: Connection closed by 10.128.77.176 port 22
+clush: frontier04967: exited with exit code 255
+frontier05344: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05344: Connection closed by 10.128.83.148 port 22
+clush: frontier05344: exited with exit code 255
+frontier09049: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09049: Connection closed by 10.128.141.120 port 22
+clush: frontier09049: exited with exit code 255
+frontier05237: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05237: Connection closed by 10.128.81.232 port 22
+clush: frontier05237: exited with exit code 255
+frontier05346: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05346: Connection closed by 10.128.83.156 port 22
+clush: frontier05346: exited with exit code 255
+frontier05238: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier05238: Connection closed by 10.128.81.236 port 22
+clush: frontier05238: exited with exit code 255
+frontier09182: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier09182: Connection closed by 10.128.143.140 port 22
+clush: frontier09182: exited with exit code 255
++ echo 'Stopping Copper Gracefully On All Nodes : End'
+Stopping Copper Gracefully On All Nodes : End

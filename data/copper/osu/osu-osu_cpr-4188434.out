@@ -1,0 +1,543 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_modules.sh
+++ module load PrgEnv-amd
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load cpe/25.09
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load amd/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load rocm/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libfabric/1.22.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load craype-accel-amd-gfx90a
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load miniforge3/23.11.0-0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ [[ /var/spool/slurmd/job4188434/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
++ module load libfabric/1.22.0
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load ums ums046 copper
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Copper loaded: use 'launch_copper' and 'stop_copper'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper points to: /sw/frontier/ums/ums046/copper/build/launch_copper.sh
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ [[ /var/spool/slurmd/job4188434/slurm_script == \/\v\a\r\/\s\p\o\o\l\/\s\l\u\r\m\d\/\j\o\b\4\1\8\8\4\3\4\/\s\l\u\r\m\_\s\c\r\i\p\t ]]
++ echo 'This script should be sourced! When it is not, it prints out the resulting module set:'
+This script should be sourced! When it is not, it prints out the resulting module set:
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) craype-accel-amd-gfx90a
+  8) DefApps                         21) miniforge3/23.11.0-0
+  9) PrgEnv-amd/8.6.0                22) libfabric/1.22.0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ exe=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ LOGDIR=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ launch_copper.sh -d /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ log_level=6
++ log_dir=/ccs/home/khana/copper-logs/4188434
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ sleeptime=20
++ physcpubind=57-60
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts l:t:d:T:M:s:b:F:n: opt
++ echo 'log_level                  : 6'
+log_level                  : 6
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 10485760'
+max_cacheable_byte_size    : 10485760
++ echo 'sleeptime                  : 20'
+sleeptime                  : 20
++ echo 'CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper'
+CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper
++ echo 'LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs'
+LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 57-60'
+physcpubind                : 57-60
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ scontrol show hostnames 'frontier[00130,00133-00135]'
++ echo 'Ignore errors below this line related to copper fuse unmount or cleanup if any. '
+Ignore errors below this line related to copper fuse unmount or cleanup if any. 
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+frontier00130: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00130: exited with exit code 1
+frontier00134: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00134: exited with exit code 1
+frontier00140: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00140: exited with exit code 1
+frontier00142: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00142: exited with exit code 1
+frontier00144: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00144: exited with exit code 1
+frontier00143: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00143: exited with exit code 1
+frontier00135: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00135: exited with exit code 1
+frontier00133: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00133: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'mkdir -p /tmp/khana/copper'
++ echo 'Errors below this line are critical - report if any. '
+Errors below this line are critical - report if any. 
++ options=' -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760  -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper'
++ sleep 20s
++ srun -N 4 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=threads --network=single_node_vni,job_vni /sw/frontier/ums/ums046/copper/build/cu_fuse -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760 -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper
+2026-03-09 10-29-32.734 [Debug] (cu_hello_main)  
+2026-03-09 10-29-32.734 [Info] (cu_hello_main) hostname found to be: frontier00135
+2026-03-09 10-29-32.734 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-29-32.734 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-29-32.734 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-29-32.734 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-29-32.734 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-29-32.734 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-29-32.734 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-29-32.734 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-29-32.734 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-29-32.734 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.734 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-29-32.734 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.734 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00135-1830502-output.log
+2026-03-09 10-29-32.757 [Debug] (cu_hello_main)  
+2026-03-09 10-29-32.757 [Info] (cu_hello_main) hostname found to be: frontier00133
+2026-03-09 10-29-32.757 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-29-32.757 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-29-32.757 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-29-32.757 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-29-32.757 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-29-32.757 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-29-32.757 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-29-32.757 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-29-32.757 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-29-32.757 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.757 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-29-32.757 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.757 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00133-2146428-output.log
+2026-03-09 10-29-32.769 [Debug] (cu_hello_main)  
+2026-03-09 10-29-32.769 [Info] (cu_hello_main) hostname found to be: frontier00134
+2026-03-09 10-29-32.769 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-29-32.769 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-29-32.769 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-29-32.769 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-29-32.769 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-29-32.769 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-29-32.769 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-29-32.769 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-29-32.769 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-29-32.769 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.769 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-29-32.769 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.769 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00134-952461-output.log
+2026-03-09 10-29-32.973 [Debug] (cu_hello_main)  
+2026-03-09 10-29-32.973 [Info] (cu_hello_main) hostname found to be: frontier00130
+2026-03-09 10-29-32.973 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-29-32.973 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-29-32.973 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-29-32.973 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-29-32.973 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-29-32.973 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-29-32.973 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-29-32.973 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-29-32.973 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-29-32.973 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.973 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-29-32.973 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-29-32.973 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00130-1638282-output.log
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
++ set -x
++ ldd /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libamdhip64.so.6 => /opt/rocm-6.4.2/lib/libamdhip64.so.6 (0x00007fffec1ed000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fffec0ed000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffec09e000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00007fffec085000)
+	libmpi_amd.so.12 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_amd.so.12 (0x00007fffeaf35000)
+	libmpi_gtl_hsa.so.0 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_gtl_hsa.so.0 (0x00007fffeae8a000)
+	libxpmem.so.0 => /usr/lib64/libxpmem.so.0 (0x00007fffeae87000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007fffeac31000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fffeac04000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fffea9ef000)
+	librocprofiler-register.so.0 => /opt/rocm-6.4.2/lib/librocprofiler-register.so.0 (0x00007fffea96e000)
+	libamd_comgr.so.3 => /opt/rocm-6.4.2/lib/libamd_comgr.so.3 (0x00007fffe11c1000)
+	libhsa-runtime64.so.1 => /opt/rocm-6.4.2/lib/libhsa-runtime64.so.1 (0x00007fffe0e77000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00007fffe0c00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libfabric.so.1 => /opt/cray/libfabric/1.22.0/lib64/libfabric.so.1 (0x00007fffe0ac9000)
+	libatomic.so.1 => /usr/lib64/libatomic.so.1 (0x00007fffe0e6b000)
+	libpmi.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi.so.0 (0x00007fffe0e47000)
+	libpmi2.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi2.so.0 (0x00007fffe0e23000)
+	libzstd.so.1 => /usr/lib64/libzstd.so.1 (0x00007fffe0a0a000)
+	libelf.so.1 => /usr/lib64/libelf.so.1 (0x00007fffe0600000)
+	libdrm.so.2 => /opt/amdgpu/lib64/libdrm.so.2 (0x00007fffe09f3000)
+	libdrm_amdgpu.so.1 => /opt/amdgpu/lib64/libdrm_amdgpu.so.1 (0x00007fffe0e13000)
+	libcxi.so.1 => /usr/lib64/libcxi.so.1 (0x00007fffe09d2000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fffe0e0e000)
+	libpals.so.0 => /opt/cray/pals/1.6/lib/libpals.so.0 (0x00007fffe09ca000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00007fffe09a7000)
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 4 -n 32 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 32, min: 730 ms, max: 879 ms, avg: 796 ms
+0.01user 0.01system 0:02.12elapsed 1%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+8outputs (0major+3372minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 4 -n 32 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+srun: error: frontier00135: task 3: Killed
+srun: Terminating StepId=4188434.0
+slurmstepd: error: *** STEP 4188434.0 ON frontier00130 CANCELLED AT 2026-03-09T10:29:55 ***
+srun: error: frontier00133: task 1: Killed
+srun: error: frontier00134: task 2: Killed
+srun: error: frontier00130: task 0: Killed
+srun: Force Terminated StepId=4188434.0
+# OSU MPI Init Test v7.5
+nprocs: 32, min: 713 ms, max: 758 ms, avg: 736 ms
+0.01user 0.02system 0:01.09elapsed 2%CPU (0avgtext+0avgdata 17408maxresident)k
+24inputs+0outputs (0major+3372minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 4 -n 32 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+srun: error: frontier00130: tasks 0-7: Exited with exit code 107
+srun: Terminating StepId=4188434.3
+srun: error: frontier00133: tasks 8-15: Exited with exit code 107
+srun: error: frontier00134: tasks 16-23: Exited with exit code 107
+srun: error: frontier00135: tasks 24-31: Exited with exit code 107
+Command exited with non-zero status 107
+0.01user 0.02system 0:00.30elapsed 11%CPU (0avgtext+0avgdata 18432maxresident)k
+24inputs+16outputs (0major+3378minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 4 -n 32 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: Transport endpoint is not connected
+srun: error: frontier00130: tasks 0-7: Exited with exit code 107
+srun: Terminating StepId=4188434.4
+srun: error: frontier00135: tasks 24-31: Exited with exit code 107
+srun: error: frontier00134: tasks 16-23: Exited with exit code 107
+srun: error: frontier00133: tasks 8-15: Exited with exit code 107
+Command exited with non-zero status 107
+0.01user 0.02system 0:00.28elapsed 11%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+16outputs (0major+3378minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 4 -n 32 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+slurmstepd: error: execve(): /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init: No such file or directory
+srun: error: frontier00134: tasks 16-23: Exited with exit code 2
+srun: Terminating StepId=4188434.5
+slurmstepd: error: *** STEP 4188434.5 ON frontier00130 CANCELLED AT 2026-03-09T10:29:56 ***
+srun: error: frontier00135: tasks 24-31: Exited with exit code 2
+srun: error: frontier00130: tasks 0-7: Exited with exit code 2
+srun: error: frontier00133: tasks 8-15: Exited with exit code 2
+Command exited with non-zero status 2
+0.01user 0.02system 0:00.30elapsed 11%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+8outputs (0major+3378minor)pagefaults 0swaps
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ log_dir=/ccs/home/khana/copper-logs/4188434
++ getopts d: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts d: opt
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ echo 'Stopping Copper Gracefully On All Nodes : Start'
+Stopping Copper Gracefully On All Nodes : Start
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'pkill -9 cu_fuse'
+clush: frontier00140: exited with exit code 1
+clush: frontier00134: exited with exit code 1
+clush: frontier00133: exited with exit code 1
+clush: frontier00144: exited with exit code 1
+clush: frontier00143: exited with exit code 1
+clush: frontier00135: exited with exit code 1
+clush: frontier00142: exited with exit code 1
+clush: frontier00130: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+frontier00143: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00144: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00143: Connection closed by 10.128.2.80 port 22
+clush: frontier00143: exited with exit code 255
+frontier00144: Connection closed by 10.128.2.84 port 22
+clush: frontier00144: exited with exit code 255
+frontier00140: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00142: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00142: Connection closed by 10.128.2.76 port 22
+clush: frontier00142: exited with exit code 255
+frontier00140: Connection closed by 10.128.2.68 port 22
+clush: frontier00140: exited with exit code 255
+frontier00135: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier00135: exited with exit code 1
+frontier00134: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier00134: exited with exit code 1
+frontier00130: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+frontier00133: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier00130: exited with exit code 1
+clush: frontier00133: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
+frontier00143: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00143: Connection closed by 10.128.2.80 port 22
+clush: frontier00143: exited with exit code 255
+frontier00140: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00140: Connection closed by 10.128.2.68 port 22
+clush: frontier00140: exited with exit code 255
+frontier00142: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00144: Access denied by pam_slurm_adopt: you have no active jobs on this node
+frontier00142: Connection closed by 10.128.2.76 port 22
+clush: frontier00142: exited with exit code 255
+frontier00144: Connection closed by 10.128.2.84 port 22
+clush: frontier00144: exited with exit code 255
++ echo 'Stopping Copper Gracefully On All Nodes : End'
+Stopping Copper Gracefully On All Nodes : End

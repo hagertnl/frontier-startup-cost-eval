@@ -1,0 +1,1530 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_modules.sh
+++ module load PrgEnv-amd
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load cpe/25.09
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load amd/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load rocm/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libfabric/1.22.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load craype-accel-amd-gfx90a
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load miniforge3/23.11.0-0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
+++ [[ /var/spool/slurmd/job4188439/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
++ module load libfabric/1.22.0
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load ums ums046 copper
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Copper loaded: use 'launch_copper' and 'stop_copper'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper points to: /sw/frontier/ums/ums046/copper/build/launch_copper.sh
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ [[ /var/spool/slurmd/job4188439/slurm_script == \/\v\a\r\/\s\p\o\o\l\/\s\l\u\r\m\d\/\j\o\b\4\1\8\8\4\3\9\/\s\l\u\r\m\_\s\c\r\i\p\t ]]
++ echo 'This script should be sourced! When it is not, it prints out the resulting module set:'
+This script should be sourced! When it is not, it prints out the resulting module set:
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) craype-accel-amd-gfx90a
+  8) DefApps                         21) miniforge3/23.11.0-0
+  9) PrgEnv-amd/8.6.0                22) libfabric/1.22.0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ exe=/tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ LOGDIR=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ launch_copper.sh -d /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ log_level=6
++ log_dir=/ccs/home/khana/copper-logs/4188439
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ sleeptime=20
++ physcpubind=57-60
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts l:t:d:T:M:s:b:F:n: opt
++ echo 'log_level                  : 6'
+log_level                  : 6
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 10485760'
+max_cacheable_byte_size    : 10485760
++ echo 'sleeptime                  : 20'
+sleeptime                  : 20
++ echo 'CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper'
+CU_FUSE_MNT_VIEWDIR        : /tmp/khana/copper
++ echo 'LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs'
+LOGDIR                     : /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 57-60'
+physcpubind                : 57-60
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ scontrol show hostnames 'frontier[00117,00158,00265,00452,00534,00668,00865,00915,01035,01178,01310,01473,01557,01678,01815,01955,02086,02216,02342,02471,02593,02732,02858,02994,03124,03268,03380,03495,03642,03812,03961,04066,04190,04315,04443,04558,04693,04820,04977,05073,05207,05328,05454,05583,05717,05838,05973,06104,06221,06348,06480,06610,06736,06862,06987,07117,07245,07371,07500,07626,07754,07883,08010,08108]'
++ echo 'Ignore errors below this line related to copper fuse unmount or cleanup if any. '
+Ignore errors below this line related to copper fuse unmount or cleanup if any. 
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+frontier00865: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00865: exited with exit code 1
+frontier06348: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06348: exited with exit code 1
+frontier06221: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06221: exited with exit code 1
+frontier00668: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00668: exited with exit code 1
+frontier00915: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00915: exited with exit code 1
+frontier06104: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06104: exited with exit code 1
+frontier03642: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier03642: exited with exit code 1
+frontier00534: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00534: exited with exit code 1
+frontier03812: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier03812: exited with exit code 1
+frontier01035: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier03380: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier01035: exited with exit code 1
+clush: frontier03380: exited with exit code 1
+frontier06610: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06610: exited with exit code 1
+frontier03495: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier03495: exited with exit code 1
+frontier06480: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06480: exited with exit code 1
+frontier00117: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier03961: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00117: exited with exit code 1
+clush: frontier03961: exited with exit code 1
+frontier00265: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00265: exited with exit code 1
+frontier04190: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04190: exited with exit code 1
+frontier04977: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04977: exited with exit code 1
+frontier01678: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier01678: exited with exit code 1
+frontier04693: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04693: exited with exit code 1
+frontier06987: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06987: exited with exit code 1
+frontier04820: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier01178: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier06736: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04820: exited with exit code 1
+clush: frontier01178: exited with exit code 1
+clush: frontier06736: exited with exit code 1
+frontier00158: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier01557: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00158: exited with exit code 1
+clush: frontier01557: exited with exit code 1
+frontier07371: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier07371: exited with exit code 1
+frontier04066: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04066: exited with exit code 1
+frontier04443: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04443: exited with exit code 1
+frontier04558: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier07754: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04558: exited with exit code 1
+clush: frontier07754: exited with exit code 1
+frontier01310: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier01815: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier01310: exited with exit code 1
+clush: frontier01815: exited with exit code 1
+frontier02471: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02471: exited with exit code 1
+frontier07626: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier07626: exited with exit code 1
+frontier04315: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier04315: exited with exit code 1
+frontier07883: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier07883: exited with exit code 1
+frontier06862: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier06862: exited with exit code 1
+frontier05207: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05207: exited with exit code 1
+frontier05073: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05073: exited with exit code 1
+frontier05973: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05973: exited with exit code 1
+frontier02342: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02342: exited with exit code 1
+frontier00452: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier02216: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier07500: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier01955: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier00452: exited with exit code 1
+frontier07117: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02216: exited with exit code 1
+clush: frontier07500: exited with exit code 1
+clush: frontier07117: exited with exit code 1
+clush: frontier01955: exited with exit code 1
+frontier05328: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05328: exited with exit code 1
+frontier08010: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier08010: exited with exit code 1
+frontier08108: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier08108: exited with exit code 1
+frontier07245: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier07245: exited with exit code 1
+frontier01473: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier03268: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier01473: exited with exit code 1
+clush: frontier03268: exited with exit code 1
+frontier02593: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02593: exited with exit code 1
+frontier02732: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier05838: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02732: exited with exit code 1
+clush: frontier05838: exited with exit code 1
+frontier05583: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+frontier02086: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05583: exited with exit code 1
+clush: frontier02086: exited with exit code 1
+frontier02994: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02994: exited with exit code 1
+frontier05454: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05454: exited with exit code 1
+frontier03124: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier03124: exited with exit code 1
+frontier02858: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier02858: exited with exit code 1
+frontier05717: fusermount3: bad mount point /tmp/khana/copper: No such file or directory
+clush: frontier05717: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'mkdir -p /tmp/khana/copper'
++ echo 'Errors below this line are critical - report if any. '
+Errors below this line are critical - report if any. 
++ options=' -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760  -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper'
++ sleep 20s
++ srun -N 64 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=threads --network=single_node_vni,job_vni /sw/frontier/ums/ums046/copper/build/cu_fuse -f -tpath / -vpath /tmp/khana/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt -max_cacheable_byte_size 10485760 -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/khana/copper
+2026-03-09 10-42-20.315 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.315 [Info] (cu_hello_main) hostname found to be: frontier02086
+2026-03-09 10-42-20.315 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.315 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.315 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.315 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.315 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.315 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.315 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.315 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.315 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.315 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.315 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.315 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.316 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02086-456335-output.log
+2026-03-09 10-42-20.318 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.318 [Info] (cu_hello_main) hostname found to be: frontier00117
+2026-03-09 10-42-20.318 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.318 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.318 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.318 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.318 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.318 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.318 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.318 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.318 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.318 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.318 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.318 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.318 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00117-1546226-output.log
+2026-03-09 10-42-20.319 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) hostname found to be: frontier00265
+2026-03-09 10-42-20.319 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.319 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.319 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.319 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.319 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.319 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.319 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00265-1521311-output.log
+2026-03-09 10-42-20.319 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) hostname found to be: frontier02593
+2026-03-09 10-42-20.319 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.319 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.319 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.319 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.319 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.319 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.319 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.319 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.319 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02593-815189-output.log
+2026-03-09 10-42-20.320 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.320 [Info] (cu_hello_main) hostname found to be: frontier00865
+2026-03-09 10-42-20.320 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.320 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.320 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.320 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.320 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.320 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.320 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.320 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.320 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.320 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.320 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.320 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.320 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00865-857963-output.log
+2026-03-09 10-42-20.322 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.322 [Info] (cu_hello_main) hostname found to be: frontier04066
+2026-03-09 10-42-20.322 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.322 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.322 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.322 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.322 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.322 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.322 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.322 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.322 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.322 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.322 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.322 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.322 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04066-1462812-output.log
+2026-03-09 10-42-20.323 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) hostname found to be: frontier05717
+2026-03-09 10-42-20.323 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.323 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.323 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.323 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.323 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.323 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.323 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05717-1573832-output.log
+2026-03-09 10-42-20.323 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) hostname found to be: frontier00915
+2026-03-09 10-42-20.323 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.323 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.323 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.323 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.323 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.323 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.323 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.323 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00915-1224209-output.log
+2026-03-09 10-42-20.323 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.323 [Info] (cu_hello_main) hostname found to be: frontier05207
+2026-03-09 10-42-20.324 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.324 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.324 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.324 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.324 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.324 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.324 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05207-1018555-output.log
+2026-03-09 10-42-20.323 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) hostname found to be: frontier04315
+2026-03-09 10-42-20.324 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.324 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.324 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.324 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.324 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.324 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.324 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.324 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.324 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04315-842331-output.log
+2026-03-09 10-42-20.325 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) hostname found to be: frontier05328
+2026-03-09 10-42-20.325 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.325 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.325 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.325 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.325 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.325 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.325 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05328-1550080-output.log
+2026-03-09 10-42-20.325 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) hostname found to be: frontier02342
+2026-03-09 10-42-20.325 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.325 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.325 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.325 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.325 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.325 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.325 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.325 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02342-2148416-output.log
+2026-03-09 10-42-20.325 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.325 [Info] (cu_hello_main) hostname found to be: frontier02471
+2026-03-09 10-42-20.326 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.326 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.326 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.326 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.326 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.326 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.326 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02471-3065788-output.log
+2026-03-09 10-42-20.326 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) hostname found to be: frontier07626
+2026-03-09 10-42-20.326 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.326 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.326 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.326 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.326 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.326 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.326 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.326 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) hostname found to be: frontier06987
+2026-03-09 10-42-20.326 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.326 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07626-697288-output.log
+2026-03-09 10-42-20.326 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) hostname found to be: frontier04558
+2026-03-09 10-42-20.326 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.326 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.326 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.326 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.326 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.326 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.326 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.326 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.326 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.326 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.326 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.326 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.326 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.327 [Info] (cu_hello_main) hostname found to be: frontier03961
+2026-03-09 10-42-20.327 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06987-1136060-output.log
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.326 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04558-1786821-output.log
+2026-03-09 10-42-20.327 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.327 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.327 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.327 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.327 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.327 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.327 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.327 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.327 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.327 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.327 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.327 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03961-1411102-output.log
+2026-03-09 10-42-20.328 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.328 [Info] (cu_hello_main) hostname found to be: frontier04190
+2026-03-09 10-42-20.328 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.328 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.328 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.328 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.328 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.328 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.328 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.328 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.328 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.328 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.328 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.328 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.328 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04190-1335889-output.log
+2026-03-09 10-42-20.328 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.328 [Info] (cu_hello_main) hostname found to be: frontier04693
+2026-03-09 10-42-20.329 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.329 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.329 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.329 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.329 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.329 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.329 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04693-1422766-output.log
+2026-03-09 10-42-20.329 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) hostname found to be: frontier03642
+2026-03-09 10-42-20.329 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.329 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.329 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.329 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.329 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.329 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.329 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.329 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.329 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03642-1220954-output.log
+2026-03-09 10-42-20.331 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) hostname found to be: frontier01678
+2026-03-09 10-42-20.331 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.331 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.331 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.331 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.331 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.331 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.331 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01678-1512029-output.log
+2026-03-09 10-42-20.331 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) hostname found to be: frontier01473
+2026-03-09 10-42-20.331 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.331 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.331 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.331 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.331 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.331 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.331 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) hostname found to be: frontier06348
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01473-2148745-output.log
+2026-03-09 10-42-20.331 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.331 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.331 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.331 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.331 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.331 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.331 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.331 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.331 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06348-544287-output.log
+2026-03-09 10-42-20.332 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) hostname found to be: frontier07245
+2026-03-09 10-42-20.332 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.332 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.332 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.332 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.332 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.332 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.332 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07245-764747-output.log
+2026-03-09 10-42-20.332 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) hostname found to be: frontier01955
+2026-03-09 10-42-20.332 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.332 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.332 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.332 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.332 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.332 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.332 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.332 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.332 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01955-1676459-output.log
+2026-03-09 10-42-20.333 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) hostname found to be: frontier07117
+2026-03-09 10-42-20.333 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.333 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.333 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.333 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.333 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.333 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.333 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.333 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) hostname found to be: frontier03268
+2026-03-09 10-42-20.333 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.333 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.333 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.333 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.333 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.333 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.333 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.333 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07117-1345066-output.log
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.333 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03268-197960-output.log
+2026-03-09 10-42-20.333 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) hostname found to be: frontier00534
+2026-03-09 10-42-20.334 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.334 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.334 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.334 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.334 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.334 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.334 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00534-1705875-output.log
+2026-03-09 10-42-20.334 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) hostname found to be: frontier07883
+2026-03-09 10-42-20.334 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.334 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.334 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.334 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.334 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.334 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.334 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07883-993029-output.log
+2026-03-09 10-42-20.334 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) hostname found to be: frontier03812
+2026-03-09 10-42-20.334 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.334 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.334 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.334 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.334 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.334 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.334 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.334 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.334 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03812-1610077-output.log
+2026-03-09 10-42-20.334 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) hostname found to be: frontier08010
+2026-03-09 10-42-20.335 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.335 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.335 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.335 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.335 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.335 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.335 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier08010-1393449-output.log
+2026-03-09 10-42-20.335 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) hostname found to be: frontier01178
+2026-03-09 10-42-20.335 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.335 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.335 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.335 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.335 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.335 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.335 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) hostname found to be: frontier04443
+2026-03-09 10-42-20.335 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.335 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01178-1926460-output.log
+2026-03-09 10-42-20.335 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.335 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.335 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.335 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.335 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04443-379185-output.log
+2026-03-09 10-42-20.335 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) hostname found to be: frontier07500
+2026-03-09 10-42-20.335 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.335 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.335 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.335 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.335 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.335 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.335 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.335 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.335 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07500-196381-output.log
+2026-03-09 10-42-20.336 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) hostname found to be: frontier06736
+2026-03-09 10-42-20.336 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.336 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.336 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.336 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.336 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.336 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.336 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06736-196713-output.log
+2026-03-09 10-42-20.336 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) hostname found to be: frontier03124
+2026-03-09 10-42-20.336 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.336 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.336 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.336 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.336 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.336 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.336 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.336 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.336 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03124-324210-output.log
+2026-03-09 10-42-20.338 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) hostname found to be: frontier06862
+2026-03-09 10-42-20.338 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.338 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.338 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.338 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.338 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.338 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.338 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06862-557821-output.log
+2026-03-09 10-42-20.338 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) hostname found to be: frontier01310
+2026-03-09 10-42-20.338 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.338 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.338 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.338 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.338 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.338 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.338 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01310-843868-output.log
+2026-03-09 10-42-20.338 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.338 [Info] (cu_hello_main) hostname found to be: frontier01815
+2026-03-09 10-42-20.338 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.338 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.338 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.338 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.338 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.338 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.338 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.338 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) hostname found to be: frontier05838
+2026-03-09 10-42-20.339 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.339 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01815-1522160-output.log
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.339 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.339 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.339 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05838-571065-output.log
+2026-03-09 10-42-20.339 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) hostname found to be: frontier04977
+2026-03-09 10-42-20.339 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.339 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.339 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) hostname found to be: frontier01557
+2026-03-09 10-42-20.339 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.339 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.339 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.339 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.339 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.339 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.339 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04977-886192-output.log
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01557-1243650-output.log
+2026-03-09 10-42-20.339 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) hostname found to be: frontier00158
+2026-03-09 10-42-20.339 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.339 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.339 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.339 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.339 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) hostname found to be: frontier03495
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00158-1321641-output.log
+2026-03-09 10-42-20.339 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.339 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.339 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.339 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.339 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.339 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.339 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.339 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.339 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) hostname found to be: frontier02858
+2026-03-09 10-42-20.340 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.340 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.340 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03495-3015872-output.log
+2026-03-09 10-42-20.340 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.340 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.340 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.340 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02858-1240934-output.log
+2026-03-09 10-42-20.340 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) hostname found to be: frontier06221
+2026-03-09 10-42-20.340 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.340 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.340 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.340 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.340 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.340 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.340 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06221-1446218-output.log
+2026-03-09 10-42-20.340 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) hostname found to be: frontier08108
+2026-03-09 10-42-20.340 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.340 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.340 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.340 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.340 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.340 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.340 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.340 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.340 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier08108-1815208-output.log
+2026-03-09 10-42-20.341 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) hostname found to be: frontier07371
+2026-03-09 10-42-20.341 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.341 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.341 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.341 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.341 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.341 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.341 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07371-1331037-output.log
+2026-03-09 10-42-20.341 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) hostname found to be: frontier02994
+2026-03-09 10-42-20.341 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.341 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.341 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.341 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.341 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.341 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.341 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) hostname found to be: frontier07754
+2026-03-09 10-42-20.341 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.341 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.341 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.341 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.341 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02994-1333219-output.log
+2026-03-09 10-42-20.341 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.341 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.341 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.341 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier07754-329273-output.log
+2026-03-09 10-42-20.342 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.342 [Info] (cu_hello_main) hostname found to be: frontier05073
+2026-03-09 10-42-20.342 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.342 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.342 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.342 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.342 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.342 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.342 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.342 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.342 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.342 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.342 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.342 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.342 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier01035
+2026-03-09 10-42-20.342 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05073-594389-output.log
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.343 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.343 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.343 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.343 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier01035-936262-output.log
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier03380
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier06610
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.343 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.343 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.343 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.343 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.343 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.343 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.343 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier03380-1248108-output.log
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06610-1395211-output.log
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier06480
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.343 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.343 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.343 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.343 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06480-1832756-output.log
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier05973
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.343 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.343 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.343 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.343 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.343 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05973-1043618-output.log
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.343 [Info] (cu_hello_main) hostname found to be: frontier05454
+2026-03-09 10-42-20.343 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.343 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.343 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.344 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.344 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.344 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.344 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.344 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.343 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) hostname found to be: frontier02216
+2026-03-09 10-42-20.344 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.344 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.344 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.344 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.344 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.344 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.344 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05454-598371-output.log
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02216-2283092-output.log
+2026-03-09 10-42-20.344 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) hostname found to be: frontier05583
+2026-03-09 10-42-20.344 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.344 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.344 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.344 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.344 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.344 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.344 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.344 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.344 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier05583-1241193-output.log
+2026-03-09 10-42-20.344 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.345 [Info] (cu_hello_main) hostname found to be: frontier02732
+2026-03-09 10-42-20.345 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.345 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.345 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.345 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.345 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.345 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.345 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.345 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.345 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.345 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.345 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.345 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.345 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier02732-1431558-output.log
+2026-03-09 10-42-20.346 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.346 [Info] (cu_hello_main) hostname found to be: frontier04820
+2026-03-09 10-42-20.346 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.346 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.346 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.346 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.346 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.346 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.346 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.346 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.346 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.346 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.346 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.346 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.346 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier04820-902776-output.log
+2026-03-09 10-42-20.348 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.348 [Info] (cu_hello_main) hostname found to be: frontier00668
+2026-03-09 10-42-20.348 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.348 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.348 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.348 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.348 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.348 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.348 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.348 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.348 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.348 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.348 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.348 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.348 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00668-1729601-output.log
+2026-03-09 10-42-20.350 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.350 [Info] (cu_hello_main) hostname found to be: frontier00452
+2026-03-09 10-42-20.350 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.350 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.350 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.350 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.350 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.350 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.350 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.350 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.350 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.350 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.350 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.350 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.350 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier00452-2041284-output.log
+2026-03-09 10-42-20.354 [Debug] (cu_hello_main)  
+2026-03-09 10-42-20.354 [Info] (cu_hello_main) hostname found to be: frontier06104
+2026-03-09 10-42-20.354 [Debug] (process_args) -tpath was found: /
+2026-03-09 10-42-20.354 [Debug] (process_args) -vpath was found: /tmp/khana/copper
+2026-03-09 10-42-20.354 [Debug] (process_args) -log_level was found: 6
+2026-03-09 10-42-20.354 [Debug] (process_args) -log_type was found: file
+2026-03-09 10-42-20.354 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
+2026-03-09 10-42-20.354 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-09 10-42-20.354 [Debug] (process_args) -trees was found: 1
+2026-03-09 10-42-20.354 [Debug] (process_args) -nf was found: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
+2026-03-09 10-42-20.354 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-09 10-42-20.354 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.354 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/copper_address_book.txt
+2026-03-09 10-42-20.354 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-09 10-42-20.354 [Info] (cu_hello_main) output filename path: /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/frontier06104-1358322-output.log
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
++ set -x
++ ldd /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libamdhip64.so.6 => /opt/rocm-6.4.2/lib/libamdhip64.so.6 (0x00007fffec1ed000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fffec0ed000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffec09e000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00007fffec085000)
+	libmpi_amd.so.12 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_amd.so.12 (0x00007fffeaf35000)
+	libmpi_gtl_hsa.so.0 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_gtl_hsa.so.0 (0x00007fffeae8a000)
+	libxpmem.so.0 => /usr/lib64/libxpmem.so.0 (0x00007fffeae87000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007fffeac31000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fffeac04000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fffea9ef000)
+	librocprofiler-register.so.0 => /opt/rocm-6.4.2/lib/librocprofiler-register.so.0 (0x00007fffea96e000)
+	libamd_comgr.so.3 => /opt/rocm-6.4.2/lib/libamd_comgr.so.3 (0x00007fffe11c1000)
+	libhsa-runtime64.so.1 => /opt/rocm-6.4.2/lib/libhsa-runtime64.so.1 (0x00007fffe0e77000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00007fffe0c00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libfabric.so.1 => /opt/cray/libfabric/1.22.0/lib64/libfabric.so.1 (0x00007fffe0ac9000)
+	libatomic.so.1 => /usr/lib64/libatomic.so.1 (0x00007fffe0e6b000)
+	libpmi.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi.so.0 (0x00007fffe0e47000)
+	libpmi2.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi2.so.0 (0x00007fffe0e23000)
+	libzstd.so.1 => /usr/lib64/libzstd.so.1 (0x00007fffe0a0a000)
+	libelf.so.1 => /usr/lib64/libelf.so.1 (0x00007fffe0600000)
+	libdrm.so.2 => /opt/amdgpu/lib64/libdrm.so.2 (0x00007fffe09f3000)
+	libdrm_amdgpu.so.1 => /opt/amdgpu/lib64/libdrm_amdgpu.so.1 (0x00007fffe0e13000)
+	libcxi.so.1 => /usr/lib64/libcxi.so.1 (0x00007fffe09d2000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fffe0e0e000)
+	libpals.so.0 => /opt/cray/pals/1.6/lib/libpals.so.0 (0x00007fffe09ca000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00007fffe09a7000)
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 512, min: 697 ms, max: 979 ms, avg: 884 ms
+0.01user 0.05system 0:02.59elapsed 2%CPU (0avgtext+0avgdata 18432maxresident)k
+38inputs+0outputs (0major+4020minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+srun: Step created for StepId=4188439.2
+# OSU MPI Init Test v7.5
+nprocs: 512, min: 746 ms, max: 784 ms, avg: 762 ms
+0.01user 0.04system 0:01.22elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+38inputs+0outputs (0major+4019minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+srun: Step created for StepId=4188439.3
+# OSU MPI Init Test v7.5
+nprocs: 512, min: 741 ms, max: 810 ms, avg: 776 ms
+0.01user 0.04system 0:01.29elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+4020minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+srun: Step created for StepId=4188439.4
+# OSU MPI Init Test v7.5
+nprocs: 512, min: 747 ms, max: 801 ms, avg: 771 ms
+0.01user 0.04system 0:01.29elapsed 4%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+4020minor)pagefaults 0swaps
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --cpus-per-task=1 --threads-per-core=1 --network=single_node_vni,job_vni /tmp/khana/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+srun: Step created for StepId=4188439.5
+# OSU MPI Init Test v7.5
+nprocs: 512, min: 744 ms, max: 804 ms, avg: 773 ms
+0.01user 0.05system 0:01.27elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+4020minor)pagefaults 0swaps
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ log_dir=/ccs/home/khana/copper-logs/4188439
++ getopts d: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs
++ getopts d: opt
++ SLURM_NODEFILE=/lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt
++ echo 'Stopping Copper Gracefully On All Nodes : Start'
+Stopping Copper Gracefully On All Nodes : Start
++ CU_FUSE_MNT_VIEWDIR=/tmp/khana/copper
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'pkill -9 cu_fuse'
+srun: error: frontier08108: task 63: Killed
+srun: Terminating StepId=4188439.0
+slurmstepd: error: *** STEP 4188439.0 ON frontier00117 CANCELLED AT 2026-03-09T10:42:49 ***
+srun: error: frontier08010: task 62: Killed
+srun: error: frontier02732: task 21: Killed
+srun: error: frontier02216: task 17: Killed
+srun: error: frontier02471: task 19: Killed
+srun: error: frontier07754: task 60: Killed
+srun: error: frontier05454: task 42: Killed
+srun: error: frontier05838: task 45: Killed
+srun: error: frontier05207: task 40: Killed
+srun: error: frontier00534: task 4: Killed
+srun: error: frontier07883: task 61: Killed
+srun: error: frontier03642: task 28: Killed
+srun: error: frontier00158: task 1: Killed
+srun: error: frontier02858: task 22: Killed
+srun: error: frontier05583: task 43: Killed
+srun: error: frontier03380: task 26: Killed
+srun: error: frontier00668: task 5: Killed
+srun: error: frontier02342: task 18: Killed
+srun: error: frontier02994: task 23: Killed
+srun: error: frontier06480: task 50: Killed
+srun: error: frontier05073: task 39: Killed
+srun: error: frontier05717: task 44: Killed
+srun: error: frontier02593: task 20: Killed
+srun: error: frontier00452: task 3: Killed
+srun: error: frontier00265: task 2: Killed
+srun: error: frontier05973: task 46: Killed
+srun: error: frontier03124: task 24: Killed
+srun: error: frontier06104: task 47: Killed
+srun: error: frontier05328: task 41: Killed
+srun: error: frontier06348: task 49: Killed
+srun: error: frontier07371: task 57: Killed
+srun: error: frontier00865: task 6: Killed
+srun: error: frontier00117: task 0: Killed
+srun: error: frontier04443: task 34: Killed
+srun: error: frontier01557: task 12: Killed
+srun: error: frontier03268: task 25: Killed
+srun: error: frontier07245: task 56: Killed
+srun: error: frontier03812: task 29: Exited with exit code 7
+srun: error: frontier01178: task 9: Exited with exit code 7
+srun: error: frontier06221: task 48: Exited with exit code 7
+srun: error: frontier06736: task 52: Killed
+srun: error: frontier04066: task 31: Exited with exit code 7
+srun: error: frontier04820: task 37: Exited with exit code 7
+srun: error: frontier06987: task 54: Exited with exit code 7
+srun: error: frontier07500: task 58: Exited with exit code 7
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'fusermount3 -u /tmp/khana/copper'
+srun: error: frontier04190: task 32: Exited with exit code 7
+srun: error: frontier02086: task 16: Exited with exit code 7
+srun: error: frontier01815: task 14: Exited with exit code 7
+srun: error: frontier06610: task 51: Exited with exit code 7
+srun: error: frontier03961: task 30: Exited with exit code 7
+srun: error: frontier04693: task 36: Exited with exit code 7
+srun: error: frontier00915: task 7: Exited with exit code 7
+srun: error: frontier04977: task 38: Exited with exit code 7
+srun: error: frontier07626: task 59: Exited with exit code 7
+srun: error: frontier01473: task 11: Exited with exit code 7
+srun: error: frontier07117: task 55: Exited with exit code 7
+srun: error: frontier04558: task 35: Killed
+srun: error: frontier01035: task 8: Killed
+srun: error: frontier01955: task 15: Exited with exit code 7
+srun: error: frontier01678: task 13: Exited with exit code 7
+srun: error: frontier03495: task 27: Killed
+srun: error: frontier04315: task 33: Killed
+srun: error: frontier06862: task 53: Killed
+srun: error: frontier01310: task 10: Killed
+srun: Force Terminated StepId=4188439.0
+frontier04066: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04066: exited with exit code 1
+frontier04558: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04558: exited with exit code 1
+frontier06987: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier06987: exited with exit code 1
+frontier01557: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01557: exited with exit code 1
+frontier01310: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+frontier06736: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01310: exited with exit code 1
+clush: frontier06736: exited with exit code 1
+frontier01815: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+frontier01678: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01815: exited with exit code 1
+clush: frontier01678: exited with exit code 1
+frontier03961: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier03961: exited with exit code 1
+frontier01178: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01178: exited with exit code 1
+frontier04190: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+frontier04315: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04190: exited with exit code 1
+frontier01473: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04315: exited with exit code 1
+clush: frontier01473: exited with exit code 1
+frontier06862: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier06862: exited with exit code 1
+frontier04820: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04820: exited with exit code 1
+frontier07117: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier07117: exited with exit code 1
+frontier01955: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01955: exited with exit code 1
+frontier07245: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier07245: exited with exit code 1
+frontier07500: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier07500: exited with exit code 1
+frontier03812: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier03812: exited with exit code 1
+frontier02086: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier02086: exited with exit code 1
+frontier06221: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier06221: exited with exit code 1
+frontier04977: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04977: exited with exit code 1
+frontier00915: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier00915: exited with exit code 1
+frontier03495: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier03495: exited with exit code 1
+frontier03268: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier03268: exited with exit code 1
+frontier07626: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier07626: exited with exit code 1
+frontier06610: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier06610: exited with exit code 1
+frontier04693: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier04693: exited with exit code 1
+frontier01035: fusermount3: entry for /tmp/khana/copper not found in /etc/mtab
+clush: frontier01035: exited with exit code 1
++ clush --hostfile /lustre/orion/stf008/proj-shared/hvac/copper-cug/copper_logs/node_file.txt 'rm -rf /tmp/khana/copper'
++ echo 'Stopping Copper Gracefully On All Nodes : End'
+Stopping Copper Gracefully On All Nodes : End
