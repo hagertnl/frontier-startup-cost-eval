@@ -10,10 +10,10 @@ echo "benchmark,tool,nnodes,jobid,iteration,seconds" > $out_name
 
 for tool in ../data/*; do
     for benchmark in $tool/*; do
-        for run_output in $benchmark/slurm-*.out; do
-            if [[ "$(basename $run_output)" =~ ^slurm-[0-9]+\.out$ ]]; then
+        for run_output in $benchmark/*.out; do
+            if [[ "$(basename $run_output)" =~ ^.*-[0-9]+\.out$ ]]; then
                 filename=$(basename $run_output)
-                jobid=$(echo $filename | cut -d'-' -f2 | cut -d'.' -f1)
+                jobid=$(echo $filename | sed 's/^.*-\([0-9]\+\)\.out/\1/')
                 benchmark=$(basename $(dirname $run_output))
                 tool=$(basename $(dirname $(dirname $run_output)))
                 nnodes=$(sacct -j $jobid -Xn -o nnodes | head -n1 | awk '{print $1}')
