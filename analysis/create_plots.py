@@ -55,10 +55,12 @@ for cache in ['cold', 'warm']:
     for ax in axes:
         ax.set_xlabel("# Nodes", fontsize=14)
         ax.tick_params(axis='both', labelsize=12)
-        ax.set_yscale('log')
+        #ax.set_yscale('log')
         ax.set_xscale('log')
-        ax.set_ylim(0.1, 1500)
+        ax.set_ylim(0.0, 120)
         ax.set_xlim(0.5, 1500)
+
+    axes[benchmark_to_ax_index["python-pytorch"]].set_ylim(0.0, 600)
 
     df = df_grouped[df_grouped['cache'] == cache]
     # For each unique benchmark/tool, get & plot data
