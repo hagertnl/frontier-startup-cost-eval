@@ -26,7 +26,7 @@ df_grouped = df_grouped.reset_index()
 fig, axes = plt.subplots(1, 2, figsize=(10, 5))
 
 # Custom legend
-legend_colors = ["#0072B2", "#E69F00", "#56B4E9", "#009E73"]
+legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73"]
 legend_labels = ['osu', 'pynamic', 'python-mpi4py', 'python-pytorch']
 
 legend_labels_to_index = {}

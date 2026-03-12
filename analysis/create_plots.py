@@ -29,7 +29,7 @@ df_grouped = df_grouped.reset_index()
 fig, axes = plt.subplots(1, 4, figsize=(20, 5))
 
 # Custom legend
-legend_colors = ["#0072B2", "#E69F00", "#56B4E9", "#009E73", "#D55E00"]
+legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442"]
 legend_labels = ['nfs-baseline', 'lustre-baseline', 'sbcast', 'spindle', 'copper']
 
 legend_labels_to_index = {}
