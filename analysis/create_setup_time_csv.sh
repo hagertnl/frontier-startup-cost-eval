@@ -41,6 +41,7 @@ for tool in ../data/sbcast; do
                     s=$(python3 -c "s='${t}'; print(int(s.split(':')[0])*60+float(s.split(':')[1]))")
                     setup_time=$(echo "$setup_time + $s" | bc -l)
                 done
+                setup_time=$(echo "$setup_time - $benchmark_time" | bc -l)
                 echo "$benchmark,$tool,$nnodes,$jobid,$setup_time" >> $out_name
             fi
         done

@@ -52,7 +52,7 @@ for ax in axes:
     ax.set_xlabel("# Nodes", fontsize=14)
     ax.tick_params(axis='both', labelsize=12)
     ax.set_xscale('log')
-    ax.set_ylim(0.0, 300)
+    ax.set_ylim(0.0, 180)
     ax.set_xlim(0.5, 1500)
 
 # Example of how to set an axis-specific limit if needed later

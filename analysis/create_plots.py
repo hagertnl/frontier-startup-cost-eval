@@ -22,7 +22,7 @@ df = pd.read_csv('benchmark_times.csv')
 df['cache'] = df['iteration'].apply(lambda x: 'cold' if x == 1 else 'warm')
 
 # Now, summarize cold/warm timings with avg & stdev
-df_grouped = df.groupby(['benchmark', 'tool', 'nnodes', 'cache'])['seconds'].agg(['mean', 'std'])
+df_grouped = df.groupby(['benchmark', 'tool', 'nnodes', 'cache'])['seconds'].agg(['mean', 'std', 'min', 'max'])
 print(df_grouped)
 df_grouped = df_grouped.reset_index()
 
@@ -69,11 +69,18 @@ for cache in ['cold', 'warm']:
         nnodes = single_series_df['nnodes'].to_numpy()
         time_avg = single_series_df['mean'].to_numpy()
         time_stdev = single_series_df['std'].to_numpy()
+        time_min = single_series_df['min'].to_numpy()
+        time_max = single_series_df['max'].to_numpy()
         sorted_indices = nnodes.argsort()
         nnodes_sorted = nnodes[sorted_indices]
         time_avg_sorted = time_avg[sorted_indices]
         time_stdev_sorted = time_stdev[sorted_indices]
-        axes[benchmark_to_ax_index[entry['benchmark']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=time_stdev_sorted, fmt='-o', capsize=5, color=legend_colors[legend_labels_to_index[entry['tool']]])
+        time_min_sorted = time_min[sorted_indices]
+        time_max_sorted = time_max[sorted_indices]
+        #err_bars = time_stdev[sorted_indices]
+        # slice min/max time into a single array
+        err_bars = [time_avg_sorted - time_min_sorted, time_max_sorted - time_avg_sorted]
+        axes[benchmark_to_ax_index[entry['benchmark']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=8, capthick=3, elinewidth=0.5, color=legend_colors[legend_labels_to_index[entry['tool']]])
         axes[benchmark_to_ax_index[entry['benchmark']]].set_title(entry['benchmark'], fontsize=16)
 
     plt.savefig(f'scaling_{cache}_start.png', dpi=100)
