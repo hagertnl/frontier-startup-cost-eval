@@ -1,3 +1,2 @@
-benchmark_times.csv
-setup_times.csv
+*.csv
 *.png

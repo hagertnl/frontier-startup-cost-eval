@@ -1,13 +1,15 @@
 #!/bin/bash
 
 # This script searches all directories for result files in the naming scheme `slurm-[0-9]+.out`,
-# then collates those into a CSV named `setup_times.csv` with rows:
+# then collates those into a CSV named `sbcast_times.csv` with rows:
 # benchmark,tool,nnodes,jobid,seconds
 
 # Accounting approach: find all /usr/bin/time outputs and sum them together,
 # then subtract all from a benchmarking srun
 
-out_name="setup_times.csv"
+# This is only for sbcast because Copper's /usr/bin/time calls are not representative of the overhead
+
+out_name="sbcast_times.csv"
 
 echo "benchmark,tool,nnodes,jobid,seconds" > $out_name
 

@@ -52,7 +52,7 @@ for ax in axes:
     ax.set_xlabel("# Nodes", fontsize=14)
     ax.tick_params(axis='both', labelsize=12)
     ax.set_xscale('log')
-    ax.set_ylim(0.0, 180)
+    ax.set_ylim(0.0, 300)
     ax.set_xlim(0.5, 1500)
 
 # Example of how to set an axis-specific limit if needed later
@@ -74,8 +74,8 @@ for index, entry in df_grouped[['benchmark', 'tool']].drop_duplicates().iterrows
     #err_bars = time_stdev[sorted_indices]
     # slice min/max time into a single array
     err_bars = [time_avg_sorted - time_min_sorted, time_max_sorted - time_avg_sorted]
-    axes[tool_to_ax_index[entry['tool']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=5, color=legend_colors[legend_labels_to_index[entry['benchmark']]])
-    axes[tool_to_ax_index[entry['tool']]].set_title(f"{entry['tool']} setup time", fontsize=16)
+    axes[tool_to_ax_index[entry['tool']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=8, capthick=3, elinewidth=0.5, color=legend_colors[legend_labels_to_index[entry['benchmark']]])
+    axes[tool_to_ax_index[entry['tool']]].set_title(f"{entry['tool']} time to first srun", fontsize=16)
 
 plt.savefig(f'setup_times.png', dpi=200)
 
