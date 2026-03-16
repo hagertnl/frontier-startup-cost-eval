@@ -23,7 +23,7 @@ df_grouped = df.groupby(['benchmark', 'tool', 'nnodes'])['seconds'].agg(['mean',
 print(df_grouped)
 df_grouped = df_grouped.reset_index()
 
-fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+fig, ax = plt.subplots(1, 1, figsize=(5, 5))
 
 # Custom legend
 legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73"]
@@ -35,28 +35,17 @@ for i in range(0, len(legend_labels)):
 
 legend_handles = [Patch(color=color, label=label) for color, label in zip(legend_colors, legend_labels)]
 legend_labels = [h.get_label() for h in legend_handles]
-fig.legend(legend_handles, legend_labels, loc='upper center', bbox_to_anchor=(0.5, 0.1), ncol=4, frameon=False, fontsize=14)
-fig.tight_layout(rect=[0.03, 0.15, 1, 0.95])
-
-# Create a mapping of axis index to benchmark name
-tool_to_ax_index = {}
-cur_index = 0
-# Assign tool to axes
-for b in df_grouped['tool'].unique():
-    tool_to_ax_index[b] = cur_index
-    cur_index += 1
+fig.legend(legend_handles, legend_labels, loc='upper center', bbox_to_anchor=(0.5, 0.15), ncol=2, frameon=False, fontsize=14)
+fig.tight_layout(rect=[0.05, 0.18, 1, 0.95])
 
 # Set labels, scales
-axes[0].set_ylabel("Time (s)", fontsize=14)
-for ax in axes:
-    ax.set_xlabel("# Nodes", fontsize=14)
-    ax.tick_params(axis='both', labelsize=12)
-    ax.set_xscale('log')
-    ax.set_ylim(0.0, 300)
-    ax.set_xlim(0.5, 1500)
-
-# Example of how to set an axis-specific limit if needed later
-#axes[benchmark_to_ax_index["python-pytorch"]].set_ylim(0.0, 600)
+ax.set_ylabel("Time (s)", fontsize=14)
+ax.set_xlabel("# Nodes", fontsize=14)
+ax.tick_params(axis='both', labelsize=12)
+ax.set_xscale('log')
+ax.set_ylim(0.0, 300)
+ax.set_xlim(0.5, 1500)
+ax.set_title(f"sbcast time to first srun", fontsize=16)
 
 # For each unique benchmark/tool, get & plot data
 for index, entry in df_grouped[['benchmark', 'tool']].drop_duplicates().iterrows():
@@ -74,8 +63,7 @@ for index, entry in df_grouped[['benchmark', 'tool']].drop_duplicates().iterrows
     #err_bars = time_stdev[sorted_indices]
     # slice min/max time into a single array
     err_bars = [time_avg_sorted - time_min_sorted, time_max_sorted - time_avg_sorted]
-    axes[tool_to_ax_index[entry['tool']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=8, capthick=3, elinewidth=0.5, color=legend_colors[legend_labels_to_index[entry['benchmark']]])
-    axes[tool_to_ax_index[entry['tool']]].set_title(f"{entry['tool']} time to first srun", fontsize=16)
+    ax.errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=8, capthick=3, elinewidth=0.5, color=legend_colors[legend_labels_to_index[entry['benchmark']]])
 
 plt.savefig(f'setup_times.png', dpi=200)
 
