@@ -1,0 +1,1316 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+Copper loaded: use 'launch_copper' and 'stop_copper'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper points to: /sw/frontier/ums/ums046/copper/build/launch_copper.sh
+This script should be sourced! When it is not, it prints out the resulting module set:
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) libfabric/1.22.0
+  8) DefApps                         21) craype-accel-amd-gfx90a
+  9) PrgEnv-amd/8.6.0                22) miniforge3/23.11.0-0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ CU_FUSE_MNT_VIEWDIR=/tmp/hagertnl/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ log_level=6
++ log_dir=/ccs/home/hagertnl/copper-logs/4203425
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ sleeptime=20
++ physcpubind=57-60
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ sleeptime=30
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
++ getopts l:t:d:T:M:s:b:F:n: opt
++ echo 'log_level                  : 6'
+log_level                  : 6
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 10485760'
+max_cacheable_byte_size    : 10485760
++ echo 'sleeptime                  : 30'
+sleeptime                  : 30
++ echo 'CU_FUSE_MNT_VIEWDIR        : /tmp/hagertnl/copper'
+CU_FUSE_MNT_VIEWDIR        : /tmp/hagertnl/copper
++ echo 'LOGDIR                     : /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425'
+LOGDIR                     : /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 57-60'
+physcpubind                : 57-60
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
++ SLURM_NODEFILE=/lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
++ scontrol show hostnames 'frontier[00117,00255,00376,00507,00633,00760,00872,00892,01002,01016,01134,01144,01272,01408,01522,01647,01773,01903,02037,02159,02283,02411,02541,02668,02814,02929,03061,03186,03455,03574,03696,03822,03953,04079,04213,04343,04462,04588,04722,04834,04963,05090,05504,05884,06241,06528,06648,06755,06883,07267,07417,07549,07657,07802,07905,08291,08418,08534,08690,08795,09059,09213,09304,09431]'
++ echo 'Ignore errors below this line related to copper fuse unmount or cleanup if any. '
+Ignore errors below this line related to copper fuse unmount or cleanup if any. 
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'fusermount3 -u /tmp/hagertnl/copper'
+frontier02037: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02037: exited with exit code 1
+frontier06755: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06755: exited with exit code 1
+frontier07417: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07417: exited with exit code 1
+frontier04343: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04343: exited with exit code 1
+frontier04079: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04079: exited with exit code 1
+frontier07905: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07905: exited with exit code 1
+frontier00376: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00376: exited with exit code 1
+frontier01002: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01002: exited with exit code 1
+frontier00255: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00255: exited with exit code 1
+frontier01134: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01134: exited with exit code 1
+frontier00507: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00507: exited with exit code 1
+frontier06241: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06241: exited with exit code 1
+frontier04462: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04462: exited with exit code 1
+frontier05090: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier05090: exited with exit code 1
+frontier03822: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03822: exited with exit code 1
+frontier01408: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01408: exited with exit code 1
+frontier01144: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01144: exited with exit code 1
+frontier01647: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01647: exited with exit code 1
+frontier03953: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03953: exited with exit code 1
+frontier04588: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04588: exited with exit code 1
+frontier08291: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08291: exited with exit code 1
+frontier04213: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04213: exited with exit code 1
+frontier00872: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00872: exited with exit code 1
+frontier03696: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03696: exited with exit code 1
+frontier09059: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier09059: exited with exit code 1
+frontier03574: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03574: exited with exit code 1
+frontier01016: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01016: exited with exit code 1
+frontier00117: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00117: exited with exit code 1
+frontier08795: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08795: exited with exit code 1
+frontier02411: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02411: exited with exit code 1
+frontier02668: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02668: exited with exit code 1
+frontier07802: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07802: exited with exit code 1
+frontier03455: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03455: exited with exit code 1
+frontier07657: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07657: exited with exit code 1
+frontier06648: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06648: exited with exit code 1
+frontier07549: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07549: exited with exit code 1
+frontier09304: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier09304: exited with exit code 1
+frontier08690: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08690: exited with exit code 1
+frontier04722: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04722: exited with exit code 1
+frontier02541: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02541: exited with exit code 1
+frontier09213: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier09213: exited with exit code 1
+frontier01522: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01522: exited with exit code 1
+frontier01903: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01903: exited with exit code 1
+frontier01773: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+frontier00760: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01773: exited with exit code 1
+clush: frontier00760: exited with exit code 1
+frontier08534: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08534: exited with exit code 1
+frontier04834: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04834: exited with exit code 1
+frontier02929: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02929: exited with exit code 1
+frontier01272: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier01272: exited with exit code 1
+frontier08418: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08418: exited with exit code 1
+frontier02283: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02283: exited with exit code 1
+frontier04963: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier04963: exited with exit code 1
+frontier00633: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00633: exited with exit code 1
+frontier07267: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07267: exited with exit code 1
+frontier02159: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02159: exited with exit code 1
+frontier03061: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03061: exited with exit code 1
+frontier05884: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier05884: exited with exit code 1
+frontier03186: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier03186: exited with exit code 1
+frontier02814: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier02814: exited with exit code 1
+frontier06883: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06883: exited with exit code 1
+frontier09431: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier09431: exited with exit code 1
+frontier00892: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier00892: exited with exit code 1
+frontier05504: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier05504: exited with exit code 1
+frontier06528: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06528: exited with exit code 1
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'rm -rf /tmp/hagertnl/copper'
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'mkdir -p /tmp/hagertnl/copper'
++ echo 'Errors below this line are critical - report if any. '
+Errors below this line are critical - report if any. 
++ options=' -f -tpath / -vpath /tmp/hagertnl/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt -max_cacheable_byte_size 10485760  -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/hagertnl/copper'
++ sleep 30s
++ srun -N 64 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=threads --network=single_node_vni,job_vni /sw/frontier/ums/ums046/copper/build/cu_fuse -f -tpath / -vpath /tmp/hagertnl/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt -max_cacheable_byte_size 10485760 -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/hagertnl/copper
+2026-03-12 21-40-12.640 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.640 [Info] (cu_hello_main) hostname found to be: frontier00117
+2026-03-12 21-40-12.640 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.640 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.640 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.640 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.640 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.640 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.640 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.640 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.640 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.640 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.640 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.640 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.640 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00117-781133-output.log
+2026-03-12 21-40-12.657 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) hostname found to be: frontier09431
+2026-03-12 21-40-12.657 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.657 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.657 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.657 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.657 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.657 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.657 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier09431-590419-output.log
+2026-03-12 21-40-12.657 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) hostname found to be: frontier07267
+2026-03-12 21-40-12.657 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.657 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.657 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.657 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.657 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.657 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.657 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07267-1451999-output.log
+2026-03-12 21-40-12.657 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) hostname found to be: frontier07417
+2026-03-12 21-40-12.657 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.657 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.657 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.657 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.657 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.657 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.657 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07417-1179853-output.log
+2026-03-12 21-40-12.657 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) hostname found to be: frontier04722
+2026-03-12 21-40-12.657 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.657 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.657 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.657 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.657 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.657 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.657 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.657 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.657 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04722-202378-output.log
+2026-03-12 21-40-12.658 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) hostname found to be: frontier03822
+2026-03-12 21-40-12.658 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.658 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.658 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.658 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.658 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.658 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.658 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) hostname found to be: frontier08795
+2026-03-12 21-40-12.658 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.658 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03822-194915-output.log
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.658 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.658 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.658 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.658 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.658 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) hostname found to be: frontier00255
+2026-03-12 21-40-12.658 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier08795-222740-output.log
+2026-03-12 21-40-12.658 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.658 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.658 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.658 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.658 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.658 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.658 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.658 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00255-1648532-output.log
+2026-03-12 21-40-12.658 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) hostname found to be: frontier08534
+2026-03-12 21-40-12.659 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.659 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.659 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.659 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.659 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.659 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.659 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier08534-3632222-output.log
+2026-03-12 21-40-12.659 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) hostname found to be: frontier09059
+2026-03-12 21-40-12.659 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.659 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.659 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.659 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.659 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.659 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.659 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) hostname found to be: frontier03696
+2026-03-12 21-40-12.659 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.659 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier09059-255351-output.log
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.659 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.659 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.659 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.659 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.659 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.659 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.659 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03696-195038-output.log
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier02541
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02541-1075409-output.log
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier00376
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier02814
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier01272
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01272-2493560-output.log
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00376-1227563-output.log
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02814-195735-output.log
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier03455
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) hostname found to be: frontier04079
+2026-03-12 21-40-12.660 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.660 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.660 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.660 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.660 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.660 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.660 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.660 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03455-849192-output.log
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.660 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04079-226049-output.log
+2026-03-12 21-40-12.660 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier03953
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03953-1269392-output.log
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier07905
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier09213
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07905-1645257-output.log
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier09213-1707159-output.log
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier02668
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02668-217402-output.log
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier02037
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier08690
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.661 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.661 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.661 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02037-1227306-output.log
+2026-03-12 21-40-12.661 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.661 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier08690-948151-output.log
+2026-03-12 21-40-12.661 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.661 [Info] (cu_hello_main) hostname found to be: frontier05884
+2026-03-12 21-40-12.661 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.661 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.661 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier05884-213488-output.log
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier06755
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier07802
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier06755-1294086-output.log
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07802-217141-output.log
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier00633
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier04462
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier06648
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04462-195048-output.log
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00633-637295-output.log
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier06648-215931-output.log
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier04213
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier00872
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04213-227524-output.log
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier01144
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier04963
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00872-774457-output.log
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04963-767488-output.log
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01144-1431839-output.log
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier01647
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01647-1179230-output.log
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier06883
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) hostname found to be: frontier02929
+2026-03-12 21-40-12.662 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.662 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.662 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.662 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.662 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier06528
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.662 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.662 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier01773
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier06883-790489-output.log
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.662 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02929-211363-output.log
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier06528-681958-output.log
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01773-1055803-output.log
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier07549
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07549-1276290-output.log
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier05504
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier05504-226286-output.log
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier04834
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier01522
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04834-1330572-output.log
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01522-1034481-output.log
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier06241
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) hostname found to be: frontier00760
+2026-03-12 21-40-12.663 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.663 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.663 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.663 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.663 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.663 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.663 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier06241-1202790-output.log
+2026-03-12 21-40-12.663 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00760-2065550-output.log
+2026-03-12 21-40-12.663 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) hostname found to be: frontier00892
+2026-03-12 21-40-12.664 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.664 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.664 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.664 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.664 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.664 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.664 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00892-311223-output.log
+2026-03-12 21-40-12.664 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) hostname found to be: frontier03061
+2026-03-12 21-40-12.664 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.664 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.664 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.664 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.664 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.664 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.664 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03061-260467-output.log
+2026-03-12 21-40-12.664 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) hostname found to be: frontier01903
+2026-03-12 21-40-12.664 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.664 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.664 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.664 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.664 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.664 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.664 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01903-579133-output.log
+2026-03-12 21-40-12.664 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) hostname found to be: frontier01016
+2026-03-12 21-40-12.664 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.664 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.664 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.664 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.664 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.664 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.664 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.664 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.664 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01016-1889289-output.log
+2026-03-12 21-40-12.666 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) hostname found to be: frontier03574
+2026-03-12 21-40-12.666 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.666 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.666 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) hostname found to be: frontier07657
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.666 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.666 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.666 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.666 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.666 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.666 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.666 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.666 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier07657-215688-output.log
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03574-194968-output.log
+2026-03-12 21-40-12.666 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) hostname found to be: frontier08291
+2026-03-12 21-40-12.666 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.666 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.666 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.666 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.666 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.666 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier08291-2214355-output.log
+2026-03-12 21-40-12.666 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) hostname found to be: frontier01002
+2026-03-12 21-40-12.666 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.666 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.666 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.666 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.666 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.666 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.666 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.666 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.666 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01002-1629843-output.log
+2026-03-12 21-40-12.667 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) hostname found to be: frontier09304
+2026-03-12 21-40-12.667 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.667 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.667 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.667 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.667 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.667 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.667 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier09304-1506617-output.log
+2026-03-12 21-40-12.667 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) hostname found to be: frontier03186
+2026-03-12 21-40-12.667 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.667 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.667 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.667 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.667 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.667 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.667 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.667 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier03186-1672036-output.log
+2026-03-12 21-40-12.667 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.667 [Info] (cu_hello_main) hostname found to be: frontier02411
+2026-03-12 21-40-12.668 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.668 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.668 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.668 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.668 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.668 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.668 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02411-203868-output.log
+2026-03-12 21-40-12.668 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) hostname found to be: frontier02283
+2026-03-12 21-40-12.668 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.668 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.668 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.668 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.668 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.668 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.668 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02283-1184040-output.log
+2026-03-12 21-40-12.668 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) hostname found to be: frontier01134
+2026-03-12 21-40-12.668 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.668 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.668 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.668 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.668 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.668 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.668 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.668 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.668 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01134-825784-output.log
+2026-03-12 21-40-12.669 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) hostname found to be: frontier02159
+2026-03-12 21-40-12.669 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.669 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.669 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.669 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.669 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.669 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.669 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.669 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) hostname found to be: frontier08418
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier02159-1199046-output.log
+2026-03-12 21-40-12.669 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.669 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.669 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.669 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.669 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.669 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.669 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.669 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.669 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier08418-292920-output.log
+2026-03-12 21-40-12.670 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.670 [Info] (cu_hello_main) hostname found to be: frontier01408
+2026-03-12 21-40-12.671 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.671 [Info] (cu_hello_main) hostname found to be: frontier04588
+2026-03-12 21-40-12.670 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.670 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.670 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.670 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.670 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.670 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.670 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.671 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.671 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.671 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.670 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.670 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.670 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.670 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.671 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.671 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.671 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.671 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.670 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.670 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier01408-197857-output.log
+2026-03-12 21-40-12.671 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.671 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.671 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.671 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.671 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.671 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04588-193327-output.log
+2026-03-12 21-40-12.675 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.675 [Info] (cu_hello_main) hostname found to be: frontier00507
+2026-03-12 21-40-12.675 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.675 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.675 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.675 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.675 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.675 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.675 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.675 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.675 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.675 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.675 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.675 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.675 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier00507-1470533-output.log
+2026-03-12 21-40-12.678 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.678 [Info] (cu_hello_main) hostname found to be: frontier04343
+2026-03-12 21-40-12.678 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.678 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.678 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.678 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.678 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.678 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.678 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.678 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.678 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.678 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier04343-243985-output.log
+2026-03-12 21-40-12.678 [Debug] (cu_hello_main)  
+2026-03-12 21-40-12.678 [Info] (cu_hello_main) hostname found to be: frontier05090
+2026-03-12 21-40-12.678 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-40-12.678 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-40-12.678 [Debug] (process_args) -log_output_dir was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
+2026-03-12 21-40-12.678 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-40-12.678 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-40-12.678 [Debug] (process_args) -nf was found: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
+2026-03-12 21-40-12.679 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-40-12.679 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.679 [Info] (cu_hello_main) copper address located at path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/copper_address_book.txt
+2026-03-12 21-40-12.679 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-40-12.679 [Info] (cu_hello_main) output filename path: /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/frontier05090-1629408-output.log
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.06system 0:38.86elapsed 0%CPU (0avgtext+0avgdata 18432maxresident)k
+38inputs+0outputs (0major+3954minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.05system 0:24.96elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+38inputs+0outputs (0major+3953minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.05system 0:24.88elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3954minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.05system 0:24.24elapsed 0%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3954minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 64 -n 512 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni python3 -c 'import torch'
+0.02user 0.06system 0:24.74elapsed 0%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3954minor)pagefaults 0swaps
++ sleep 10
++ stop_copper.sh -d /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ log_dir=/ccs/home/hagertnl/copper-logs/4203425
++ getopts d: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425
++ getopts d: opt
++ SLURM_NODEFILE=/lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt
++ echo 'Stopping Copper Gracefully On All Nodes : Start'
+Stopping Copper Gracefully On All Nodes : Start
++ CU_FUSE_MNT_VIEWDIR=/tmp/hagertnl/copper
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'pkill -9 cu_fuse'
+srun: error: frontier00760: task 5: Killed
+srun: Terminating StepId=4203425.0
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'fusermount3 -u /tmp/hagertnl/copper'
+srun: error: frontier03696: task 30: Killed
+srun: error: frontier07549: task 51: Killed
+srun: error: frontier02037: task 18: Killed
+srun: error: frontier07267: task 49: Killed
+srun: error: frontier04213: task 34: Killed
+srun: error: frontier01016: task 9: Killed
+srun: error: frontier03061: task 26: Killed
+srun: error: frontier08534: task 57: Killed
+srun: error: frontier07657: task 52: Killed
+srun: error: frontier01903: task 17: Killed
+srun: error: frontier09059: task 60: Killed
+srun: error: frontier01647: task 15: Killed
+srun: error: frontier02541: task 22: Killed
+srun: error: frontier03574: task 29: Killed
+srun: error: frontier04462: task 36: Killed
+srun: error: frontier03186: task 27: Killed
+srun: error: frontier03455: task 28: Killed
+srun: error: frontier05090: task 41: Killed
+srun: error: frontier07905: task 54: Killed
+srun: error: frontier08291: task 55: Killed
+srun: error: frontier01002: task 8: Killed
+srun: error: frontier07802: task 53: Killed
+srun: error: frontier04963: task 40: Killed
+srun: error: frontier04343: task 35: Killed
+srun: error: frontier01272: task 12: Killed
+srun: error: frontier00255: task 1: Killed
+srun: error: frontier02283: task 20: Killed
+srun: error: frontier09213: task 61: Killed
+srun: error: frontier05504: task 42: Killed
+srun: error: frontier00507: task 3: Killed
+srun: error: frontier01773: task 16: Killed
+srun: error: frontier06755: task 47: Killed
+srun: error: frontier00376: task 2: Killed
+srun: error: frontier02159: task 19: Killed
+srun: error: frontier06648: task 46: Killed
+srun: error: frontier05884: task 43: Killed
+srun: error: frontier07417: task 50: Killed
+srun: error: frontier06528: task 45: Killed
+srun: error: frontier08690: task 58: Killed
+srun: error: frontier02668: task 23: Killed
+srun: error: frontier08418: task 56: Killed
+srun: error: frontier02411: task 21: Killed
+srun: error: frontier04722: task 38: Killed
+srun: error: frontier09431: task 63: Killed
+srun: error: frontier09304: task 62: Killed
+srun: error: frontier03822: task 31: Killed
+srun: error: frontier00633: task 4: Killed
+srun: error: frontier04834: task 39: Killed
+srun: error: frontier01522: task 14: Killed
+srun: error: frontier00892: task 7: Killed
+srun: error: frontier00872: task 6: Killed
+srun: error: frontier02929: task 25: Killed
+srun: error: frontier06883: task 48: Killed
+srun: error: frontier08795: task 59: Killed
+srun: error: frontier03953: task 32: Killed
+srun: error: frontier01144: task 11: Killed
+srun: error: frontier02814: task 24: Killed
+srun: error: frontier04079: task 33: Killed
+srun: error: frontier01134: task 10: Killed
+srun: error: frontier01408: task 13: Killed
+srun: error: frontier00117: task 0: Killed
+srun: error: frontier04588: task 37: Killed
+srun: error: frontier06241: task 44: Killed
+srun: Force Terminated StepId=4203425.0
++ clush --hostfile /lustre/orion/stf243/world-shared/hagertnl/CUG26/copper_run/python-pytorch/copper_logs/4203425/node_file.txt 'rm -rf /tmp/hagertnl/copper'
++ echo 'Stopping Copper Gracefully On All Nodes : End'
+Stopping Copper Gracefully On All Nodes : End

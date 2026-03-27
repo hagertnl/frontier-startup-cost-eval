@@ -29,8 +29,8 @@ df_grouped = df_grouped.reset_index()
 fig, axes = plt.subplots(1, 4, figsize=(20, 5))
 
 # Custom legend
-legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73"]
-legend_labels = ['nfs-baseline', 'lustre-baseline', 'sbcast', 'spindle']
+legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73", "#FF0000"]
+legend_labels = ['nfs-baseline', 'lustre-baseline', 'sbcast', 'spindle', 'copper']
 
 legend_labels_to_index = {}
 for i in range(0, len(legend_labels)):
@@ -38,7 +38,7 @@ for i in range(0, len(legend_labels)):
 
 legend_handles = [Patch(color=color, label=label) for color, label in zip(legend_colors, legend_labels)]
 legend_labels = [h.get_label() for h in legend_handles]
-fig.legend(legend_handles, legend_labels, loc='upper center', bbox_to_anchor=(0.5, 0.1), ncol=4, frameon=False, fontsize=14)
+fig.legend(legend_handles, legend_labels, loc='upper center', bbox_to_anchor=(0.5, 0.1), ncol=5, frameon=False, fontsize=14)
 fig.tight_layout(rect=[0.01, 0.1, 1, 0.95])
 
 # Create a mapping of axis index to benchmark name

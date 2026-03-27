@@ -1,0 +1,351 @@
+
+Lmod is automatically replacing "cce/18.0.1" with "amd/6.2.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/24.11.0     2) cray-mpich/8.1.31     3) darshan-runtime/3.4.6-mpi
+
+
+The following have been reloaded with a version change:
+  1) amd/6.2.4 => amd/6.4.2
+  2) cray-dsmml/0.3.0 => cray-dsmml/0.3.1
+  3) cray-libsci/24.11.0 => cray-libsci/25.09.0
+  4) cray-mpich/8.1.31 => cray-mpich/9.0.1
+  5) cray-pmi/6.1.15 => cray-pmi/6.1.16
+  6) craype/2.7.33 => craype/2.7.35
+  7) darshan-runtime/3.4.6-mpi => darshan-runtime/3.4.7-mpi
+  8) perftools-base/24.11.0 => perftools-base/25.09.0
+
+Copper loaded: use 'launch_copper' and 'stop_copper'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper points to: /sw/frontier/ums/ums046/copper/build/launch_copper.sh
+This script should be sourced! When it is not, it prints out the resulting module set:
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) libfabric/1.22.0
+  8) DefApps                         21) craype-accel-amd-gfx90a
+  9) PrgEnv-amd/8.6.0                22) miniforge3/23.11.0-0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ CU_FUSE_MNT_VIEWDIR=/tmp/hagertnl/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ log_level=6
++ log_dir=/ccs/home/hagertnl/copper-logs/4200882
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ sleeptime=20
++ physcpubind=57-60
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ sleeptime=30
++ getopts l:t:d:T:M:s:b:F:n: opt
++ case ${opt} in
++ log_dir=/lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
++ getopts l:t:d:T:M:s:b:F:n: opt
++ echo 'log_level                  : 6'
+log_level                  : 6
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 10485760'
+max_cacheable_byte_size    : 10485760
++ echo 'sleeptime                  : 30'
+sleeptime                  : 30
++ echo 'CU_FUSE_MNT_VIEWDIR        : /tmp/hagertnl/copper'
+CU_FUSE_MNT_VIEWDIR        : /tmp/hagertnl/copper
++ echo 'LOGDIR                     : /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882'
+LOGDIR                     : /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 57-60'
+physcpubind                : 57-60
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
++ SLURM_NODEFILE=/lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
++ scontrol show hostnames 'frontier[06998,07550,07930,08056,08179,08315,08440,08692]'
++ echo 'Ignore errors below this line related to copper fuse unmount or cleanup if any. '
+Ignore errors below this line related to copper fuse unmount or cleanup if any. 
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'fusermount3 -u /tmp/hagertnl/copper'
+frontier06998: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier06998: exited with exit code 1
+frontier08179: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08179: exited with exit code 1
+frontier08315: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08315: exited with exit code 1
+frontier08440: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+frontier07930: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08440: exited with exit code 1
+clush: frontier07930: exited with exit code 1
+frontier08056: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08056: exited with exit code 1
+frontier07550: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier07550: exited with exit code 1
+frontier08692: fusermount3: bad mount point /tmp/hagertnl/copper: No such file or directory
+clush: frontier08692: exited with exit code 1
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'rm -rf /tmp/hagertnl/copper'
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'mkdir -p /tmp/hagertnl/copper'
++ echo 'Errors below this line are critical - report if any. '
+Errors below this line are critical - report if any. 
++ options=' -f -tpath / -vpath /tmp/hagertnl/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt -max_cacheable_byte_size 10485760  -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/hagertnl/copper'
++ sleep 30s
++ srun -N 8 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=threads --network=single_node_vni,job_vni /sw/frontier/ums/ums046/copper/build/cu_fuse -f -tpath / -vpath /tmp/hagertnl/copper -log_level 6 -log_type file -log_output_dir /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt -max_cacheable_byte_size 10485760 -facility_address_book /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt -s /tmp/hagertnl/copper
+2026-03-12 21-03-55.822 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.822 [Info] (cu_hello_main) hostname found to be: frontier06998
+2026-03-12 21-03-55.822 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.822 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.822 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.822 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.822 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.822 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.822 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.822 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.822 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.822 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.822 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.822 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.822 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier06998-185511-output.log
+2026-03-12 21-03-55.853 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) hostname found to be: frontier07550
+2026-03-12 21-03-55.853 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.853 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.853 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) hostname found to be: frontier08692
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.853 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.853 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.853 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.853 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.853 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.853 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.853 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.853 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier07550-745841-output.log
+2026-03-12 21-03-55.853 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.853 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.853 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.853 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.853 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.853 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier08692-706705-output.log
+2026-03-12 21-03-55.862 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.862 [Info] (cu_hello_main) hostname found to be: frontier07930
+2026-03-12 21-03-55.862 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.862 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.862 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.862 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.862 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.862 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.862 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.862 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.863 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.863 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.863 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.863 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.863 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier07930-2109881-output.log
+2026-03-12 21-03-55.866 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.866 [Info] (cu_hello_main) hostname found to be: frontier08179
+2026-03-12 21-03-55.866 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.866 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.866 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.866 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.866 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.866 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.866 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.866 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.866 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.866 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.866 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.866 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.866 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier08179-1065837-output.log
+2026-03-12 21-03-55.869 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.869 [Info] (cu_hello_main) hostname found to be: frontier08056
+2026-03-12 21-03-55.869 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.869 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.869 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.869 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.869 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.869 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.869 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.869 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.869 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.869 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.869 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.869 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.869 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier08056-558363-output.log
+2026-03-12 21-03-55.882 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.882 [Info] (cu_hello_main) hostname found to be: frontier08440
+2026-03-12 21-03-55.882 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.882 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.882 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.882 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.882 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.882 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.882 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.882 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.882 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.882 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.882 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.882 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.882 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier08440-2338427-output.log
+2026-03-12 21-03-55.891 [Debug] (cu_hello_main)  
+2026-03-12 21-03-55.891 [Info] (cu_hello_main) hostname found to be: frontier08315
+2026-03-12 21-03-55.891 [Debug] (process_args) -tpath was found: /
+2026-03-12 21-03-55.891 [Debug] (process_args) -vpath was found: /tmp/hagertnl/copper
+2026-03-12 21-03-55.891 [Debug] (process_args) -log_level was found: 6
+2026-03-12 21-03-55.891 [Debug] (process_args) -log_type was found: file
+2026-03-12 21-03-55.891 [Debug] (process_args) -log_output_dir was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
+2026-03-12 21-03-55.891 [Debug] (process_args) -net_type was found: cxi://cxi1
+2026-03-12 21-03-55.891 [Debug] (process_args) -trees was found: 1
+2026-03-12 21-03-55.891 [Debug] (process_args) -nf was found: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
+2026-03-12 21-03-55.891 [Debug] (process_args) -max_cacheable_byte_size was found: 10485760
+2026-03-12 21-03-55.891 [Debug] (process_args) -facility_address_book was found: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.891 [Info] (cu_hello_main) copper address located at path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/copper_address_book.txt
+2026-03-12 21-03-55.891 [Info] (cu_hello_main) facility address book filename path: /sw/frontier/ums/ums046/copper/olcf_copper_addressbook.txt
+2026-03-12 21-03-55.891 [Info] (cu_hello_main) output filename path: /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/frontier08315-1313458-output.log
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
++ ldd /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+	linux-vdso.so.1 (0x00007fffed9ce000)
+	libamdhip64.so.6 => /opt/rocm-6.4.2/lib/libamdhip64.so.6 (0x00007fffec1ed000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fffec0ed000)
+	libdarshan.so.0 => /sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib/libdarshan.so.0 (0x00007fffec09e000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00007fffec085000)
+	libmpi_amd.so.12 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_amd.so.12 (0x00007fffeaf35000)
+	libmpi_gtl_hsa.so.0 => /opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib/libmpi_gtl_hsa.so.0 (0x00007fffeae8a000)
+	libxpmem.so.0 => /usr/lib64/libxpmem.so.0 (0x00007fffeae87000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007fffeac31000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fffeac04000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fffea9ef000)
+	librocprofiler-register.so.0 => /opt/rocm-6.4.2/lib/librocprofiler-register.so.0 (0x00007fffea96e000)
+	libamd_comgr.so.3 => /opt/rocm-6.4.2/lib/libamd_comgr.so.3 (0x00007fffe11c1000)
+	libhsa-runtime64.so.1 => /opt/rocm-6.4.2/lib/libhsa-runtime64.so.1 (0x00007fffe0e77000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00007fffe0c00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fffed9d0000)
+	libfabric.so.1 => /opt/cray/libfabric/1.22.0/lib64/libfabric.so.1 (0x00007fffe0ac9000)
+	libatomic.so.1 => /usr/lib64/libatomic.so.1 (0x00007fffe0e6b000)
+	libpmi.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi.so.0 (0x00007fffe0e47000)
+	libpmi2.so.0 => /opt/cray/pe/pmi/6.1.16/lib/libpmi2.so.0 (0x00007fffe0e23000)
+	libzstd.so.1 => /usr/lib64/libzstd.so.1 (0x00007fffe0a0a000)
+	libelf.so.1 => /usr/lib64/libelf.so.1 (0x00007fffe0600000)
+	libdrm.so.2 => /opt/amdgpu/lib64/libdrm.so.2 (0x00007fffe09f3000)
+	libdrm_amdgpu.so.1 => /opt/amdgpu/lib64/libdrm_amdgpu.so.1 (0x00007fffe0e13000)
+	libcxi.so.1 => /usr/lib64/libcxi.so.1 (0x00007fffe09d2000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fffe0e0e000)
+	libpals.so.0 => /opt/cray/pals/1.6/lib/libpals.so.0 (0x00007fffe09ca000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00007fffe09a7000)
+++ seq 1 5
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 64, min: 384 ms, max: 550 ms, avg: 448 ms
+0.01user 0.02system 0:02.58elapsed 1%CPU (0avgtext+0avgdata 17408maxresident)k
+24inputs+0outputs (0major+3448minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 64, min: 246 ms, max: 300 ms, avg: 280 ms
+0.01user 0.02system 0:02.51elapsed 1%CPU (0avgtext+0avgdata 17408maxresident)k
+24inputs+0outputs (0major+3448minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 64, min: 727 ms, max: 759 ms, avg: 745 ms
+0.01user 0.02system 0:01.06elapsed 3%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3448minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 64, min: 621 ms, max: 767 ms, avg: 738 ms
+0.00user 0.02system 0:01.10elapsed 3%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+8outputs (0major+3448minor)pagefaults 0swaps
++ sleep 10
++ for i in $(seq 1 5)
++ /usr/bin/time srun -N 8 -n 64 -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest --network=single_node_vni,job_vni /tmp/hagertnl/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 64, min: 740 ms, max: 759 ms, avg: 749 ms
+0.02user 0.01system 0:01.07elapsed 3%CPU (0avgtext+0avgdata 17408maxresident)k
+0inputs+0outputs (0major+3448minor)pagefaults 0swaps
++ sleep 10
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ log_dir=/ccs/home/hagertnl/copper-logs/4200882
++ getopts d: opt
++ case ${opt} in
++ log_dir=/lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882
++ getopts d: opt
++ SLURM_NODEFILE=/lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt
++ echo 'Stopping Copper Gracefully On All Nodes : Start'
+Stopping Copper Gracefully On All Nodes : Start
++ CU_FUSE_MNT_VIEWDIR=/tmp/hagertnl/copper
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'pkill -9 cu_fuse'
+srun: error: frontier08315: task 5: Killed
+srun: Terminating StepId=4200882.0
+srun: error: frontier08440: task 6: Killed
+srun: error: frontier06998: task 0: Killed
+srun: error: frontier07930: task 2: Killed
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'fusermount3 -u /tmp/hagertnl/copper'
+srun: error: frontier07550: task 1: Killed
+srun: error: frontier08056: task 3: Killed
+frontier08179: fusermount3: entry for /tmp/hagertnl/copper not found in /etc/mtab
+clush: frontier08179: exited with exit code 1
+frontier08692: fusermount3: entry for /tmp/hagertnl/copper not found in /etc/mtab
+clush: frontier08692: exited with exit code 1
++ clush --hostfile /lustre/orion/world-shared/stf243/hagertnl/CUG26/copper_run/osu/copper_logs/4200882/node_file.txt 'rm -rf /tmp/hagertnl/copper'
+srun: error: frontier08692: task 7: Killed
+srun: error: frontier08179: task 4: Killed
+srun: Force Terminated StepId=4200882.0
++ echo 'Stopping Copper Gracefully On All Nodes : End'
+Stopping Copper Gracefully On All Nodes : End

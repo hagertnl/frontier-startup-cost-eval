@@ -1,0 +1,8 @@
+frontier00080: ofi+cxi://0x00698400
+frontier05704: ofi+cxi://0x0329c200
+frontier06215: ofi+cxi://0x0368c200
+frontier07482: ofi+cxi://0x0407a000
+frontier07743: ofi+cxi://0x04268400
+frontier08133: ofi+cxi://0x0458e200
+frontier08505: ofi+cxi://0x0486a000
+frontier08637: ofi+cxi://0x0496a400
