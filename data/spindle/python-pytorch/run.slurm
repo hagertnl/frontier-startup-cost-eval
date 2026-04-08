@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -t 20
+#SBATCH -t 10
 
 # -N and -A can be provided on sbatch CLI or added here
 # 45-minute walltime to avoid unnecessary allocation burn to get high data points
@@ -12,11 +12,14 @@ source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_
 # Activate our custom-build PyTorch environment
 conda activate /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
 
+#py_prefix=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_envbin/python3 //First G
+py_prefix=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env/lib/python3.12/
+
 set -x
 
 for i in $(seq 1 5); do
     # import MPI automatically does an MPI_Init
-    /usr/bin/time spindle  srun -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) \
+    /usr/bin/time spindle --python-prefix=${py_prefix} srun -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) \
         -c 7 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest \
         python3 -c "import torch"
 done
