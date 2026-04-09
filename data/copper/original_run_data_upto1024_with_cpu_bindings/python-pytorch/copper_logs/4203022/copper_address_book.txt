@@ -1,8 +1,0 @@
-frontier00097: ofi+cxi://0x006ce600
-frontier00240: ofi+cxi://0x007d8400
-frontier00347: ofi+cxi://0x008a8000
-frontier00475: ofi+cxi://0x009a8000
-frontier00603: ofi+cxi://0x00aa8000
-frontier00732: ofi+cxi://0x00bb8000
-frontier00857: ofi+cxi://0x00caa000
-frontier00987: ofi+cxi://0x00da8000
