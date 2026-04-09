@@ -1,0 +1,1927 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ cd /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/osu
++ module load ums ums046 copper
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Copper loaded: use 'launch_copper_frontier' and 'stop_copper_frontier'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper_frontier points to:
+/sw/frontier/ums/ums046/copper/build/launch_copper_frontier.sh 
+Copper loaded: use 'launch_copper_frontier' and 'stop_copper_frontier'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper_frontier points to:
+/sw/frontier/ums/ums046/copper/build/launch_copper_frontier.sh 
+Copper loaded: use 'launch_copper_frontier' and 'stop_copper_frontier'.
+COPPER_ROOT: /sw/frontier/ums/ums046/copper
+launch_copper_frontier points to:
+/sw/frontier/ums/ums046/copper/build/launch_copper_frontier.sh 
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) craype-x86-trento               14) cpe/25.09
+  2) craype-network-ofi              15) amd/6.4.2
+  3) xpmem/2.11.3-1.3_gdbda01a1eb3d  16) cray-libsci/25.09.0
+  4) Core/25.03                      17) cray-mpich/9.0.1
+  5) tmux/3.4                        18) darshan-runtime/3.4.7-mpi (E4S)
+  6) hsi/default                     19) rocm/6.4.2
+  7) lfs-wrapper/0.0.1               20) libfabric/1.22.0
+  8) DefApps                         21) craype-accel-amd-gfx90a
+  9) PrgEnv-amd/8.6.0                22) miniforge3/23.11.0-0
+ 10) cray-dsmml/0.3.1                23) ums/default
+ 11) cray-pmi/6.1.16                 24) ums046/default
+ 12) craype/2.7.35                   25) copper/0.1
+ 13) perftools-base/25.09.0
+
+  Where:
+   E4S:  E4S: Extreme-scale Scientific Software Stack (E4S) https://e4s.io/index.html
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ echo 4341735
+4341735
++ echo 512
+512
++ echo copper_spindle
+copper_spindle
++ echo 'frontier[00002,00004,00007-00008,00010,00012,00016-00018,00020,00025,00027,00138,00142-00143,00145,00147-00149,00151-00153,00155,00158,00278-00280,00284-00285,00287-00289,00291,00293,00295-00296,00388,00390,00393-00394,00396-00397,00411-00413,00415-00417,00515-00518,00526,00529,00542,00549,00551-00554,00643-00646,00649,00652,00656-00659,00664,00666,00774-00775,00780-00783,00785,00793,00795,00799,00802-00803,00899-00900,00905,00919,00927,00930-00931,00938-00942,01028,01030,01035-01036,01041,01045-01048,01051-01053,01157,01159-01166,01170-01171,01173,01282-01288,01291-01294,01296,01416,01429-01431,01437,01445-01446,01452,01457-01460,01567,01569,01573,01577,01660,01663,01672,01676,01682,01689,01697,01703,01707,01713,01716,01718-01719,01749,01809,01813,01815-01816,01829,01836-01837,01845,01922,01933,01945,01954,01956,01963,01966,01972,01975,01978-01979,02011,02061,02067,02069,02071,02081,02086,02088,02091-02094,02186,02195,02201-02202,02207-02208,02215,02296-02298,02319,02341-02342,02345-02348,02356-02357,02359,02429,02459,02466,02476,02479,02481-02482,02487,02489,02493,02496,02556,02565,02569-02570,02573,02575,02579,02585-02586,02591-02593,02701,02718-02719,02731,02733-02734,02737-02739,02741,02743,02821,02824,02837-02838,02844-02846,02848,02864,02866,02871,02968,02986,03001,03004-03005,03032,03037,03097,03117-03118,03127,03131-03132,03169,03223,03251-03252,03295,03341,03350,03368,03377,03385,03417,03430,03496,03499,03505,03510,03514,03544,03560,03592-03593,03599,03601,03604,03614,03655,03671,03747-03748,03779,03782,03853,03856,03908,03972,03976,03978,03981,04032,04249-04250,04252,04255,04372,04376,04413,04559,04693,04818,04947,05376,05464,05631,05759,05881,06012,06124,06136-06137,06264-06265,06362,06523,06525-06526,06656,06781-06782,06909,07034-07035,07044,07046-07050,07052-07054,07057-07058,07172,07176,07179,07181-07187,07189,07300-07305,07308-07312,07426-07427,07430-07431,07433,07435-07438,07443-07444,07554,07556,07559,07562,07564-07565,07567-07569,07576,07578,07684-07685,07689-07691,07693,07696-07700,07813-07816,07819-07825,07940,07943-07947,07951-07953,07956-07957,08072,08076,08078-08079,08142,08198-08199,08201-08202,08207-08208,08212-08213,08219,08221,08224,08322,08325-08326,08328-08330,08332,08335-08337,08340,08450,08452,08455-08458,08461,08465,08476,08510,08579,08586,08591-08592,08603,08643,08645,08706-08709,08712,08720,08722-08723,08725,08732,08736,08971,09122,09125,09127-09130,09142-09143,09217,09221,09223-09224,09231,09234,09237-09238,09242-09243,09245,09362-09363,09369-09371,09373-09374]'
+frontier[00002,00004,00007-00008,00010,00012,00016-00018,00020,00025,00027,00138,00142-00143,00145,00147-00149,00151-00153,00155,00158,00278-00280,00284-00285,00287-00289,00291,00293,00295-00296,00388,00390,00393-00394,00396-00397,00411-00413,00415-00417,00515-00518,00526,00529,00542,00549,00551-00554,00643-00646,00649,00652,00656-00659,00664,00666,00774-00775,00780-00783,00785,00793,00795,00799,00802-00803,00899-00900,00905,00919,00927,00930-00931,00938-00942,01028,01030,01035-01036,01041,01045-01048,01051-01053,01157,01159-01166,01170-01171,01173,01282-01288,01291-01294,01296,01416,01429-01431,01437,01445-01446,01452,01457-01460,01567,01569,01573,01577,01660,01663,01672,01676,01682,01689,01697,01703,01707,01713,01716,01718-01719,01749,01809,01813,01815-01816,01829,01836-01837,01845,01922,01933,01945,01954,01956,01963,01966,01972,01975,01978-01979,02011,02061,02067,02069,02071,02081,02086,02088,02091-02094,02186,02195,02201-02202,02207-02208,02215,02296-02298,02319,02341-02342,02345-02348,02356-02357,02359,02429,02459,02466,02476,02479,02481-02482,02487,02489,02493,02496,02556,02565,02569-02570,02573,02575,02579,02585-02586,02591-02593,02701,02718-02719,02731,02733-02734,02737-02739,02741,02743,02821,02824,02837-02838,02844-02846,02848,02864,02866,02871,02968,02986,03001,03004-03005,03032,03037,03097,03117-03118,03127,03131-03132,03169,03223,03251-03252,03295,03341,03350,03368,03377,03385,03417,03430,03496,03499,03505,03510,03514,03544,03560,03592-03593,03599,03601,03604,03614,03655,03671,03747-03748,03779,03782,03853,03856,03908,03972,03976,03978,03981,04032,04249-04250,04252,04255,04372,04376,04413,04559,04693,04818,04947,05376,05464,05631,05759,05881,06012,06124,06136-06137,06264-06265,06362,06523,06525-06526,06656,06781-06782,06909,07034-07035,07044,07046-07050,07052-07054,07057-07058,07172,07176,07179,07181-07187,07189,07300-07305,07308-07312,07426-07427,07430-07431,07433,07435-07438,07443-07444,07554,07556,07559,07562,07564-07565,07567-07569,07576,07578,07684-07685,07689-07691,07693,07696-07700,07813-07816,07819-07825,07940,07943-07947,07951-07953,07956-07957,08072,08076,08078-08079,08142,08198-08199,08201-08202,08207-08208,08212-08213,08219,08221,08224,08322,08325-08326,08328-08330,08332,08335-08337,08340,08450,08452,08455-08458,08461,08465,08476,08510,08579,08586,08591-08592,08603,08643,08645,08706-08709,08712,08720,08722-08723,08725,08732,08736,08971,09122,09125,09127-09130,09142-09143,09217,09221,09223-09224,09231,09234,09237-09238,09242-09243,09245,09362-09363,09369-09371,09373-09374]
++ LOGDIR=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
++ cd /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
++ PACKAGE_ENV_LOCATION=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds
++ source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_modules.sh
+++ module load PrgEnv-amd
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load cpe/25.09
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source
+/opt/cray/pe/cpe/25.09/restore_lmod_system_defaults.[csh|sh]'. 
+ 
+Sourcing the above script is not necessary if swapping the cpe module with a
+different version. 
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load amd/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load rocm/6.4.2
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load libfabric/1.22.0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load craype-accel-amd-gfx90a
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ module load miniforge3/23.11.0-0
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib
+++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib
+++ [[ /var/spool/slurmd/job4341735/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
++ COPPER_MOUNT_PATH=/mnt/bb/wcastil/copper_mount
++ /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs -v /mnt/bb/wcastil/copper_mount -M 220000000
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo 'Launching Copper Gracefully On All Nodes : Start'
+Launching Copper Gracefully On All Nodes : Start
++ echo /sw/frontier/ums/ums046/copper
+/sw/frontier/ums/ums046/copper
++ CUPATH=/sw/frontier/ums/ums046/copper/build/cu_fuse
++ DISCOVERY_HELPER=/sw/frontier/ums/ums046/copper/build/list_cxi_hsn_thallium
++ CU_FUSE_MNT_VIEWDIR=/tmp/wcastil/copper
++ facility_address_book=/sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt
++ address_book_source=facility
++ log_level=0
++ log_dir=/ccs/home/wcastil/copper-logs
++ log_type=file
++ trees=1
++ max_cacheable_byte_size=10485760
++ md_enoent_ttl_ms=2000
++ profile_metrics=0
++ profile_top_n=0
++ profile_paths_full=0
++ profile_snapshot_interval_s=0
++ sleeptime=10
++ physcpubind=1,2
++ net_type=cxi://cxi1
++ getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
++ case ${opt} in
++ log_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
++ getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
++ case ${opt} in
++ CU_FUSE_MNT_VIEWDIR=/mnt/bb/wcastil/copper_mount
++ getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
++ case ${opt} in
++ max_cacheable_byte_size=220000000
++ getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
++ log_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735
++ logs_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs
++ tables_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/tables
++ profiling_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling
++ profiling_final_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/final
++ profiling_cluster_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/cluster
++ node_file_copy=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt
++ prepared_address_book=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt
++ prepared_address_book_full_output=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book_full_output.txt
++ prepare_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/prepare_address_book.awk
++ select_discovered_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/select_discovered_address_book.awk
++ echo 'log_level                  : 0'
+log_level                  : 0
++ echo 'log_type                   : file'
+log_type                   : file
++ echo 'trees                      : 1'
+trees                      : 1
++ echo 'max_cacheable_byte_size    : 220000000'
+max_cacheable_byte_size    : 220000000
++ echo 'md_enoent_ttl_ms           : 2000'
+md_enoent_ttl_ms           : 2000
++ echo 'profile_metrics            : 0'
+profile_metrics            : 0
++ echo 'profile_top_n              : 0'
+profile_top_n              : 0
++ echo 'profile_paths_full         : 0'
+profile_paths_full         : 0
++ echo 'profile_snapshot_interval_s: 0'
+profile_snapshot_interval_s: 0
++ echo 'sleeptime                  : 10'
+sleeptime                  : 10
++ echo 'CU_FUSE_MNT_VIEWDIR        : /mnt/bb/wcastil/copper_mount'
+CU_FUSE_MNT_VIEWDIR        : /mnt/bb/wcastil/copper_mount
++ echo 'LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735'
+LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735
++ echo 'logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs'
+logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs
++ echo 'tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/tables'
+tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/tables
++ echo 'profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/final'
+profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/final
++ echo 'profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/cluster'
+profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/cluster
++ echo 'SLURM_NODEFILE             : '
+SLURM_NODEFILE             : 
++ echo 'physcpubind                : 1,2'
+physcpubind                : 1,2
++ echo 'facility_address_book      : /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt'
+facility_address_book      : /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt
++ echo 'address_book_source        : facility'
+address_book_source        : facility
++ echo 'prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt'
+prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt
++ echo 'prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book_full_output.txt'
+prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book_full_output.txt
++ echo 'discovery_helper           : /sw/frontier/ums/ums046/copper/build/list_cxi_hsn_thallium'
+discovery_helper           : /sw/frontier/ums/ums046/copper/build/list_cxi_hsn_thallium
++ echo 'net_type                   : cxi://cxi1'
+net_type                   : cxi://cxi1
++ mkdir -p /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/tables/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/profiling/cluster
++ scontrol show hostnames 'frontier[00002,00004,00007-00008,00010,00012,00016-00018,00020,00025,00027,00138,00142-00143,00145,00147-00149,00151-00153,00155,00158,00278-00280,00284-00285,00287-00289,00291,00293,00295-00296,00388,00390,00393-00394,00396-00397,00411-00413,00415-00417,00515-00518,00526,00529,00542,00549,00551-00554,00643-00646,00649,00652,00656-00659,00664,00666,00774-00775,00780-00783,00785,00793,00795,00799,00802-00803,00899-00900,00905,00919,00927,00930-00931,00938-00942,01028,01030,01035-01036,01041,01045-01048,01051-01053,01157,01159-01166,01170-01171,01173,01282-01288,01291-01294,01296,01416,01429-01431,01437,01445-01446,01452,01457-01460,01567,01569,01573,01577,01660,01663,01672,01676,01682,01689,01697,01703,01707,01713,01716,01718-01719,01749,01809,01813,01815-01816,01829,01836-01837,01845,01922,01933,01945,01954,01956,01963,01966,01972,01975,01978-01979,02011,02061,02067,02069,02071,02081,02086,02088,02091-02094,02186,02195,02201-02202,02207-02208,02215,02296-02298,02319,02341-02342,02345-02348,02356-02357,02359,02429,02459,02466,02476,02479,02481-02482,02487,02489,02493,02496,02556,02565,02569-02570,02573,02575,02579,02585-02586,02591-02593,02701,02718-02719,02731,02733-02734,02737-02739,02741,02743,02821,02824,02837-02838,02844-02846,02848,02864,02866,02871,02968,02986,03001,03004-03005,03032,03037,03097,03117-03118,03127,03131-03132,03169,03223,03251-03252,03295,03341,03350,03368,03377,03385,03417,03430,03496,03499,03505,03510,03514,03544,03560,03592-03593,03599,03601,03604,03614,03655,03671,03747-03748,03779,03782,03853,03856,03908,03972,03976,03978,03981,04032,04249-04250,04252,04255,04372,04376,04413,04559,04693,04818,04947,05376,05464,05631,05759,05881,06012,06124,06136-06137,06264-06265,06362,06523,06525-06526,06656,06781-06782,06909,07034-07035,07044,07046-07050,07052-07054,07057-07058,07172,07176,07179,07181-07187,07189,07300-07305,07308-07312,07426-07427,07430-07431,07433,07435-07438,07443-07444,07554,07556,07559,07562,07564-07565,07567-07569,07576,07578,07684-07685,07689-07691,07693,07696-07700,07813-07816,07819-07825,07940,07943-07947,07951-07953,07956-07957,08072,08076,08078-08079,08142,08198-08199,08201-08202,08207-08208,08212-08213,08219,08221,08224,08322,08325-08326,08328-08330,08332,08335-08337,08340,08450,08452,08455-08458,08461,08465,08476,08510,08579,08586,08591-08592,08603,08643,08645,08706-08709,08712,08720,08722-08723,08725,08732,08736,08971,09122,09125,09127-09130,09142-09143,09217,09221,09223-09224,09231,09234,09237-09238,09242-09243,09245,09362-09363,09369-09371,09373-09374]'
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt 'fusermount3 -u /mnt/bb/wcastil/copper_mount'
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt 'rm -rf /mnt/bb/wcastil/copper_mount'
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt 'mkdir -p /mnt/bb/wcastil/copper_mount'
++ rm -f /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book_full_output.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/prepare_address_book.awk /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/select_discovered_address_book.awk
++ echo 'Preparing job-local address book once before full cu_fuse launch'
+Preparing job-local address book once before full cu_fuse launch
+++ date +%s
++ prepare_address_book_start_epoch=1775510169
++ prepare_address_book_rc=0
++ case "${address_book_source}" in
++ prepare_address_book_from_facility
++ cp /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book_full_output.txt
++ cat
++ srun --overlap -N 1 -n 1 --ntasks-per-node=1 env NODEFILE_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt FACILITY_BOOK=/sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt OUTPUT_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt AWK_SCRIPT=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/prepare_address_book.awk bash -lc 'awk -f "$AWK_SCRIPT" "$NODEFILE_PATH" "$FACILITY_BOOK" > "$OUTPUT_PATH"'
+Deactivating conda environments
+++ date +%s
++ prepare_address_book_end_epoch=1775510172
++ echo 'prepared address book generation took 3 s'
+prepared address book generation took 3 s
++ '[' 0 -ne 0 ']'
++ '[' '!' -s /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt ']'
++ profile_options=
++ '[' 0 -eq 1 ']'
++ '[' 0 -gt 0 ']'
++ '[' 0 -eq 1 ']'
++ '[' 0 -gt 0 ']'
++ options=' -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt -max_cacheable_byte_size 220000000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount'
++ echo 'sleeping for 10 s'
+sleeping for 10 s
++ sleep 10s
++ srun --overlap -N 512 --ntasks-per-node=1 --cpus-per-task=2 bash -c '
+    echo "host=$(hostname)"
+    echo "allowed=$(grep Cpus_allowed_list /proc/self/status | awk "{print \$2}")"
+    echo "current_cpu=$(ps -o psr= -p $$)"
+    exec /sw/frontier/ums/ums046/copper/build/cu_fuse  -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/node_file.txt -max_cacheable_byte_size 220000000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4341735/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount
+    '\''
+  '
+host=frontier00018
+host=frontier07053
+host=frontier08201
+host=frontier01954
+host=frontier02573
+host=frontier06782
+host=frontier00526
+host=frontier06264
+host=frontier00002
+host=frontier00656
+host=frontier07312
+host=frontier01816
+host=frontier08706
+host=frontier07426
+host=frontier07176
+host=frontier01975
+host=frontier03368
+host=frontier09125
+host=frontier01573
+host=frontier02743
+host=frontier03377
+host=frontier09234
+host=frontier01048
+host=frontier00393
+host=frontier01660
+host=frontier02824
+host=frontier00394
+host=frontier02570
+host=frontier06781
+host=frontier06012
+host=frontier08722
+host=frontier07052
+host=frontier00649
+host=frontier00411
+host=frontier01030
+host=frontier04559
+host=frontier01459
+host=frontier01035
+host=frontier01963
+host=frontier01282
+host=frontier07953
+allowed=1-2
+host=frontier01171
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00397
+host=frontier02838
+host=frontier08592
+host=frontier01053
+host=frontier01028
+host=frontier04818
+host=frontier08645
+host=frontier02487
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08458
+allowed=1-2
+host=frontier07957
+host=frontier01460
+allowed=1-2
+host=frontier02585
+host=frontier03981
+host=frontier07058
+host=frontier00657
+allowed=1-2
+host=frontier02489
+host=frontier01567
+host=frontier02215
+host=frontier08072
+host=frontier01972
+allowed=1-2
+host=frontier01041
+host=frontier04032
+host=frontier08971
+host=frontier03341
+host=frontier06265
+host=frontier02296
+host=frontier03748
+allowed=1-2
+allowed=1-2
+host=frontier01045
+host=frontier08076
+host=frontier03350
+host=frontier02493
+host=frontier00931
+host=frontier05376
+allowed=1-2
+host=frontier01837
+allowed=1-2
+allowed=1-2
+host=frontier09231
+host=frontier02496
+host=frontier07430
+host=frontier02297
+host=frontier07689
+host=frontier02866
+host=frontier01978
+host=frontier08336
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01577
+host=frontier02871
+host=frontier08337
+host=frontier01845
+host=frontier08709
+host=frontier02556
+host=frontier07431
+host=frontier00940
+allowed=1-2
+allowed=1-2
+host=frontier09237
+host=frontier02011
+allowed=1-2
+host=frontier00012
+host=frontier08712
+host=frontier02565
+host=frontier07182
+host=frontier03385
+host=frontier06526
+allowed=1-2
+host=frontier03856
+allowed=1-2
+host=frontier07947
+host=frontier07183
+host=frontier03417
+host=frontier07050
+host=frontier02986
+host=frontier07435
+host=frontier07951
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00017
+allowed=1-2
+host=frontier01945
+host=frontier09242
+host=frontier07184
+host=frontier00942
+host=frontier01170
+host=frontier02837
+host=frontier08199
+allowed=1-2
+allowed=1-2
+host=frontier08328
+host=frontier01173
+allowed=1-2
+host=frontier03251
+host=frontier00020
+host=frontier07054
+allowed=1-2
+host=frontier07186
+host=frontier02202
+host=frontier01682
+host=frontier02481
+host=frontier08725
+host=frontier02347
+host=frontier07057
+allowed=1-2
+host=frontier07311
+allowed=1-2
+host=frontier07034
+allowed=1-2
+host=frontier08329
+host=frontier02482
+allowed=1-2
+host=frontier01689
+host=frontier08643
+host=frontier00412
+host=frontier03252
+host=frontier02846
+host=frontier01283
+host=frontier01697
+host=frontier01966
+host=frontier07035
+host=frontier07700
+host=frontier07578
+host=frontier00027
+host=frontier02738
+host=frontier08332
+host=frontier02586
+host=frontier07172
+host=frontier07684
+host=frontier00930
+host=frontier00785
+host=frontier00295
+host=frontier07046
+host=frontier08335
+host=frontier00552
+host=frontier01707
+host=frontier02091
+host=frontier07943
+host=frontier00938
+host=frontier07944
+host=frontier07047
+host=frontier00417
+host=frontier08078
+host=frontier03118
+host=frontier02359
+host=frontier03779
+host=frontier00388
+host=frontier00554
+host=frontier00939
+host=frontier02429
+host=frontier00280
+host=frontier08079
+host=frontier02093
+host=frontier01437
+host=frontier07048
+host=frontier08510
+host=frontier08221
+host=frontier08142
+host=frontier00516
+host=frontier07691
+host=frontier02459
+host=frontier01922
+host=frontier07049
+host=frontier01718
+host=frontier00666
+host=frontier03593
+host=frontier07819
+host=frontier00644
+host=frontier00016
+host=frontier08586
+host=frontier02341
+host=frontier08322
+host=frontier04372
+host=frontier03599
+host=frontier01719
+host=frontier02186
+host=frontier01446
+host=frontier01672
+host=frontier00518
+host=frontier02476
+host=frontier08325
+host=frontier00775
+host=frontier00287
+host=frontier01676
+host=frontier03223
+host=frontier02479
+host=frontier08723
+host=frontier00780
+host=frontier02731
+host=frontier02345
+allowed=1-2
+host=frontier03499
+host=frontier03976
+host=frontier01458
+host=frontier02346
+host=frontier00289
+host=frontier02071
+host=frontier01294
+host=frontier02579
+host=frontier07187
+host=frontier03978
+host=frontier00782
+host=frontier02207
+host=frontier02845
+host=frontier03505
+host=frontier02737
+host=frontier00155
+host=frontier01036
+host=frontier08208
+host=frontier01160
+host=frontier07189
+host=frontier01416
+host=frontier02348
+host=frontier00158
+host=frontier01161
+host=frontier03514
+host=frontier01829
+host=frontier02739
+host=frontier00278
+host=frontier01836
+host=frontier00658
+host=frontier02357
+host=frontier00279
+host=frontier00143
+host=frontier08476
+host=frontier01713
+host=frontier02298
+host=frontier09127
+host=frontier01716
+host=frontier00284
+host=frontier03131
+host=frontier02701
+host=frontier01288
+host=frontier07564
+host=frontier01291
+host=frontier07693
+host=frontier02718
+host=frontier03132
+host=frontier00148
+host=frontier00285
+host=frontier01749
+host=frontier00645
+host=frontier04376
+host=frontier01052
+host=frontier03601
+host=frontier09142
+host=frontier03496
+host=frontier01809
+host=frontier01813
+host=frontier00529
+host=frontier09245
+host=frontier01956
+host=frontier03614
+host=frontier07438
+host=frontier00152
+host=frontier09217
+host=frontier02734
+host=frontier08457
+host=frontier06137
+host=frontier03655
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier02201
+host=frontier07185
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+host=frontier09363
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier03747
+allowed=1-2
+host=frontier01703
+allowed=1-2
+host=frontier07556
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07685
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01569
+host=frontier02864
+host=frontier06362
+current_cpu=  1
+allowed=1-2
+host=frontier08708
+host=frontier04250
+current_cpu=  1
+current_cpu=  1
+host=frontier05464
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier03782
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01979
+allowed=1-2
+host=frontier06525
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00799
+host=frontier05631
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier03853
+host=frontier08579
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier02821
+current_cpu=  1
+host=frontier01166
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+host=frontier06656
+host=frontier09238
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08198
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08591
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier02575
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07956
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08736
+host=frontier03510
+host=frontier02086
+allowed=1-2
+host=frontier08330
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00293
+host=frontier03671
+host=frontier04947
+allowed=1-2
+allowed=1-2
+host=frontier02848
+allowed=1-2
+allowed=1-2
+host=frontier09369
+host=frontier08461
+allowed=1-2
+allowed=1-2
+host=frontier09223
+host=frontier07940
+allowed=1-2
+host=frontier01429
+allowed=1-2
+host=frontier09122
+host=frontier04249
+host=frontier07427
+allowed=1-2
+allowed=1-2
+host=frontier08707
+host=frontier08213
+allowed=1-2
+host=frontier00793
+allowed=1-2
+host=frontier09370
+allowed=1-2
+host=frontier09224
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01286
+host=frontier07179
+allowed=1-2
+allowed=1-2
+host=frontier01431
+host=frontier00553
+allowed=1-2
+allowed=1-2
+host=frontier02592
+allowed=1-2
+allowed=1-2
+host=frontier06523
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07181
+allowed=1-2
+allowed=1-2
+host=frontier04252
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier03127
+host=frontier00390
+host=frontier09373
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier05759
+host=frontier07946
+allowed=1-2
+host=frontier07433
+allowed=1-2
+host=frontier02968
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01663
+host=frontier05881
+host=frontier00941
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00774
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00517
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier02342
+host=frontier00396
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07436
+host=frontier03001
+allowed=1-2
+host=frontier00899
+allowed=1-2
+host=frontier07696
+host=frontier01452
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07952
+host=frontier09243
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07437
+allowed=1-2
+host=frontier01293
+host=frontier07822
+current_cpu=  1
+host=frontier06136
+allowed=1-2
+allowed=1-2
+host=frontier01157
+host=frontier08603
+host=frontier09143
+host=frontier00781
+allowed=1-2
+host=frontier02733
+allowed=1-2
+host=frontier06909
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07824
+allowed=1-2
+host=frontier00652
+allowed=1-2
+host=frontier01815
+allowed=1-2
+host=frontier07443
+host=frontier07576
+host=frontier04693
+allowed=1-2
+allowed=1-2
+host=frontier07699
+host=frontier01159
+host=frontier07444
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier02208
+host=frontier03295
+allowed=1-2
+host=frontier09221
+allowed=1-2
+allowed=1-2
+host=frontier00413
+host=frontier07825
+host=frontier03037
+allowed=1-2
+allowed=1-2
+host=frontier01284
+host=frontier00138
+host=frontier07044
+allowed=1-2
+host=frontier02356
+allowed=1-2
+allowed=1-2
+host=frontier03097
+host=frontier08212
+allowed=1-2
+host=frontier00551
+host=frontier07554
+host=frontier07300
+host=frontier02088
+host=frontier07814
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00296
+allowed=1-2
+allowed=1-2
+host=frontier08465
+host=frontier01162
+host=frontier03117
+host=frontier01430
+host=frontier07301
+host=frontier01285
+host=frontier03544
+host=frontier00007
+host=frontier09371
+host=frontier08219
+host=frontier07815
+host=frontier02741
+host=frontier00659
+allowed=1-2
+allowed=1-2
+host=frontier07559
+allowed=1-2
+allowed=1-2
+host=frontier02092
+host=frontier07302
+host=frontier03560
+host=frontier00664
+host=frontier00515
+allowed=1-2
+host=frontier00010
+host=frontier00145
+host=frontier01164
+host=frontier07945
+host=frontier07690
+allowed=1-2
+allowed=1-2
+host=frontier03592
+host=frontier07816
+host=frontier02593
+host=frontier07303
+host=frontier07562
+host=frontier01165
+host=frontier08224
+host=frontier00802
+host=frontier02094
+allowed=1-2
+host=frontier02319
+host=frontier00643
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08340
+host=frontier09374
+allowed=1-2
+host=frontier04255
+host=frontier09128
+host=frontier09129
+allowed=1-2
+allowed=1-2
+host=frontier00803
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07820
+host=frontier01051
+allowed=1-2
+host=frontier07565
+host=frontier02061
+host=frontier07305
+host=frontier08450
+host=frontier08720
+allowed=1-2
+allowed=1-2
+host=frontier03430
+host=frontier08452
+host=frontier02195
+allowed=1-2
+host=frontier00149
+host=frontier01292
+host=frontier07308
+allowed=1-2
+host=frontier07567
+allowed=1-2
+host=frontier02719
+host=frontier02067
+host=frontier07821
+host=frontier04413
+host=frontier01457
+allowed=1-2
+host=frontier08455
+host=frontier00900
+allowed=1-2
+host=frontier00646
+host=frontier07568
+host=frontier02069
+host=frontier07309
+host=frontier08326
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier08202
+host=frontier00905
+host=frontier08456
+host=frontier07698
+allowed=1-2
+allowed=1-2
+host=frontier07310
+host=frontier03005
+host=frontier00291
+host=frontier00025
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier09362
+host=frontier01296
+host=frontier02081
+host=frontier00919
+host=frontier00153
+host=frontier00542
+host=frontier03032
+allowed=1-2
+host=frontier07813
+host=frontier00004
+host=frontier02591
+host=frontier00795
+host=frontier01046
+host=frontier01047
+host=frontier01287
+host=frontier07304
+host=frontier02466
+host=frontier09130
+host=frontier08207
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+host=frontier02569
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+host=frontier01933
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00783
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+host=frontier00142
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+host=frontier01445
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+host=frontier03908
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+host=frontier03169
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+host=frontier06124
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+host=frontier03604
+allowed=1-2
+current_cpu=  2
+host=frontier00151
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+host=frontier00415
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier01163
+host=frontier00008
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+host=frontier00288
+allowed=1-2
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+host=frontier03004
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier07823
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+host=frontier08732
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00147
+allowed=1-2
+allowed=1-2
+allowed=1-2
+host=frontier00927
+host=frontier00416
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+allowed=1-2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+host=frontier03972
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  2
+host=frontier07569
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+current_cpu=  2
+allowed=1-2
+host=frontier07697
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+current_cpu=  2
+host=frontier00549
+host=frontier02844
+current_cpu=  2
+allowed=1-2
+allowed=1-2
+current_cpu=  1
+current_cpu=  2
+current_cpu=  1
+allowed=1-2
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
+current_cpu=  1
++ echo 'Launching Copper Gracefully On All Nodes : End'
+Launching Copper Gracefully On All Nodes : End
++ exe=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
++ /usr/bin/time srun --overlap -N 512 -n 4096 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 4096, min: 2646 ms, max: 3657 ms, avg: 3415 ms
+0.09user 0.20system 0:09.98elapsed 2%CPU (0avgtext+0avgdata 19456maxresident)k
+38inputs+0outputs (0major+5755minor)pagefaults 0swaps
++ sleep 2s
++ /usr/bin/time srun --overlap -N 512 -n 4096 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 4096, min: 636 ms, max: 816 ms, avg: 783 ms
+0.07user 0.15system 0:06.38elapsed 3%CPU (0avgtext+0avgdata 19456maxresident)k
+38inputs+0outputs (0major+5755minor)pagefaults 0swaps
++ sleep 2s
++ /usr/bin/time srun --overlap -N 512 -n 4096 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 4096, min: 644 ms, max: 817 ms, avg: 790 ms
+0.07user 0.15system 0:06.28elapsed 3%CPU (0avgtext+0avgdata 19456maxresident)k
+0inputs+0outputs (0major+5755minor)pagefaults 0swaps
++ sleep 2s
++ /usr/bin/time srun --overlap -N 512 -n 4096 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 4096, min: 631 ms, max: 815 ms, avg: 781 ms
+0.06user 0.16system 0:06.92elapsed 3%CPU (0avgtext+0avgdata 19456maxresident)k
+0inputs+0outputs (0major+5753minor)pagefaults 0swaps
++ sleep 2s
++ /usr/bin/time srun --overlap -N 512 -n 4096 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+# OSU MPI Init Test v7.5
+nprocs: 4096, min: 583 ms, max: 829 ms, avg: 793 ms
+0.06user 0.15system 0:06.34elapsed 3%CPU (0avgtext+0avgdata 19456maxresident)k
+0inputs+0outputs (0major+5756minor)pagefaults 0swaps
++ sleep 2s
++ conda deactivate
++ local cmd=deactivate
++ case "$cmd" in
++ __conda_activate deactivate
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix deactivate
+++ /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda shell.posix deactivate
++ ask_conda='export PATH='\''/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/wcastil/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+unset CONDA_PREFIX
+unset CONDA_DEFAULT_ENV
+unset CONDA_PROMPT_MODIFIER
+PS1='\'''\''
+export CONDA_SHLVL='\''0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
++ eval 'export PATH='\''/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/wcastil/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin'\''
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh"
+unset CONDA_PREFIX
+unset CONDA_DEFAULT_ENV
+unset CONDA_PROMPT_MODIFIER
+PS1='\'''\''
+export CONDA_SHLVL='\''0'\''
+export CONDA_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python'\'''
+++ export PATH=/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/wcastil/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ PATH=/sw/frontier/lfs-wrapper/0.0.1/bin/lfs:/sw/frontier/miniforge3/23.11.0-0/bin:/opt/cray/libfabric/1.22.0/bin:/opt/rocm-6.4.2/bin:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/bin:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/bin:/opt/cray/pe/mpich/9.0.1/bin:/opt/cray/pe/perftools/25.09.0/bin:/opt/cray/pe/papi/7.2.0.2/bin:/opt/cray/pe/craype/2.7.35/bin:/sw/frontier/ums/ums046/copper/build:/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/condabin:/sw/sources/hpss/bin:/sw/frontier/spack-envs/core-25.03/opt/gcc-13.2/tmux-3.4-fcqqko3j4ga67yuc7zxaqcwsix5hns2v/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/sw/frontier/bin:/ccs/home/wcastil/.local/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/usr/lib/mit/bin:/opt/puppetlabs/bin:/opt/cray/pe/bin
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libxml2_deactivate.sh
++++ test -n ''
++++ unset XML_CATALOG_FILES
++++ unset xml_catalog_files_libxml2
+++ . /autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/etc/conda/deactivate.d/libglib_deactivate.sh
++++ export GSETTINGS_SCHEMA_DIR=
++++ GSETTINGS_SCHEMA_DIR=
++++ unset GSETTINGS_SCHEMA_DIR_CONDA_BACKUP
++++ '[' -z ']'
++++ unset GSETTINGS_SCHEMA_DIR
+++ unset CONDA_PREFIX
+++ unset CONDA_DEFAULT_ENV
+++ unset CONDA_PROMPT_MODIFIER
+++ PS1=
+++ export CONDA_SHLVL=0
+++ CONDA_SHLVL=0
+++ export CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ CONDA_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
+++ CONDA_PYTHON_EXE=/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ stop_copper.sh -d /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs -v /mnt/bb/wcastil/copper_mount
+/var/spool/slurmd/job4341735/slurm_script: line 39: stop_copper.sh: command not found

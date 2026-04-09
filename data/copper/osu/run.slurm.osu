@@ -24,19 +24,17 @@ COPPER_MOUNT_PATH=/mnt/bb/$USER/copper_mount
 
 #CPU_BINDING_MAP=verbose,map_cpu:9,17,25,33,41,49,57,73
 
-
-conda activate $COPPER_MOUNT_PATH/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env
-/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "from mpi4py import MPI"
+exe=$COPPER_MOUNT_PATH/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/osu/install-osu-7.5.1/libexec/osu-micro-benchmarks/mpi/startup/osu_init
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5  $exe
 sleep 2s
-/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "from mpi4py import MPI"
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 $exe
 sleep 2s
-/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "from mpi4py import MPI"
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 $exe
 sleep 2s
-/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "from mpi4py import MPI"
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 $exe
 sleep 2s
-/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "from mpi4py import MPI"
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 $exe
 sleep 2s
-
 conda deactivate
 stop_copper.sh -d $LOGDIR -v $COPPER_MOUNT_PATH
 

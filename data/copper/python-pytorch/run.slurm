@@ -1,33 +1,41 @@
-#!/bin/bash
+#!/bin/bash -x
+#SBATCH -A stf243
+#SBATCH -J copper_spindle
+#SBATCH -o %x-%j.out
+#SBATCH -t 00:20:00
+#SBATCH -p batch
+#SBATCH -C nvme
 
-#SBATCH -t 00:25:00
-#SBATCH --network=single_node_vni,job_vni,def_tles=0
-
-# Activate our custom-build PyTorch environment
-source /lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/common_modules.sh
+cd $SLURM_SUBMIT_DIR
 module load ums ums046 copper
+module list
+echo $SLURM_JOBID
+echo $SLURM_JOB_NUM_NODES
+echo $SLURM_JOB_NAME
+echo $SLURM_NODELIST
 
-# if script is being run with ./common_modules.sh (instead of sourced), print the module set:
-if [[ "$0" == "${BASH_SOURCE[0]}" ]]; then
-    echo "This script should be sourced! When it is not, it prints out the resulting module set:"
-    module list
-fi
+#LOGDIR=/lustre/orion/proj-shared/ums046/cug_runs_kaushik/2_nodes
+LOGDIR=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
+cd ${LOGDIR}
+PACKAGE_ENV_LOCATION=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds
+source "${PACKAGE_ENV_LOCATION}/common_modules.sh"
+COPPER_MOUNT_PATH=/mnt/bb/$USER/copper_mount
+/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d $LOGDIR -v $COPPER_MOUNT_PATH -M 220000000
 
-# Lustre base for this project
-LOGDIR=${PWD}/copper_logs/${SLURM_JOBID}
+#CPU_BINDING_MAP=verbose,map_cpu:9,17,25,33,41,49,57,73
 
-launch_copper.sh -s 30 -d $LOGDIR
+conda activate $COPPER_MOUNT_PATH/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "import torch"
+sleep 2s
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "import torch"
+sleep 2s
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "import torch"
+sleep 2s
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "import torch"
+sleep 2s
+/usr/bin/time srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 5 python3 -c "import torch"
+sleep 2s
+conda deactivate
 
-conda activate /tmp/$USER/copper/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-pytorch/conda_env
+stop_copper.sh -d $LOGDIR -v $COPPER_MOUNT_PATH
 
-set -x
-
-for i in $(seq 1 5); do
-    /usr/bin/time srun -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) \
-        -c 2 --ntasks-per-node=8 --gpus-per-node=8 --gpu-bind=closest \
-        --network=single_node_vni,job_vni \
-        python3 -c "import torch"
-        sleep 10
-done
-
-stop_copper.sh -d $LOGDIR
