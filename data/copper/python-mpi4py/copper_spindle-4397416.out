@@ -6,7 +6,7 @@
 Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/opt/cray/pe/lmod/lmod/init/bash)
 Shell debugging restarted
 + unset __lmod_vx
-+ cd /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/pynamic/M_524_MB
++ cd /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/python-mpi4py/1-node-run
 + module load ums ums046 copper
 + '[' -z '' ']'
 + case "$-" in
@@ -50,14 +50,14 @@ Currently Loaded Modules:
 Shell debugging restarted
 + unset __lmod_sh_dbg
 + return 0
-+ echo 4352265
-4352265
-+ echo 2
-2
++ echo 4397416
+4397416
++ echo 1
+1
 + echo copper_spindle
 copper_spindle
-+ echo 'frontier[01791,01919]'
-frontier[01791,01919]
++ echo frontier05285
+frontier05285
 + LOGDIR=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
 + cd /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
 + PACKAGE_ENV_LOCATION=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds
@@ -155,9 +155,9 @@ Shell debugging restarted
 ++ return 0
 ++ export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
 ++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
-++ [[ /var/spool/slurmd/job4352265/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
+++ [[ /var/spool/slurmd/job4397416/slurm_script == \/\l\u\s\t\r\e\/\o\r\i\o\n\/\s\t\f\2\4\3\/\w\o\r\l\d\-\s\h\a\r\e\d\/\h\a\g\e\r\t\n\l\/\C\U\G\2\6\/\b\e\n\c\h\m\a\r\k\_\b\u\i\l\d\s\/\c\o\m\m\o\n\_\m\o\d\u\l\e\s\.\s\h ]]
 + COPPER_MOUNT_PATH=/mnt/bb/wcastil/copper_mount
-+ /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs -v /mnt/bb/wcastil/copper_mount -M 524288000
++ /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs -v /mnt/bb/wcastil/copper_mount -M 220000000
 + '[' -z '' ']'
 + case "$-" in
 + __lmod_vx=x
@@ -196,27 +196,27 @@ Launching Copper Gracefully On All Nodes : Start
 + CU_FUSE_MNT_VIEWDIR=/mnt/bb/wcastil/copper_mount
 + getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
 + case ${opt} in
-+ max_cacheable_byte_size=524288000
++ max_cacheable_byte_size=220000000
 + getopts l:t:d:T:M:E:PN:AI:s:b:F:a:n:v: opt
-+ log_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265
-+ logs_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs
-+ tables_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/tables
-+ profiling_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling
-+ profiling_final_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/final
-+ profiling_cluster_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/cluster
-+ node_file_copy=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt
-+ prepared_address_book=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt
-+ prepared_address_book_full_output=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book_full_output.txt
-+ prepare_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/prepare_address_book.awk
-+ select_discovered_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/select_discovered_address_book.awk
++ log_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416
++ logs_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs
++ tables_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/tables
++ profiling_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling
++ profiling_final_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/final
++ profiling_cluster_dir=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/cluster
++ node_file_copy=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt
++ prepared_address_book=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt
++ prepared_address_book_full_output=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book_full_output.txt
++ prepare_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/prepare_address_book.awk
++ select_discovered_address_book_awk=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/select_discovered_address_book.awk
 + echo 'log_level                  : 0'
 log_level                  : 0
 + echo 'log_type                   : file'
 log_type                   : file
 + echo 'trees                      : 1'
 trees                      : 1
-+ echo 'max_cacheable_byte_size    : 524288000'
-max_cacheable_byte_size    : 524288000
++ echo 'max_cacheable_byte_size    : 220000000'
+max_cacheable_byte_size    : 220000000
 + echo 'md_enoent_ttl_ms           : 2000'
 md_enoent_ttl_ms           : 2000
 + echo 'profile_metrics            : 0'
@@ -231,16 +231,16 @@ profile_snapshot_interval_s: 0
 sleeptime                  : 10
 + echo 'CU_FUSE_MNT_VIEWDIR        : /mnt/bb/wcastil/copper_mount'
 CU_FUSE_MNT_VIEWDIR        : /mnt/bb/wcastil/copper_mount
-+ echo 'LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265'
-LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265
-+ echo 'logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs'
-logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs
-+ echo 'tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/tables'
-tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/tables
-+ echo 'profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/final'
-profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/final
-+ echo 'profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/cluster'
-profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/cluster
++ echo 'LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416'
+LOGDIR                     : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416
++ echo 'logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs'
+logs_dir                   : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs
++ echo 'tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/tables'
+tables_dir                 : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/tables
++ echo 'profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/final'
+profiling_final_dir        : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/final
++ echo 'profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/cluster'
+profiling_cluster_dir      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/cluster
 + echo 'SLURM_NODEFILE             : '
 SLURM_NODEFILE             : 
 + echo 'physcpubind                : 1,2'
@@ -249,57 +249,54 @@ physcpubind                : 1,2
 facility_address_book      : /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt
 + echo 'address_book_source        : facility'
 address_book_source        : facility
-+ echo 'prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt'
-prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt
-+ echo 'prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book_full_output.txt'
-prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book_full_output.txt
++ echo 'prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt'
+prepared_address_book      : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt
++ echo 'prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book_full_output.txt'
+prepared_address_book_full : /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book_full_output.txt
 + echo 'discovery_helper           : /sw/frontier/ums/ums046/copper/build/list_cxi_hsn_thallium'
 discovery_helper           : /sw/frontier/ums/ums046/copper/build/list_cxi_hsn_thallium
 + echo 'net_type                   : cxi://cxi1'
 net_type                   : cxi://cxi1
-+ mkdir -p /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/tables/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/profiling/cluster
-+ scontrol show hostnames 'frontier[01791,01919]'
-+ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt 'fusermount3 -u /mnt/bb/wcastil/copper_mount'
-+ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt 'rm -rf /mnt/bb/wcastil/copper_mount'
-+ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt 'mkdir -p /mnt/bb/wcastil/copper_mount'
-+ rm -f /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book_full_output.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/prepare_address_book.awk /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/select_discovered_address_book.awk
++ mkdir -p /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/tables/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/final /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/profiling/cluster
++ scontrol show hostnames frontier05285
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt 'fusermount3 -u /mnt/bb/wcastil/copper_mount'
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt 'rm -rf /mnt/bb/wcastil/copper_mount'
++ clush --hostfile /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt 'mkdir -p /mnt/bb/wcastil/copper_mount'
++ rm -f /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book_full_output.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/prepare_address_book.awk /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/select_discovered_address_book.awk
 + echo 'Preparing job-local address book once before full cu_fuse launch'
 Preparing job-local address book once before full cu_fuse launch
 ++ date +%s
-+ prepare_address_book_start_epoch=1775673203
++ prepare_address_book_start_epoch=1776292536
 + prepare_address_book_rc=0
 + case "${address_book_source}" in
 + prepare_address_book_from_facility
-+ cp /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book_full_output.txt
++ cp /sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book_full_output.txt
 + cat
-+ srun --overlap -N 1 -n 1 --ntasks-per-node=1 env NODEFILE_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt FACILITY_BOOK=/sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt OUTPUT_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt AWK_SCRIPT=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/prepare_address_book.awk bash -lc 'awk -f "$AWK_SCRIPT" "$NODEFILE_PATH" "$FACILITY_BOOK" > "$OUTPUT_PATH"'
++ srun --overlap -N 1 -n 1 --ntasks-per-node=1 env NODEFILE_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt FACILITY_BOOK=/sw/frontier/ums/ums046/copper/build/olcf_frontier_copper_addressbook.txt OUTPUT_PATH=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt AWK_SCRIPT=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/prepare_address_book.awk bash -lc 'awk -f "$AWK_SCRIPT" "$NODEFILE_PATH" "$FACILITY_BOOK" > "$OUTPUT_PATH"'
 Deactivating conda environments
 ++ date +%s
-+ prepare_address_book_end_epoch=1775673204
++ prepare_address_book_end_epoch=1776292537
 + echo 'prepared address book generation took 1 s'
 prepared address book generation took 1 s
 + '[' 0 -ne 0 ']'
-+ '[' '!' -s /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt ']'
++ '[' '!' -s /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt ']'
 + profile_options=
 + '[' 0 -eq 1 ']'
 + '[' 0 -gt 0 ']'
 + '[' 0 -eq 1 ']'
 + '[' 0 -gt 0 ']'
-+ options=' -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt -max_cacheable_byte_size 524288000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount'
++ options=' -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt -max_cacheable_byte_size 220000000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount'
 + echo 'sleeping for 10 s'
 sleeping for 10 s
 + sleep 10s
-+ srun --overlap -N 2 --ntasks-per-node=1 --cpus-per-task=2 bash -c '
++ srun --overlap -N 1 --ntasks-per-node=1 --cpus-per-task=2 bash -c '
     echo "host=$(hostname)"
     echo "allowed=$(grep Cpus_allowed_list /proc/self/status | awk "{print \$2}")"
     echo "current_cpu=$(ps -o psr= -p $$)"
-    exec /sw/frontier/ums/ums046/copper/build/cu_fuse  -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/node_file.txt -max_cacheable_byte_size 524288000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4352265/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount
+    exec /sw/frontier/ums/ums046/copper/build/cu_fuse  -f -tpath / -vpath /mnt/bb/wcastil/copper_mount -log_level 0 -log_type file -log_output_dir /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416 -net_type cxi://cxi1 -trees 1 -nf /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/node_file.txt -max_cacheable_byte_size 220000000 -md_enoent_ttl_ms 2000 -facility_address_book /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs/4397416/logs/copper_address_book.txt -prefiltered_address_book 1 -s /mnt/bb/wcastil/copper_mount
     '\''
   '
-host=frontier01791
-allowed=1-2
-current_cpu=  1
-host=frontier01919
+host=frontier05285
 allowed=1-2
 current_cpu=  1
 + echo 'Launching Copper Gracefully On All Nodes : End'
@@ -374,65 +371,25 @@ export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/b
 + '[' -n '' ']'
 + '[' -n '' ']'
 + hash -r
-+ exe=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/
-+ export LD_LIBRARY_PATH=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
-+ LD_LIBRARY_PATH=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
-+ export LD_LIBRARY_PATH=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env/lib:/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
-+ LD_LIBRARY_PATH=/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env/lib:/mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280/:/opt/cray/pe/mpich/9.0.1/ofi/amd/6.0/lib:/opt/cray/pe/mpich/9.0.1/gtl/lib:/opt/cray/pe/libsci/25.09.0/AMD/6.0/x86_64/lib:/opt/cray/pe/perftools/25.09.0/lib64:/opt/cray/pe/pmi/6.1.16/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/libfabric/1.22.0/lib64:/opt/rocm-6.4.2/lib/roctracer:/opt/rocm-6.4.2/lib/rocprofiler:/opt/rocm-6.4.2/lib:/sw/frontier/spack-envs/cpe25.09-cpu/opt/llvm-amdgpu-6.4.2/darshan-runtime-3.4.7-tvdocpzv3jfj4y6ki5jvmmkics323gon/lib:/opt/rocm-6.4.2/llvm/lib:/opt/cray/pe/papi/7.2.0.2/lib64
-+ srun --overlap -N 2 -n 16 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
-+ grep -v 'rank -'
-Pynamic: Version 1.3.3
-Pynamic: run on 04/08/26 14:33:40 with 16 MPI tasks
-
-Pynamic: driver beginning... now importing modules
-Pynamic: driver finished importing all modules..
-Pynamic: module import time = 3.7535204887390137 secs
-Pynamic: module test passed!
-
++ /usr/bin/time srun --overlap -N 1 -n 8 --ntasks-per-node=8 -c 5 python3 -c 'from mpi4py import MPI'
+0.01user 0.01system 0:01.43elapsed 1%CPU (0avgtext+0avgdata 18432maxresident)k
+24inputs+0outputs (0major+3249minor)pagefaults 0swaps
 + sleep 2s
-+ srun --overlap -N 2 -n 16 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
-+ grep -v 'rank -'
-Pynamic: Version 1.3.3
-Pynamic: run on 04/08/26 14:33:49 with 16 MPI tasks
-
-Pynamic: driver beginning... now importing modules
-Pynamic: driver finished importing all modules..
-Pynamic: module import time = 3.2257978916168213 secs
-Pynamic: module test passed!
-
++ /usr/bin/time srun --overlap -N 1 -n 8 --ntasks-per-node=8 -c 5 python3 -c 'from mpi4py import MPI'
+0.01user 0.01system 0:00.44elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+24inputs+0outputs (0major+3249minor)pagefaults 0swaps
 + sleep 2s
-+ srun --overlap -N 2 -n 16 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
-+ grep -v 'rank -'
-Pynamic: Version 1.3.3
-Pynamic: run on 04/08/26 14:33:56 with 16 MPI tasks
-
-Pynamic: driver beginning... now importing modules
-Pynamic: driver finished importing all modules..
-Pynamic: module import time = 3.747678518295288 secs
-Pynamic: module test passed!
-
++ /usr/bin/time srun --overlap -N 1 -n 8 --ntasks-per-node=8 -c 5 python3 -c 'from mpi4py import MPI'
+0.01user 0.01system 0:00.44elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3249minor)pagefaults 0swaps
 + sleep 2s
-+ srun --overlap -N 2 -n 16 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
-+ grep -v 'rank -'
-Pynamic: Version 1.3.3
-Pynamic: run on 04/08/26 14:34:04 with 16 MPI tasks
-
-Pynamic: driver beginning... now importing modules
-Pynamic: driver finished importing all modules..
-Pynamic: module import time = 3.780442714691162 secs
-Pynamic: module test passed!
-
++ /usr/bin/time srun --overlap -N 1 -n 8 --ntasks-per-node=8 -c 5 python3 -c 'from mpi4py import MPI'
+0.01user 0.01system 0:00.46elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3249minor)pagefaults 0swaps
 + sleep 2s
-+ srun --overlap -N 2 -n 16 --ntasks-per-node=8 -c 5 /mnt/bb/wcastil/copper_mount/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/pynamic/pynamic-pyMPI-2.6a1_util_495_280//pynamic-bigexe-mpi4py pynamic_driver_mpi4py.py
-+ grep -v 'rank -'
-Pynamic: Version 1.3.3
-Pynamic: run on 04/08/26 14:34:12 with 16 MPI tasks
-
-Pynamic: driver beginning... now importing modules
-Pynamic: driver finished importing all modules..
-Pynamic: module import time = 3.7460646629333496 secs
-Pynamic: module test passed!
-
++ /usr/bin/time srun --overlap -N 1 -n 8 --ntasks-per-node=8 -c 5 python3 -c 'from mpi4py import MPI'
+0.01user 0.01system 0:00.46elapsed 5%CPU (0avgtext+0avgdata 18432maxresident)k
+0inputs+0outputs (0major+3249minor)pagefaults 0swaps
 + sleep 2s
 + conda deactivate
 + local cmd=deactivate
@@ -518,4 +475,4 @@ export CONDA_PYTHON_EXE='\''/autofs/nccs-svm1_sw/frontier/miniforge3/23.11.0-0/b
 + '[' -n '' ']'
 + hash -r
 + stop_copper.sh -d /lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs -v /mnt/bb/wcastil/copper_mount
-/var/spool/slurmd/job4352265/slurm_script: line 46: stop_copper.sh: command not found
+/var/spool/slurmd/job4397416/slurm_script: line 42: stop_copper.sh: command not found
