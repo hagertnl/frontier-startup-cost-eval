@@ -57,7 +57,7 @@ for cache in ['cold', 'warm']:
         ax.tick_params(axis='both', labelsize=12)
         #ax.set_yscale('log')
         ax.set_xscale('log')
-        ax.set_ylim(0.0, 120)
+        ax.set_ylim(0.0, 180)
         ax.set_xlim(0.5, 3000)
 
     axes[benchmark_to_ax_index["python-pytorch"]].set_ylim(0.0, 600)

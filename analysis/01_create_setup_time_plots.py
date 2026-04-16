@@ -23,7 +23,7 @@ df_grouped = df.groupby(['benchmark', 'tool', 'nnodes'])['seconds'].agg(['mean',
 print(df_grouped)
 df_grouped = df_grouped.reset_index()
 
-fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+fig, axes = plt.subplots(1, 3, figsize=(12, 5))
 
 # Custom legend
 legend_colors = ["#000000", "#E69F00", "#56B4E9", "#009E73"]
@@ -41,10 +41,15 @@ fig.tight_layout(rect=[0.03, 0.15, 1, 0.95])
 # Create a mapping of axis index to benchmark name
 tool_to_ax_index = {}
 cur_index = 0
+if 'lustre-baseline' in df_grouped['tool'].unique():
+    tool_to_ax_index['lustre-baseline'] = 0
+    cur_index += 1
+
 # Assign tool to axes
 for b in df_grouped['tool'].unique():
-    tool_to_ax_index[b] = cur_index
-    cur_index += 1
+    if not b in tool_to_ax_index.keys():
+        tool_to_ax_index[b] = cur_index
+        cur_index += 1
 
 # Set labels, scales
 axes[0].set_ylabel("Time (s)", fontsize=14)
@@ -53,7 +58,7 @@ for ax in axes:
     ax.tick_params(axis='both', labelsize=12)
     ax.set_xscale('log')
     ax.set_ylim(0.0, 300)
-    ax.set_xlim(0.5, 1500)
+    ax.set_xlim(0.5, 3000)
 
 # Example of how to set an axis-specific limit if needed later
 #axes[benchmark_to_ax_index["python-pytorch"]].set_ylim(0.0, 600)
@@ -75,7 +80,10 @@ for index, entry in df_grouped[['benchmark', 'tool']].drop_duplicates().iterrows
     # slice min/max time into a single array
     err_bars = [time_avg_sorted - time_min_sorted, time_max_sorted - time_avg_sorted]
     axes[tool_to_ax_index[entry['tool']]].errorbar(nnodes_sorted, time_avg_sorted, yerr=err_bars, fmt='-o', capsize=8, capthick=3, elinewidth=0.5, color=legend_colors[legend_labels_to_index[entry['benchmark']]])
-    axes[tool_to_ax_index[entry['tool']]].set_title(f"{entry['tool']} time to first srun", fontsize=16)
+    if entry['tool'].startswith('lustre'):
+        axes[tool_to_ax_index[entry['tool']]].set_title(f"lustre time to first srun", fontsize=16)
+    else:
+        axes[tool_to_ax_index[entry['tool']]].set_title(f"{entry['tool']} time to first srun", fontsize=16)
 
 plt.savefig(f'setup_times.png', dpi=200)
 

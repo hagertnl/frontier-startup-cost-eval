@@ -44,7 +44,7 @@ ax.set_xlabel("# Nodes", fontsize=14)
 ax.tick_params(axis='both', labelsize=12)
 ax.set_xscale('log')
 ax.set_ylim(0.0, 150)
-ax.set_xlim(0.5, 1500)
+ax.set_xlim(0.5, 3000)
 ax.set_title(f"Measured sbcast overhead", fontsize=16)
 
 # For each unique benchmark/tool, get & plot data

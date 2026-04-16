@@ -10,7 +10,7 @@ out_name="setup_times.csv"
 
 echo "benchmark,tool,nnodes,jobid,seconds" > $out_name
 
-for tool in ../data/sbcast ../data/copper; do
+for tool in ../data/sbcast ../data/copper ../data/lustre-baseline; do
     for benchmark in $tool/*; do
         for run_output in $benchmark/*.out; do
             if [[ "$(basename $run_output)" =~ ^.*-[0-9]+\.out$ ]]; then
