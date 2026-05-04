@@ -14,17 +14,12 @@ echo $SLURM_JOB_NUM_NODES
 echo $SLURM_JOB_NAME
 echo $SLURM_NODELIST
 
-#LOGDIR=/lustre/orion/proj-shared/ums046/cug_runs_kaushik/2_nodes
 LOGDIR=/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/logs
 cd ${LOGDIR}
 PACKAGE_ENV_LOCATION=/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds
 source "${PACKAGE_ENV_LOCATION}/common_modules.sh"
-#COPPER_MOUNT_PATH=/mnt/bb/$USER/copper_mount
-#/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d $LOGDIR -v $COPPER_MOUNT_PATH -M 220000000
 COPPER_MOUNT_PATH=/mnt/bb/$USER/copper_mount
-/lustre/orion/stf243/world-shared/wcastil/Experiments/CUG26/copper_run/launch_copper_frontier.sh -d $LOGDIR -v $COPPER_MOUNT_PATH -M 524288000
-
-#CPU_BINDING_MAP=verbose,map_cpu:9,17,25,33,41,49,57,73
+launch_copper_frontier.sh -d $LOGDIR -v $COPPER_MOUNT_PATH -M 524288000
 
 conda activate $COPPER_MOUNT_PATH/lustre/orion/stf243/world-shared/hagertnl/CUG26/benchmark_builds/python-mpi4py/conda_env
 
@@ -43,5 +38,5 @@ srun --overlap -N ${SLURM_NNODES} -n $((SLURM_NNODES*8)) --ntasks-per-node=8 -c 
 sleep 2s
 
 conda deactivate
-stop_copper.sh -d $LOGDIR -v $COPPER_MOUNT_PATH
+stop_copper_frontier.sh -d $LOGDIR -v $COPPER_MOUNT_PATH
 
